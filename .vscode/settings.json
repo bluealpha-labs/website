@@ -3,6 +3,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
+  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type"
 }
