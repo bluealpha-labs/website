@@ -7,9 +7,16 @@
     "build": "astro build",
     "preview": "astro preview",
     "typecheck": "tsc --noEmit",
+    "format:check": "prettier -c .",
+    "format:write": "prettier -w .",
     "clean": "git clean -dfX"
   },
   "dependencies": {
     "astro": "^5.11.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.13"
   }
 }

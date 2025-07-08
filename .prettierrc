@@ -1,0 +1,11 @@
+{
+  "printWidth": 120,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "none",
+  "bracketSameLine": true,
+  "singleAttributePerLine": true,
+  "astroAllowShorthand": true,
+  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"]
+}
