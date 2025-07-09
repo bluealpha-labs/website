@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "bluealpha",
+  "name": "website",
   "compatibility_date": "2025-07-08",
   "assets": {
     "directory": "./dist",
