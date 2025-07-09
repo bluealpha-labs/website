@@ -1,8 +1,5 @@
 {
   "type": "module",
-  "imports": {
-    "#*": "./src/*"
-  },
   "scripts": {
     "dev": "astro dev",
     "check": "astro check",
