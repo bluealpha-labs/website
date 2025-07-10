@@ -5,6 +5,12 @@ import Section from './section.astro'
 ---
 
 <Section>
-  <Content client:idle />
-  <Logos client:idle />
+  <Content
+    slot='content'
+    client:idle
+  />
+  <Logos
+    slot='logos'
+    client:idle
+  />
 </Section>
