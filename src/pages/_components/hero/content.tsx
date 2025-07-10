@@ -1,6 +1,6 @@
 import { smoothTransition } from '#utils/transitions.ts'
 import { motion } from 'motion/react'
-import { HeroActions } from './actions'
+import { Actions } from './actions'
 import { Description } from './description'
 import { Title } from './title'
 
@@ -15,7 +15,7 @@ export function Content() {
         <Title />
         <Description />
       </div>
-      <HeroActions />
+      <Actions />
     </motion.div>
   )
 }
