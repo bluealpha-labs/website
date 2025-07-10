@@ -1,0 +1,10 @@
+---
+import { Content } from './content'
+import { Logos } from './logos'
+import Section from './section.astro'
+---
+
+<Section>
+  <Content client:idle />
+  <Logos client:idle />
+</Section>
