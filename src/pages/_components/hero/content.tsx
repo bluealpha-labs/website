@@ -7,7 +7,7 @@ import { Title } from './title'
 export function Content() {
   return (
     <motion.div
-      className='flex flex-col gap-8'
+      className='flex flex-1 flex-col justify-center gap-8'
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={smoothTransition}>
