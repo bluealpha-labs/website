@@ -7,7 +7,7 @@ import { motion } from 'motion/react'
 export function Logos() {
   return (
     <motion.div
-      className='absolute right-0 bottom-10 left-0 flex flex-col items-center gap-6 md:gap-8'
+      className='flex flex-col items-center gap-6 md:gap-8'
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ...smoothTransition, delay: 0.2 }}>
