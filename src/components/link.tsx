@@ -1,4 +1,4 @@
-import { transition } from '#utils/transitions.ts'
+import { snappyTransition } from '#utils/transitions.ts'
 import { motion } from 'motion/react'
 import type { ComponentProps } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
@@ -22,7 +22,7 @@ export function Link({ variant, className, ...props }: LinkProps) {
     <motion.a
       layout
       className={linkStyles({ variant, className })}
-      transition={transition}
+      transition={snappyTransition}
       {...props}
     />
   )
