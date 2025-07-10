@@ -6,14 +6,15 @@ import { useInView } from 'motion/react'
 import { useEffect, useRef } from 'react'
 
 export function Actions() {
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null)
   const inView = useInView(ref, { initial: true })
 
   useEffect(() => $showCta.set(!inView), [inView])
 
-  function scrollToProblem() {
-    const problem = document.querySelector('#problem')
-    problem?.scrollIntoView({ behavior: 'smooth' })
+  function scrollToNextSection() {
+    const currentSection = ref.current?.closest('section')
+    const nextSection = currentSection?.nextElementSibling
+    nextSection?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
@@ -23,7 +24,7 @@ export function Actions() {
       <Button>Call with founder</Button>
       <Button
         variant='outline'
-        onClick={scrollToProblem}>
+        onClick={scrollToNextSection}>
         Learn more
         <Icon className='-me-1.5'>
           <ArrowDownIcon className='size-4' />
