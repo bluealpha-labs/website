@@ -7,7 +7,7 @@ export const buttonStyles = tv({
   base: 'flex h-11 cursor-pointer items-center gap-2 rounded-full px-4 font-semibold tracking-[.01em] transition-colors ease-out',
   variants: {
     variant: {
-      default: 'bg-stone-900 text-white hover:bg-stone-800',
+      default: 'bg-blue-600 text-white hover:bg-blue-700',
       outline: 'border border-stone-200 hover:border-stone-300 hover:bg-stone-50'
     }
   },
