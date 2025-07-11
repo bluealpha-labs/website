@@ -7,11 +7,11 @@ import { Title } from './title'
 export function Content() {
   return (
     <motion.div
-      className='flex flex-col gap-8'
+      className='flex flex-col gap-8 max-xl:items-center'
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={smoothTransition}>
-      <div className='flex flex-col gap-4 lg:gap-6'>
+      <div className='flex flex-col gap-4 max-xl:items-center max-xl:text-center lg:gap-6'>
         <Title />
         <Description />
       </div>
