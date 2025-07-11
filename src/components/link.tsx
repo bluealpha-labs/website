@@ -4,7 +4,7 @@ import type { ComponentProps } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 export const linkStyles = tv({
-  base: 'font-semibold tracking-[.01em] transition-colors ease-out',
+  base: 'font-semibold tracking-[.01em] transition-colors ease-out select-none',
   variants: {
     variant: {
       default: 'hover:text-stone-800'

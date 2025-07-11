@@ -17,7 +17,7 @@ export function DesktopNav() {
             href='/'
             className='flex items-center gap-2'>
             <Logo />
-            <span className='text-xl font-semibold tracking-[-.01em]'>BlueAlpha</span>
+            <span className='text-xl font-semibold tracking-[-.01em] select-none'>BlueAlpha</span>
           </a>
         </div>
         <Link href='/about'>About</Link>
