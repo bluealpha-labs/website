@@ -6,7 +6,7 @@ export type LogoProps = ComponentProps<'svg'>
 export function Logo({ className, ...props }: LogoProps) {
   return (
     <svg
-      className={cn('fill-current', className)}
+      className={cn('size-6 fill-blue-600', className)}
       viewBox='0 0 200 200'
       {...props}>
       <path d='M100 70C116.569 70 130 83.4315 130 100C130 116.569 116.569 130 100 130C83.4315 130 70 116.569 70 100C70 83.4315 83.4315 70 100 70Z' />
