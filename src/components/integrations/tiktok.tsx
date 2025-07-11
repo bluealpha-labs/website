@@ -1,10 +1,12 @@
+import { cn } from '#utils/cn.ts'
 import type { ComponentProps } from 'react'
 
 export type TikTokProps = ComponentProps<'svg'>
 
-export function TikTok(props: TikTokProps) {
+export function TikTok({ className, ...props }: TikTokProps) {
   return (
     <svg
+      className={cn('size-6 fill-current', className)}
       viewBox='0 0 24 25'
       {...props}>
       <path

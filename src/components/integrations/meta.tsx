@@ -1,10 +1,12 @@
+import { cn } from '#utils/cn.ts'
 import type { ComponentProps } from 'react'
 
 export type MetaProps = ComponentProps<'svg'>
 
-export function Meta(props: MetaProps) {
+export function Meta({ className, ...props }: MetaProps) {
   return (
     <svg
+      className={cn('size-6 fill-current', className)}
       viewBox='0 0 24 25'
       {...props}>
       <path

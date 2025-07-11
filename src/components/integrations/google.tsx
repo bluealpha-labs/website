@@ -1,10 +1,12 @@
+import { cn } from '#utils/cn.ts'
 import type { ComponentProps } from 'react'
 
 export type GoogleProps = ComponentProps<'svg'>
 
-export function Google(props: GoogleProps) {
+export function Google({ className, ...props }: GoogleProps) {
   return (
     <svg
+      className={cn('size-6 fill-current', className)}
       viewBox='0 0 24 25'
       {...props}>
       <path

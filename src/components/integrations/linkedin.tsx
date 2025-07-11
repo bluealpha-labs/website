@@ -1,10 +1,12 @@
+import { cn } from '#utils/cn.ts'
 import type { ComponentProps } from 'react'
 
 export type LinkedInProps = ComponentProps<'svg'>
 
-export function LinkedIn(props: LinkedInProps) {
+export function LinkedIn({ className, ...props }: LinkedInProps) {
   return (
     <svg
+      className={cn('size-6 fill-current', className)}
       viewBox='0 0 24 24'
       {...props}>
       <path
