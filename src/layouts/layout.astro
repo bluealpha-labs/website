@@ -1,6 +1,7 @@
 ---
 import { DesktopNav } from '#components/nav/desktop-nav.tsx'
 import Head from '#components/head.astro'
+import Footer from '#components/footer.astro'
 import '#styles/global.css'
 ---
 
@@ -9,6 +10,9 @@ import '#styles/global.css'
   <Head title='BlueAlpha — Marketing automation platform' />
   <body class='bg-white font-sans text-stone-900 antialiased'>
     <DesktopNav client:load />
-    <slot />
+    <main class='relative z-10 rounded-b-4xl bg-white'>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
