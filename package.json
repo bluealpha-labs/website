@@ -17,6 +17,7 @@
     "clean": "git clean -dfX"
   },
   "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
     "@heroicons/react": "^2.2.0",
     "@nanostores/react": "^1.0.0",
     "@tailwindcss/vite": "^4.1.11",
