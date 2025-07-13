@@ -23,13 +23,14 @@ const legalLinks = [
 ---
 
 <footer class='sticky bottom-0 -mt-8 bg-stone-900 px-5 pt-18 pb-12 text-white md:h-119 md:px-29 md:pt-26 md:pb-7'>
-  <div class='grid grid-cols-1 gap-8 md:h-full md:grid-cols-[1fr_auto_auto] md:grid-rows-[1fr_auto] md:gap-x-12 md:gap-y-0 lg:grid-cols-[1fr_192px_192px] lg:gap-x-0'>
+  <div
+    class='grid grid-cols-1 gap-8 md:h-full md:grid-cols-[1fr_auto_auto] md:grid-rows-[1fr_auto] md:gap-x-12 md:gap-y-0 lg:grid-cols-[1fr_192px_192px] lg:gap-x-0'>
     <!-- Logo section -->
     <div class='flex flex-col gap-4'>
       <Logo className='fill-white' />
       <p class='text-base font-[450] tracking-[.01em] text-stone-400'>Marketing automation platform</p>
     </div>
-    
+
     <!-- Nav links -->
     <div class='grid grid-cols-2 gap-14 md:block md:gap-0'>
       <div class='flex flex-col gap-2'>
@@ -43,7 +44,7 @@ const legalLinks = [
           ))
         }
       </div>
-      
+
       <!-- Social links - mobile only in grid -->
       <div class='flex flex-col gap-2 md:hidden'>
         {
@@ -58,7 +59,7 @@ const legalLinks = [
         }
       </div>
     </div>
-    
+
     <!-- Social links - desktop only -->
     <div class='hidden md:flex md:flex-col md:gap-2'>
       {
@@ -72,12 +73,12 @@ const legalLinks = [
         ))
       }
     </div>
-    
+
     <!-- Copyright -->
     <p class='text-sm font-[450] tracking-[.01em] text-stone-400 md:self-end'>
       © BlueAlpha {year}. All rights reserved
     </p>
-    
+
     <!-- Privacy link -->
     <div class='hidden md:flex md:flex-col md:gap-2 md:self-end'>
       <Link
@@ -87,7 +88,7 @@ const legalLinks = [
         {legalLinks[0].label}
       </Link>
     </div>
-    
+
     <!-- Terms link -->
     <div class='hidden md:flex md:flex-col md:gap-2 md:self-end'>
       <Link
@@ -97,7 +98,7 @@ const legalLinks = [
         {legalLinks[1].label}
       </Link>
     </div>
-    
+
     <!-- Legal links mobile -->
     <div class='flex gap-6 md:hidden'>
       {

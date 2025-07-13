@@ -1,8 +1,8 @@
 import { getCalApi } from '@calcom/embed-react'
 import { useEffect } from 'react'
-import { Button } from './button'
+import { Button, type ButtonProps } from './button'
 
-export function CallWithFounder() {
+export function CallWithFounder(props: ButtonProps) {
   useEffect(() => {
     async function init() {
       const cal = await getCalApi({ namespace: 'call-with-founder' })
@@ -21,7 +21,8 @@ export function CallWithFounder() {
     <Button
       data-cal-namespace='call-with-founder'
       data-cal-link='bluealpha/call-with-founder'
-      data-cal-config='{"layout":"month_view"}'>
+      data-cal-config='{"layout":"month_view"}'
+      {...props}>
       Call with founder
     </Button>
   )

@@ -1,0 +1,32 @@
+---
+import { ButtonLink } from '#components/button-link.tsx'
+import ContentActions from '#components/content/content-actions.astro'
+import ContentDescription from '#components/content/content-description.astro'
+import ContentTitle from '#components/content/content-title.astro'
+import Content from '#components/content/content.astro'
+import Section from './section.astro'
+import { CallWithFounder } from '#components/call-with-founder.tsx'
+import { Icon } from '#components/icon.tsx'
+import ArrowRightIcon from '@heroicons/react/16/solid/ArrowRightIcon'
+---
+
+<Section>
+  <Content>
+    <ContentTitle>Take Back Control From Black-Box Metrics</ContentTitle>
+    <ContentDescription>
+      Turn messy first-party data and walled-garden signals into proof of incremental revenue, so you invest only in
+      what grows profit.
+    </ContentDescription>
+    <ContentActions>
+      <CallWithFounder />
+      <ButtonLink
+        href='/case-studies'
+        variant='outline'>
+        See our case studies
+        <Icon className='-me-1.5'>
+          <ArrowRightIcon className='size-4' />
+        </Icon>
+      </ButtonLink>
+    </ContentActions>
+  </Content>
+</Section>

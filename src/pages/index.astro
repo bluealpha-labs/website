@@ -3,10 +3,12 @@ import Layout from '#layouts/layout.astro'
 import Hero from './_components/hero/hero.astro'
 import Problem from './_components/problem/problem.astro'
 import { Metrics } from './_components/metrics/metrics'
+import Cta from './_components/cta/cta.astro'
 ---
 
 <Layout>
   <Hero />
   <Problem />
   <Metrics client:visible />
+  <Cta />
 </Layout>

@@ -1,4 +1,4 @@
-import { Button } from '#components/button.tsx'
+import { CallWithFounder } from '#components/call-with-founder.tsx'
 import { Link } from '#components/link.tsx'
 import { Logo } from '#components/logo.tsx'
 import { $showCta } from '#stores/show-cta.tsx'
@@ -24,13 +24,13 @@ export function DesktopNav() {
         <Link href='/case-studies'>Case studies</Link>
         <AnimatePresence mode='popLayout'>
           {showCta && (
-            <Button
+            <CallWithFounder
               className='-me-3'
               initial={{ y: 20, opacity: 0, transition: snappyTransition }}
               animate={{ y: 0, opacity: 1, transition: snappyTransition }}
               exit={{ y: 20, opacity: 0, transition: snappyTransition }}>
               Call with founder
-            </Button>
+            </CallWithFounder>
           )}
         </AnimatePresence>
       </nav>
