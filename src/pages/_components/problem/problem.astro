@@ -1,7 +1,18 @@
 ---
+import ContentDescription from '#components/content/content-description.astro'
+import ContentTitle from '#components/content/content-title.astro'
+import Content from '#components/content/content.astro'
+import { CardList } from './card-list'
 import Section from './section.astro'
 ---
 
 <Section>
-  <h1>Problem</h1>
+  <Content>
+    <ContentTitle>Put a PhD Data Scientist Inside Your Team</ContentTitle>
+    <ContentDescription>
+      Turn messy first-party data and walled-garden signals into proof of incremental revenue, so you invest only in
+      what grows profit.
+    </ContentDescription>
+  </Content>
+  <CardList client:visible />
 </Section>
