@@ -47,29 +47,38 @@ export function Cards() {
       }}>
       {cards.map((card, index) => {
         return (
-          <Card
+          <motion.div
             key={card.id}
-            onSendToBack={() => sendToBack(card.id)}>
-            <motion.div
-              animate={{
-                y: 20 * index,
-                scale: 1 + index * 0.12 - cards.length * 0.12,
-                transformOrigin: 'center top'
-              }}
-              initial={false}
-              transition={{
-                type: 'spring',
-                stiffness: animationConfig.stiffness,
-                damping: animationConfig.damping
-              }}
-              style={{ width: cardWidth }}>
-              <CardContent
-                insight={card.insight}
-                result={card.result}
-                position={cards.length - index - 1}
-              />
-            </motion.div>
-          </Card>
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+              type: 'spring',
+              visualDuration: 0.6,
+              bounce: 0.3,
+              delay: index * 0.15
+            }}>
+            <Card onSendToBack={() => sendToBack(card.id)}>
+              <motion.div
+                animate={{
+                  y: 20 * index,
+                  scale: 1 + index * 0.12 - cards.length * 0.12,
+                  transformOrigin: 'center top'
+                }}
+                initial={false}
+                transition={{
+                  type: 'spring',
+                  stiffness: animationConfig.stiffness,
+                  damping: animationConfig.damping
+                }}
+                style={{ width: cardWidth }}>
+                <CardContent
+                  insight={card.insight}
+                  result={card.result}
+                  position={cards.length - index - 1}
+                />
+              </motion.div>
+            </Card>
+          </motion.div>
         )
       })}
     </div>
