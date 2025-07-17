@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is the BlueAlpha marketing website built with:
+
 - **Astro 5.11.0** - Static site generator with React integration
 - **React 19** - For interactive components
 - **Tailwind CSS v4** - Styling framework with custom theme
@@ -38,6 +39,7 @@ pnpm clean            # Clean generated files
 ## Architecture & Code Organization
 
 ### Directory Structure
+
 - `/src/pages/` - Astro pages (routes)
 - `/src/components/` - Reusable UI components
   - `.astro` files for static content
@@ -51,12 +53,14 @@ pnpm clean            # Clean generated files
 ### Key Patterns
 
 1. **Path Aliasing**: Use `#` prefix for src imports
+
    ```typescript
    import { Button } from '#/components/button'
    import { cn } from '#/utils/cn'
    ```
 
 2. **Component Styling**: Use Tailwind Variants for component styles
+
    ```typescript
    import { tv } from 'tailwind-variants'
    const buttonVariants = tv({
@@ -66,6 +70,7 @@ pnpm clean            # Clean generated files
    ```
 
 3. **State Management**: Use Nanostores for global state
+
    ```typescript
    import { atom } from 'nanostores'
    export const $showCta = atom(false)
@@ -105,5 +110,6 @@ pnpm clean            # Clean generated files
 ### Testing
 
 Currently, no testing framework is configured. When adding tests:
+
 - Consider Vitest for unit tests (works well with Vite/Astro)
 - Consider Playwright for E2E tests
