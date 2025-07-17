@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Card } from './card'
 import { CardContent } from './card-content'
 
@@ -21,7 +21,7 @@ const data = [
   }
 ]
 
-const cardWidth = 440
+const cardWidth = 420
 const animationConfig = { stiffness: 260, damping: 20 }
 
 export function Cards() {
@@ -36,6 +36,15 @@ export function Cards() {
       return newCards
     })
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const topCardId = cards[cards.length - 1].id
+      sendToBack(topCardId)
+    }, 4000) // Change card every 4 seconds
+
+    return () => clearInterval(interval)
+  }, [cards])
 
   return (
     <div
@@ -55,7 +64,7 @@ export function Cards() {
               type: 'spring',
               visualDuration: 0.6,
               bounce: 0.3,
-              delay: index * 0.15
+              delay: (cards.length - 1 - index) * 0.15
             }}>
             <Card onSendToBack={() => sendToBack(card.id)}>
               <motion.div

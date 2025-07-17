@@ -1,5 +1,6 @@
+import { Alcove } from '#components/logos/alcove.tsx'
 import { Beehiiv } from '#components/logos/beehiiv.tsx'
-import { CorralData } from '#components/logos/corral-data.tsx'
+import { Pawlicy } from '#components/logos/pawlicy.tsx'
 import { Pettable } from '#components/logos/pettable.tsx'
 import { smoothTransition } from '#utils/transitions.ts'
 import { motion } from 'motion/react'
@@ -15,7 +16,9 @@ export function Logos() {
       <div className='flex h-7 items-center gap-6 text-stone-400 md:h-5.5 md:gap-12'>
         <Beehiiv className='h-4.5 md:h-5.5' />
         <Pettable className='h-4 md:h-5' />
-        <CorralData className='h-3 md:h-4' />
+        <Alcove className='h-5 md:h-6' />
+        <Pawlicy className='h-4 md:h-5' />
+        {/* <CorralData className='h-3 md:h-4' /> */}
       </div>
     </motion.div>
   )
