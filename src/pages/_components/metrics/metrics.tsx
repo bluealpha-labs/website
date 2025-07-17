@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Boxes } from './boxes'
-import { Results } from './results'
+import { ResultList } from './result-list'
 import { Title } from './title'
 
 export function Metrics() {
@@ -11,9 +11,9 @@ export function Metrics() {
       ref={target}
       className='h-[300vh]'>
       <div className='sticky top-0 flex h-dvh items-center justify-center'>
-        <div className='flex flex-col gap-4'>
+        <div className='flex max-w-[90vw] flex-col gap-8 md:max-w-[80vw] md:gap-12 lg:max-w-[1200px]'>
           <Title />
-          <Results target={target} />
+          <ResultList target={target} />
         </div>
         <Boxes />
       </div>
