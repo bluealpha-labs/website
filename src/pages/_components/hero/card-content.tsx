@@ -18,7 +18,7 @@ export function CardContent({ insight, result, position = 0 }: CardContentProps)
       )}>
       <div className='flex flex-col gap-2'>
         <span className='w-fit rounded-full bg-stone-50 px-3 py-1.5 font-mono text-xs font-semibold tracking-[.01em] text-stone-800 sm:px-4'>
-          INSIGHT
+          ACTION
         </span>
         <div className='rounded-2xl bg-stone-50 px-3 py-2.5 sm:px-4 sm:py-3'>
           <p className='text-base leading-relaxed font-semibold text-stone-800 sm:text-lg'>{insight}</p>
