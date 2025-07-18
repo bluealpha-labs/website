@@ -1,0 +1,33 @@
+---
+import CaseStudyItem from './case-study-item.astro'
+import { Pettable } from '#components/logos/pettable.tsx'
+import { BeehiivIcon } from '#components/logos/beehiiv.tsx'
+
+const caseStudies = [
+  {
+    title: 'How Pettable Achieved a 14% CAC Reduction by Partnering with BlueAlpha',
+    href: '/case-studies/pettable',
+    url: 'www.pettable.com',
+    description:
+      "When Google Search spend crept past break-even and Customer Acquisition Cost (CAC) climbed 20%, Pettable's marketing team needed facts, not hunches: Which dollars were truly incremental, and which were cannibalizing organic sales? Existing dashboards couldn't prove causality at the campaign level.",
+    icon: Pettable
+  },
+  {
+    title: 'How Beehiiv Built Trust and Transformed Its Marketing Efficiency with BlueAlpha',
+    href: '/case-studies/beehiiv',
+    url: 'www.beehiiv.com',
+    description:
+      'Beehiiv, a fast-growing newsletter platform, faced uncertainty over whether its marketing spend was truly incremental. By partnering with BlueAlpha for rigorous incrementality testing across channels like YouTube, Meta, LinkedIn, and TikTok, they uncovered significant discrepancies in platform-reported CPAs. This allowed Beehiiv to reallocate its budget to the most efficient channels.',
+    icon: BeehiivIcon
+  }
+] as const
+export type CaseStudy = (typeof caseStudies)[number]
+---
+
+<div class='grid grid-cols-1 gap-8 md:grid-cols-2'>
+  {
+    caseStudies.map((caseStudy) => (
+      <CaseStudyItem caseStudy={caseStudy} />
+    ))
+  }
+</div>

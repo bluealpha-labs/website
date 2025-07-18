@@ -1,0 +1,21 @@
+---
+import ContentDescription from '#components/content/content-description.astro'
+import ContentTitle from '#components/content/content-title.astro'
+import Content from '#components/content/content.astro'
+import Layout from '#layouts/layout.astro'
+import CaseStudyGrid from './_components/case-study-grid.astro'
+import Section from './_components/section.astro'
+---
+
+<Layout>
+  <Section>
+    <Content>
+      <ContentTitle>Case Studies</ContentTitle>
+      <ContentDescription>
+        See how leading brands discovered their true incremental ROI and transformed their marketing efficiency with
+        BlueAlpha.
+      </ContentDescription>
+    </Content>
+    <CaseStudyGrid />
+  </Section>
+</Layout>

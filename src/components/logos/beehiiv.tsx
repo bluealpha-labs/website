@@ -3,7 +3,7 @@ import type { ComponentProps } from 'react'
 
 export type BeehiivProps = ComponentProps<'svg'>
 
-export function Beehiiv({ className, ...props }: BeehiivProps) {
+export function BeehiivIcon({ className, ...props }: BeehiivProps) {
   return (
     <svg
       className={cn('fill-current', className)}

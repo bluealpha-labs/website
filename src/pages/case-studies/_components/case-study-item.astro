@@ -1,0 +1,55 @@
+---
+import type { CaseStudy } from './case-study-grid.astro'
+
+type Props = {
+  caseStudy: CaseStudy
+}
+
+const {
+  caseStudy: { title, url, description, icon: Icon, href }
+} = Astro.props
+---
+
+<article class='relative overflow-hidden rounded-xl border border-stone-100 bg-white'>
+  <a
+    {href}
+    class='block'>
+    <!-- Icon -->
+    <div class='flex h-32 items-center justify-center bg-gradient-to-br from-stone-50 to-stone-100'>
+      <Icon className='h-10 w-auto text-stone-600' />
+    </div>
+
+    <!-- Content -->
+    <div class='p-6 lg:p-8'>
+      <!-- URL -->
+      <p class='mb-3 text-sm font-medium text-blue-600'>{url}</p>
+
+      <!-- Title -->
+      <h3 class='mb-4 text-xl leading-tight font-semibold text-stone-900 lg:text-2xl'>
+        {title}
+      </h3>
+
+      <!-- Description -->
+      <p class='mb-6 line-clamp-3 text-stone-600'>
+        {description}
+      </p>
+
+      <!-- CTA -->
+      <div class='flex items-center text-sm font-medium text-stone-900'>
+        <span>Read case study</span>
+        <svg
+          class='ml-2 h-4 w-4'
+          fill='none'
+          stroke='currentColor'
+          viewBox='0 0 24 24'>
+          <path
+            stroke-linecap='round'
+            stroke-linejoin='round'
+            stroke-width='2'
+            d='M9 5l7 7-7 7'
+          ></path>
+        </svg>
+      </div>
+    </div>
+  </a>
+</article>

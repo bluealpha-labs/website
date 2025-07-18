@@ -1,0 +1,345 @@
+---
+import { BeehiivIcon } from '#components/logos/beehiiv.tsx'
+import Layout from '#layouts/layout.astro'
+import { Testimonial } from './_components/testimonial'
+import Section from './_components/section.astro'
+---
+
+<Layout>
+  <section
+    class='mx-auto flex flex-col items-center overflow-hidden bg-stone-50 px-4 pt-64 pb-20 md:px-8 md:pt-80 md:pb-24 lg:px-16 lg:pt-48 lg:pb-32 xl:px-24'>
+    <!-- Introduction -->
+    <BeehiivIcon className='mb-10 h-8' />
+    <h1 class='mb-8 max-w-4xl text-center text-5xl font-semibold text-balance'>
+      How Beehiiv Built Trust and Transformed Its Marketing Efficiency with BlueAlpha
+    </h1>
+    <p class='mx-auto mb-12 max-w-2xl text-center text-lg'>
+      Discover how Beehiiv, a fast-growing newsletter platform, leveraged BlueAlpha's innovative methodology to reveal
+      the true cost of marketing, reallocate budget intelligently, and drive more business growth with confidence.
+    </p>
+
+    <!-- Testimonial -->
+    <Testimonial
+      quote="BlueAlpha's rigorous testing revealed the true value of channels that ad platform metrics were both over- and underestimating. We finally understood where our dollars were best spent. Their insights allowed us to reallocate our budget with confidence to fuel our scalable growth."
+      name='EJ White'
+      title='Head of Growth, Beehiiv'
+      avatar='/case-studies/ej-white-beehiiv.avif'
+    />
+  </section>
+
+  <div class='pb-24'>
+    <Section>
+    <div class='mx-auto max-w-4xl space-y-16'>
+      <!-- Client Overview -->
+      <div>
+      <h2 class='mb-8 text-3xl font-semibold'>Client Overview: <span class='text-stone-600'>Beehiiv</span></h2>
+      <div class='overflow-hidden rounded-lg border border-stone-200'>
+        <table class='w-full'>
+          <tbody>
+            <tr class='border-b border-stone-200'>
+              <td class='p-4 font-medium text-stone-700'>Industry</td>
+              <td class='p-4'>Email & Subscriber Management Platforms</td>
+            </tr>
+            <tr>
+              <td class='p-4 font-medium text-stone-700'>About</td>
+              <td class='p-4'
+                >Beehiiv empowers creators and businesses to build, grow, and monetize digital audiences through both
+                subscription‑based <em>and</em> ad‑supported models.</td
+              >
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Challenge Context -->
+    <div>
+      <h2 class='mb-6 text-3xl font-semibold'>Challenge Context</h2>
+      <p class='text-lg leading-relaxed text-stone-700'>
+        Amid aggressive growth across <span class='font-semibold'>5+ platforms</span> and <span class='font-semibold'>30+ campaigns</span>, Beehiiv faced
+        significant budget cuts and growing uncertainty about whether acquisition efforts were truly incremental or
+        merely capturing organic sign‑ups.
+      </p>
+    </div>
+
+    <!-- The Challenge -->
+    <div>
+      <h2 class='mb-6 text-3xl font-semibold'>The Challenge</h2>
+      <p class='mb-6 text-lg leading-relaxed text-stone-700'>
+        Conflicting metrics from platform reports, GA4, internal attribution, and surveys obscured which channels <span class='font-semibold'
+          >actually</span
+        > drove incremental growth. Without clear, data‑driven insight, Beehiiv risked:
+      </p>
+      <ul class='space-y-3 text-lg'>
+        <li class='flex items-start'>
+          <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+          <span><span class='font-semibold'>Overspending</span> on channels whose reported CPA looked artificially low.</span>
+        </li>
+        <li class='flex items-start'>
+          <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+          <span
+            ><span class='font-semibold'>Underspending</span> on channels where CPA was <em>actually</em> favorable but looked high.</span
+          >
+        </li>
+      </ul>
+      <p class='mt-6 text-lg text-stone-700'>
+        The result? Inefficient budget allocation and missed growth opportunities.
+      </p>
+    </div>
+
+    <!-- The Solution -->
+    <div>
+      <h2 class='mb-6 text-3xl font-semibold'>The Solution — BlueAlpha's Two‑Pronged Approach</h2>
+
+      <div class='space-y-8'>
+        <div>
+          <h3 class='mb-4 text-2xl font-semibold'>1. Marketing Mix Model (MMM) Analysis</h3>
+
+          <div class='mb-4'>
+            <h4 class='mb-3 text-lg font-semibold text-stone-700'>What We Did</h4>
+            <ul class='space-y-2 text-lg'>
+              <li class='flex items-start'>
+                <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+                <span>Analyzed channel performance to separate high‑ from low‑value efforts.</span>
+              </li>
+              <li class='flex items-start'>
+                <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+                <span>Identified confounding factors in traditional attribution.</span>
+              </li>
+              <li class='flex items-start'>
+                <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+                <span>Prioritized channels for immediate incrementality testing.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class='mb-3 text-lg font-semibold text-stone-700'>Why It Matters</h4>
+            <p class='text-lg text-stone-700'>
+              Traditional MMMs are often over‑engineered. BlueAlpha refined the model and paired it with <span class='font-semibold'
+                >time‑sensitive incrementality tests</span
+              > for faster, clearer insights.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class='mb-4 text-2xl font-semibold'>2. Structured Incrementality Testing</h3>
+
+          <div class='mb-6'>
+            <h4 class='mb-4 text-lg font-semibold text-stone-700'>Experiment Design</h4>
+            <div class='overflow-hidden rounded-lg border border-stone-200'>
+              <table class='w-full'>
+                <tbody>
+                  <tr class='border-b border-stone-200'>
+                    <td class='p-4 font-medium text-stone-700'>Channels Tested</td>
+                    <td class='p-4'>YouTube, Meta, LinkedIn, TikTok</td>
+                  </tr>
+                  <tr class='border-b border-stone-200'>
+                    <td class='p-4 font-medium text-stone-700'>Duration</td>
+                    <td class='p-4'>6‑week test + 1‑week post‑treatment window</td>
+                  </tr>
+                  <tr>
+                    <td class='p-4 font-medium text-stone-700'>Focus</td>
+                    <td class='p-4'
+                      >True incremental <span class='font-semibold'>cost per signup</span> & <span class='font-semibold'>cost per paid conversion</span>;
+                      interaction between free‑tier signups and paid‑plan conversions</td
+                    >
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div>
+            <h4 class='mb-3 text-lg font-semibold text-stone-700'>Execution</h4>
+            <p class='text-lg text-stone-700'>
+              For each channel, BlueAlpha compared the platform‑reported CPA to the <span class='font-semibold'>incremental CPA</span> revealed
+              by testing (the "BlueAlpha Results").
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The BlueAlpha Results -->
+    <div>
+      <h2 class='mb-8 text-3xl font-semibold'>The BlueAlpha Results</h2>
+
+      <div class='space-y-8'>
+        <div>
+          <h3 class='mb-4 text-2xl font-semibold'>Incremental Signups (Free‑Tier Users)</h3>
+          <div class='overflow-hidden rounded-lg border border-stone-200'>
+            <table class='w-full'>
+              <thead>
+                <tr class='border-b border-stone-200 bg-stone-50'>
+                  <th class='p-4 text-left font-semibold'>Channel</th>
+                  <th class='p-4 text-left font-semibold'>Incremental vs. Platform‑Reported CPA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class='border-b border-stone-100 bg-white transition-colors hover:bg-stone-50'>
+                  <td class='p-6 font-medium'>TikTok</td>
+                  <td class='p-6'>~10% difference — nearly identical</td>
+                </tr>
+                <tr class='border-b border-stone-200'>
+                  <td class='p-4 font-medium'>YouTube</td>
+                  <td class='p-4'>True CPA ≈ <span class='font-semibold'>50% higher</span></td>
+                </tr>
+                <tr class='border-b border-stone-200'>
+                  <td class='p-4 font-medium'>Meta</td>
+                  <td class='p-4'>True CPA <span class='font-semibold'>345% higher</span></td>
+                </tr>
+                <tr>
+                  <td class='p-4 font-medium'>LinkedIn</td>
+                  <td class='p-4'>Inconclusive — needs more data</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            <p class='mt-6 text-sm text-stone-600 italic'>
+            Figure 1. Before‑and‑after chart comparing signups reported by ad platforms with incremental signups
+            identified through testing.
+          </p>
+          <img
+            src='/case-studies/beehiiv-test-results.webp'
+            alt='Beehiiv test results chart'
+            class='mt-4 rounded-lg border border-stone-200'
+          />
+        </div>
+
+        <div>
+          <h3 class='mb-4 text-2xl font-semibold'>Paid‑Plan Conversions</h3>
+          <div class='overflow-hidden rounded-lg border border-stone-200'>
+            <table class='w-full'>
+              <thead>
+                <tr class='border-b border-stone-200 bg-stone-50'>
+                  <th class='p-4 text-left font-semibold'>Channel</th>
+                  <th class='p-4 text-left font-semibold'>Incremental Insights</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class='border-b border-stone-200'>
+                  <td class='p-4 font-medium'>YouTube & Meta</td>
+                  <td class='p-4'
+                    >Despite higher signup CPAs, incremental <span class='font-semibold'>cost per paid conversion</span> was <span class='font-semibold'
+                      >80% lower</span
+                    > than Beehiiv's internal threshold.</td
+                  >
+                </tr>
+                <tr class='border-b border-stone-100 bg-white transition-colors hover:bg-stone-50'>
+                  <td class='p-6 font-medium'>TikTok</td>
+                  <td class='p-6'
+                    >Remained the most efficient channel, delivering conversions at a cost <span class='font-semibold'>≈95% lower</span> than
+                    platform‑reported CPA.</td
+                  >
+                </tr>
+                <tr>
+                  <td class='p-4 font-medium'>LinkedIn</td>
+                  <td class='p-4'>Inconclusive — further testing required.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            <p class='mt-6 text-sm text-stone-600 italic'>
+            Figure 2. Before‑and‑after chart comparing purchases reported by ad platforms with incremental purchases
+            identified through testing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discussion -->
+    <div>
+      <h2 class='mb-6 text-3xl font-semibold'>Discussion</h2>
+      <p class='mb-6 text-lg leading-relaxed text-stone-700'>
+        Relying solely on platform metrics hides the <em>real</em> cost of acquisition:
+      </p>
+      <ul class='mb-6 space-y-3 text-lg'>
+        <li class='flex items-start'>
+          <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+          <span>Channels like <span class='font-semibold'>Meta</span> can <span class='font-semibold'>underreport CPA</span>, leading to overspending.</span
+          >
+        </li>
+        <li class='flex items-start'>
+          <span class='mt-1.5 mr-3 block h-2 w-2 flex-shrink-0 rounded-full bg-blue-500'></span>
+          <span>Channels like <span class='font-semibold'>TikTok</span> may look expensive but deliver outsized incremental value.</span>
+        </li>
+      </ul>
+      <p class='text-lg text-stone-700'>
+        With BlueAlpha's insights, Beehiiv reallocated budget toward channels that <span class='font-semibold'
+          >truly drive incremental growth</span
+        >, boosting overall efficiency.
+      </p>
+    </div>
+
+    <!-- Key Takeaways -->
+    <div>
+      <h2 class='mb-6 text-3xl font-semibold'>Key Takeaways</h2>
+      <ol class='space-y-4 text-lg'>
+        <li class='flex'>
+          <span
+            class='mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white'
+            >1</span
+          >
+          <div>
+            <h3 class='font-semibold'>Data‑Driven Baseline</h3>
+            <p class='text-stone-700'>An incremental baseline is more accurate than traditional MMMs alone.</p>
+          </div>
+        </li>
+        <li class='flex'>
+          <span
+            class='mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white'
+            >2</span
+          >
+          <div>
+            <h3 class='font-semibold'>Channel Differentiation</h3>
+            <p class='text-stone-700'>TikTok excelled; Meta's CPA was dramatically underestimated.</p>
+          </div>
+        </li>
+        <li class='flex'>
+          <span
+            class='mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white'
+            >3</span
+          >
+          <div>
+            <h3 class='font-semibold'>Informed Budget Allocation</h3>
+            <p class='text-stone-700'>Spend can now be optimized, avoiding misleading CPAs.</p>
+          </div>
+        </li>
+        <li class='flex'>
+          <span
+            class='mr-4 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-stone-900 text-sm font-semibold text-white'
+            >4</span
+          >
+          <div>
+            <h3 class='font-semibold'>Continuous Optimization</h3>
+            <p class='text-stone-700'>Ongoing testing is crucial—especially for channels like LinkedIn.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- What's Next -->
+    <div>
+      <h2 class='mb-6 text-3xl font-semibold'>What's Next for Beehiiv?</h2>
+      <ul class='space-y-4 text-lg'>
+        <li>
+            <h3 class='mb-2 text-lg font-semibold'>Scale Proven Channels</h3>
+            <p class='text-stone-700'>Double‑down on TikTok, YouTube, and Meta with refined budgets.</p>
+        </li>
+        <li>
+          <h3 class='mb-2 font-semibold'>LinkedIn Reassessment</h3>
+          <p class='text-stone-700'>Run larger, longer‑term tests to unlock its potential.</p>
+        </li>
+        <li>
+          <h3 class='mb-2 font-semibold'>Continuous Refinement</h3>
+          <p class='text-stone-700'>
+            Use the incremental baseline to steer future marketing investments as market conditions evolve.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </Section>
+  </div>
+</Layout>
