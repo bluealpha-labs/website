@@ -1,14 +1,16 @@
 import { motion } from 'motion/react'
 import type { ComponentType, SVGProps } from 'react'
+import { cn } from '#utils/cn.ts'
 
 export type BoxProps = {
   index: number
   isInView: boolean
   icon: ComponentType<SVGProps<SVGSVGElement>>
   position: { top: string; left: string }
+  className?: string
 }
 
-export function Box({ index, isInView, icon: Icon, position }: BoxProps) {
+export function Box({ index, isInView, icon: Icon, position, className }: BoxProps) {
   const delay = index * 0.08
   const floatDistanceY = -6 - (index % 3) * 2
   const floatDistanceX = (index % 2 === 0 ? 4 : -4) + (index % 3)
@@ -17,7 +19,7 @@ export function Box({ index, isInView, icon: Icon, position }: BoxProps) {
 
   return (
     <motion.div
-      className='absolute flex size-12 items-center justify-center rounded-2xl bg-stone-100 sm:size-16 md:size-20'
+      className={cn('absolute flex size-12 items-center justify-center rounded-2xl bg-stone-100 sm:size-16 md:size-20', className)}
       style={{ top: position.top, left: position.left }}
       initial={{ top: '50%', left: '50%', scale: 0, opacity: 0, x: 0, y: 0 }}
       animate={

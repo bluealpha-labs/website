@@ -21,7 +21,6 @@ const data = [
   }
 ]
 
-const cardWidth = 420
 const animationConfig = { stiffness: 260, damping: 20 }
 
 export function Cards() {
@@ -48,9 +47,8 @@ export function Cards() {
 
   return (
     <div
-      className='relative'
+      className='relative w-full max-w-[420px]'
       style={{
-        width: cardWidth,
         minHeight: 320,
         perspective: 600
       }}>
@@ -79,7 +77,7 @@ export function Cards() {
                   stiffness: animationConfig.stiffness,
                   damping: animationConfig.damping
                 }}
-                style={{ width: cardWidth }}>
+                className='w-full'>
                 <CardContent
                   insight={card.insight}
                   result={card.result}

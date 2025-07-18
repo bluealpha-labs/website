@@ -12,12 +12,12 @@ const integrations = [
   { icon: Google, position: { top: '18%', left: '35%' } },
   { icon: LinkedIn, position: { top: '15%', left: '65%' } },
   { icon: TikTok, position: { top: '25%', left: '85%' } },
-  { icon: Snapchat, position: { top: '40%', left: '8%' } },
-  { icon: Meta, position: { top: '50%', left: '87%' } },
-  { icon: Google, position: { top: '75%', left: '10%' } },
   { icon: LinkedIn, position: { top: '80%', left: '30%' } },
   { icon: TikTok, position: { top: '85%', left: '70%' } },
-  { icon: Snapchat, position: { top: '70%', left: '82%' } }
+  { icon: Snapchat, position: { top: '70%', left: '82%' } },
+  { icon: Google, position: { top: '75%', left: '10%' } },
+  { icon: Snapchat, position: { top: '40%', left: '8%' } },
+  { icon: Meta, position: { top: '50%', left: '87%' } }
 ] as const
 
 export function Boxes() {
@@ -35,6 +35,7 @@ export function Boxes() {
           isInView={isInView}
           icon={icon}
           position={position}
+          className={index >= 8 ? 'hidden sm:flex' : ''}
         />
       ))}
     </div>

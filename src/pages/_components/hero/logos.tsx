@@ -8,7 +8,7 @@ import { motion } from 'motion/react'
 export function Logos() {
   return (
     <motion.div
-      className='flex flex-col items-center gap-6 md:gap-8'
+      className='flex flex-col items-center gap-6 overflow-hidden md:gap-8'
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ...smoothTransition, delay: 0.2 }}>
@@ -16,7 +16,7 @@ export function Logos() {
       <div className='flex h-7 items-center gap-6 text-stone-400 md:h-5.5 md:gap-12'>
         <Beehiiv className='h-5 md:h-6' />
         <Pettable className='h-5 md:h-6' />
-        <Alcove className='h-6 md:h-7' />
+        <Alcove className='h-6 max-sm:hidden md:h-7' />
         <Pawlicy className='h-5 md:h-6' />
         {/* <CorralData className='h-3 md:h-4' /> */}
       </div>

@@ -8,8 +8,8 @@ export type CardItemProps = {
 
 export function CardItem({ className, card: { label, title, description, icon: Icon } }: CardItemProps) {
   return (
-    <div className={cn('relative h-84', className)}>
-      <div className='h-full w-full rounded-3xl bg-stone-50 p-8 duration-300'>
+    <div className={cn('relative', className)}>
+      <div className='w-full rounded-3xl bg-stone-50 p-8 duration-300'>
         <div className='flex flex-col gap-6'>
           <div className='inline-flex'>
             <div className='rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-3'>
