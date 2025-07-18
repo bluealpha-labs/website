@@ -17,36 +17,37 @@ export function CardList() {
 
 export const cards = [
   {
-    id: 'dataSilos',
-    label: 'Data Silos & Fragmentation',
-    title: 'Too many tools, not enough signal',
-    description:
-      'Marketers lose ~30 % of the week copy-pasting data across platforms just to assemble a “single” report. Those hours could drive campaign alignment, craft better creative, and deepen customer retention—but instead vanish into spreadsheet gymnastics and “export-csv” loops.',
-    icon: WrenchScrewdriverIcon
-  },
-  {
-    id: 'blackBox',
-    label: 'Black Box Metrics',
-    title: 'Platforms grade their own homework and your ROI looks great until finance checks the bank',
-    description:
-      'Ad networks report performance with opaque attribution windows and view-through credits that can over-state true conversions by 10-20 %. Without independent verification, teams double down on channels that appear profitable while real acquisition costs keep climbing. Taking measurement in-house exposes phantom conversions and lets you redirect every dollar to what genuinely moves revenue.',
-    icon: ChartBarIcon
-  },
-  {
-    id: 'budget',
-    label: 'Budgets Under Pressure ',
-    title: 'Higher targets, less cash',
-    description:
-      'Economic headwinds and rising media prices squeeze spend. Teams must justify every dollar, re-plan weekly, and still hit stretch KPIs - turning “do more with less” from slogan into daily reality.',
-    icon: BanknotesIcon
-  },
-  {
     id: 'cac',
     label: 'Increasing CAC',
     title: 'Customers cost more',
     description:
       'Auction competition, privacy rules, and saturated audiences push acquisition costs up double digits year-over-year. Channels that once scaled cheaply now barely break even unless strategy - and measurement - evolve.',
     icon: ArrowTrendingUpIcon
+  },
+
+  {
+    id: 'blackBox',
+    label: 'Black Box Metrics',
+    title: 'Platforms grade their own homework',
+    description:
+      'Ad platforms mark their own exams, inflating success with murky attribution windows and view-through alchemy that can pad conversions by 15%. Without a second opinion, budgets chase mirages while true acquisition costs swell. Independent measurement strips away the smoke so every dollar backs real growth.',
+    icon: ChartBarIcon
+  },
+  {
+    id: 'dataSilos',
+    label: 'Data Silos & Fragmentation',
+    title: 'Too many tools, not enough signal',
+    description:
+      'Marketers burn nearly a third of their week copy-pasting CSVs, stitching charts, and begging tools to speak the same language. Those lost hours disappear into spreadsheet acrobatics that still fail to show the full picture.',
+    icon: WrenchScrewdriverIcon
+  },
+  {
+    id: 'budget',
+    label: 'Budgets Under Pressure',
+    title: 'Higher targets, less cash',
+    description:
+      'Economic headwinds and rising media prices squeeze spend. Teams must justify every dollar, re-plan weekly, and still hit stretch KPIs - turning “do more with less” from slogan into daily reality.',
+    icon: BanknotesIcon
   }
 ] as const
 export type Card = (typeof cards)[number]
