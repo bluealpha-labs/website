@@ -1,7 +1,9 @@
-<section class='flex min-h-dvh flex-col gap-24 px-4 pt-46 pb-10 md:px-8 lg:px-16 xl:px-24'>
-  <div class='flex flex-1 items-center justify-between max-xl:flex-col max-xl:gap-y-20'>
-    <slot name='content' />
-    <slot name='animation' />
+<section class='flex min-h-dvh flex-col px-4 pt-46 pb-10 md:px-8 lg:px-16 xl:px-24'>
+  <div class='mx-auto flex w-full max-w-7xl flex-1 flex-col justify-between gap-24'>
+    <div class='flex flex-1 items-center justify-between max-xl:flex-col max-xl:gap-y-20'>
+      <slot name='content' />
+      <slot name='animation' />
+    </div>
+    <slot name='logos' />
   </div>
-  <slot name='logos' />
 </section>
