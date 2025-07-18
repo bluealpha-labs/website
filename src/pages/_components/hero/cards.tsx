@@ -21,7 +21,7 @@ const data = [
   }
 ]
 
-const animationConfig = { stiffness: 400, damping: 35 }
+const animationConfig = { stiffness: 260, damping: 20 }
 
 export function Cards() {
   const [cards, setCards] = useState(data)
@@ -79,7 +79,7 @@ export function Cards() {
                 }}
                 className='w-full will-change-transform'
                 style={{
-                  transform: 'translateZ(0)',
+                  transform: 'translateZ(0)'
                 }}>
                 <CardContent
                   insight={card.insight}

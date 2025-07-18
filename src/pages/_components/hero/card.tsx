@@ -10,8 +10,8 @@ const sensitivity = 200
 export function Card({ children, onSendToBack }: CardProps) {
   const x = useMotionValue(0)
   const y = useMotionValue(0)
-  const rotateX = useTransform(y, [-100, 100], [30, -30])
-  const rotateY = useTransform(x, [-100, 100], [-30, 30])
+  const rotateX = useTransform(y, [-100, 100], [60, -60])
+  const rotateY = useTransform(x, [-100, 100], [-60, 60])
 
   function handleDragEnd(_: never, info: PanInfo) {
     const xExceeded = Math.abs(info.offset.x) > sensitivity
@@ -28,17 +28,17 @@ export function Card({ children, onSendToBack }: CardProps) {
   return (
     <motion.div
       className='absolute cursor-grab will-change-transform'
-      style={{ 
-        x, 
-        y, 
-        rotateX, 
+      style={{
+        x,
+        y,
+        rotateX,
         rotateY,
-        transformStyle: 'preserve-3d',
+        transformStyle: 'preserve-3d'
       }}
       drag
       dragConstraints={{ top: 0, right: 0, bottom: 0, left: 0 }}
       dragElastic={0.6}
-      dragTransition={{ bounceStiffness: 600, bounceDamping: 30 }}
+      // dragTransition={{ bounceStiffness: 600, bounceDamping: 30 }}
       whileTap={{ cursor: 'grabbing' }}
       onDragEnd={handleDragEnd}>
       {children}
