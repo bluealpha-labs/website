@@ -23,7 +23,7 @@ export function CallWithFounder(props: ButtonProps) {
       data-cal-link='bluealpha/call-with-founder'
       data-cal-config='{"layout":"month_view"}'
       {...props}>
-      Call with founder
+      Book a demo
     </Button>
   )
 }

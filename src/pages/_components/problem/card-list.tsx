@@ -3,11 +3,11 @@ import { CardItem } from './card-item'
 
 export function CardList() {
   return (
-    <div className='grid grid-cols-7 gap-4'>
+    <div className='grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-7'>
       {cards.map((card, index) => (
         <CardItem
           key={card.id}
-          className={index % 3 === 0 ? 'col-span-3' : 'col-span-4'}
+          className={`col-span-1 lg:col-span-1 ${index % 3 === 0 ? 'xl:col-span-3' : 'xl:col-span-4'}`}
           card={card}
         />
       ))}

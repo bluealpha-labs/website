@@ -28,9 +28,8 @@ export function DesktopNav() {
               className='-me-2 px-3 py-2 text-sm sm:-me-3 sm:px-4 sm:py-2.5 sm:text-base'
               initial={{ y: 20, opacity: 0, transition: snappyTransition }}
               animate={{ y: 0, opacity: 1, transition: snappyTransition }}
-              exit={{ y: 20, opacity: 0, transition: snappyTransition }}>
-              Call with founder
-            </CallWithFounder>
+              exit={{ y: 20, opacity: 0, transition: snappyTransition }}
+            />
           )}
         </AnimatePresence>
       </nav>

@@ -14,10 +14,10 @@ export function Logos() {
       transition={{ ...smoothTransition, delay: 0.2 }}>
       <p className='text-sm font-[450] tracking-[.01em] text-stone-500'>Trusted by marketing teams at</p>
       <div className='flex h-7 items-center gap-6 text-stone-400 md:h-5.5 md:gap-12'>
-        <Beehiiv className='h-4.5 md:h-5.5' />
-        <Pettable className='h-4 md:h-5' />
-        <Alcove className='h-5 md:h-6' />
-        <Pawlicy className='h-4 md:h-5' />
+        <Beehiiv className='h-5 md:h-6' />
+        <Pettable className='h-5 md:h-6' />
+        <Alcove className='h-6 md:h-7' />
+        <Pawlicy className='h-5 md:h-6' />
         {/* <CorralData className='h-3 md:h-4' /> */}
       </div>
     </motion.div>

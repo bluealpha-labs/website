@@ -1,7 +1,8 @@
 export function Description() {
   return (
-    <p className='max-w-lg text-lg font-[450] text-stone-500 md:max-w-lg lg:max-w-xl lg:text-xl'>
-      Put AI and data science in the hands of your marketing team with an end-to-end automation platform.
+    <p className='max-w-124 text-lg font-[450] text-stone-500 lg:max-w-148 lg:text-xl'>
+      Put a team of marketing scientists inside your ad stack - spotting wasted dollars, showing where to reinvest, and
+      automating the busy-work so your team can focus on growth.
     </p>
   )
 }
