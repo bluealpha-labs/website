@@ -1,11 +1,80 @@
 ---
 import Layout from '#layouts/layout.astro'
-import { getCollection } from 'astro:content'
+import { getCollection, type CollectionEntry } from 'astro:content'
 
 const collection = await getCollection('careers')
 const published = collection.filter((career) => career.data.status === 'Published')
 const careers = published.sort((a, b) => a.data.order - b.data.order)
 const count = published.length
+
+const grouped = careers.reduce((acc: Record<string, CollectionEntry<'careers'>[]>, career) => {
+  const department = career.data.department
+  ;(acc[department] ||= []).push(career)
+  return acc
+}, {})
+const departments = Object.keys(grouped).sort()
 ---
 
-<Layout />
+<Layout>
+  <section class='mx-auto min-h-screen max-w-5xl px-6 pt-40 pb-20'>
+    <header class='mb-12'>
+      <h1 class='text-3xl font-semibold tracking-tight md:text-5xl'>Join BlueAlpha</h1>
+      <p class='mt-4 max-w-2xl text-stone-600'>
+        We are building AI-first marketing automation with a small, senior team. Help us ship systems that move millions
+        in ad spend with scientific rigor.
+      </p>
+      <p class='mt-2 text-sm text-stone-500'>{count} open role{count === 1 ? '' : 's'}</p>
+    </header>
+
+    {
+      count === 0 && (
+        <div class='rounded-2xl border border-stone-200 bg-stone-50 p-8 text-stone-600'>
+          No open roles right now. If you think you can help us win, send a note to
+          <a
+            class='font-medium text-stone-900 underline underline-offset-4'
+            href='mailto:careers@bluealpha.ai'>
+            careers@bluealpha.ai
+          </a>
+          .
+        </div>
+      )
+    }
+
+    {
+      count > 0 && (
+        <div class='space-y-10'>
+          {departments.map((dept) => (
+            <section>
+              <h2 class='mb-4 text-2xl font-semibold tracking-tight text-stone-900'>{dept}</h2>
+              <ul class='grid gap-4 md:gap-6'>
+                {grouped[dept].map((career) => (
+                  <li>
+                    <a
+                      href={`/careers/${career.slug}`}
+                      class='group block rounded-2xl border border-stone-200 p-6 no-underline transition-colors hover:bg-stone-50'>
+                      <div class='flex flex-col justify-between gap-2 md:flex-row md:items-center'>
+                        <div>
+                          <h3 class='text-xl font-semibold tracking-tight md:text-2xl'>{career.data.title}</h3>
+                          <div class='mt-1 flex flex-wrap items-center gap-2 text-sm text-stone-600'>
+                            {career.data.locations.map((loc) => (
+                              <span class='inline-flex items-center rounded-full border border-stone-200 px-2.5 py-1'>
+                                {loc}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <div class='mt-2 md:mt-0'>
+                          <span class='text-sm font-medium text-stone-700 group-hover:text-stone-900'>View role →</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      )
+    }
+  </section>
+</Layout>
