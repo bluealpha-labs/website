@@ -1,0 +1,15 @@
+---
+import Layout from '#layouts/layout.astro'
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+  const collection = await getCollection('careers')
+  const published = collection.filter((career) => career.data.status === 'Published')
+  return published.map((career) => ({ params: { slug: career.slug }, props: { career } }))
+}
+
+const { career } = Astro.props
+const { Content } = await career.render()
+---
+
+<Layout />

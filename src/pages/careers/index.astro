@@ -1,0 +1,11 @@
+---
+import Layout from '#layouts/layout.astro'
+import { getCollection } from 'astro:content'
+
+const collection = await getCollection('careers')
+const published = collection.filter((career) => career.data.status === 'Published')
+const careers = published.sort((a, b) => a.data.order - b.data.order)
+const count = published.length
+---
+
+<Layout />
