@@ -1,5 +1,19 @@
 import { defineCollection, z } from 'astro:content'
 
+const articles = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    date: z.date(),
+    status: z.enum(['Draft', 'Published']),
+    tags: z.array(z.string()).optional(),
+    author: z.string().optional(),
+    image: z.string().optional(),
+    order: z.number().optional()
+  })
+})
+
 const careers = defineCollection({
   type: 'content',
   schema: z.object({
@@ -24,4 +38,4 @@ const playbooks = defineCollection({
   })
 })
 
-export const collections = { careers, playbooks }
+export const collections = { articles, careers, playbooks, }
