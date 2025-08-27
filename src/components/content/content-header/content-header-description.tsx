@@ -2,7 +2,7 @@ import { cva } from '#utils/cva.ts'
 import type { ComponentProps } from 'react'
 
 const styles = cva({
-  base: 'text-gray-600 mt-4 text-lg md:mt-6 md:text-xl'
+  base: 'mt-4 text-lg text-tertiary md:mt-6 md:text-xl'
 })
 
 type Props = ComponentProps<'p'>
