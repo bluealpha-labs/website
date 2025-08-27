@@ -7,6 +7,7 @@ import { ContentCardTagLink } from './content-card-tag-link'
 import { ContentCardTitle } from './content-card-title'
 
 export type ContentCard01Props = {
+  src: string
   author: string
   date: string
   href: string
@@ -15,13 +16,16 @@ export type ContentCard01Props = {
   tags: { name: string; color: string }[]
 }
 
-export function ContentCard01({ author, date, href, title, description, tags }: ContentCard01Props) {
+export function ContentCard01({ src, author, date, href, title, description, tags }: ContentCard01Props) {
   return (
     <ContentCardGroup
       direction='column'
       gap={4}>
-      <ContentCardImageLink>
-        <ContentCardImage />
+      <ContentCardImageLink href={href}>
+        <ContentCardImage
+          src={src}
+          alt={title}
+        />
       </ContentCardImageLink>
       <ContentCardGroup
         direction='column'
@@ -41,11 +45,7 @@ export function ContentCard01({ author, date, href, title, description, tags }: 
         </ContentCardGroup>
         <ContentCardGroup gap={2}>
           {tags.map(({ name, color }) => (
-            <ContentCardTagLink
-              key={name}
-              style={{ backgroundColor: color }}>
-              {name}
-            </ContentCardTagLink>
+            <ContentCardTagLink key={name}>{name}</ContentCardTagLink>
           ))}
         </ContentCardGroup>
       </ContentCardGroup>
