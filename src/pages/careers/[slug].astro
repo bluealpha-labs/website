@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
   const collection = await getCollection('careers')
-  const published = collection.filter((career) => career.data.status === 'Published')
+  const published = collection.filter((career) => career.data.status === 'published')
   return published.map((career) => ({ params: { slug: career.slug }, props: { career } }))
 }
 

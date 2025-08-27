@@ -1,18 +1,18 @@
 ---
+import { departmentNames, locationNames } from '#constants/career.ts'
 import Layout from '#layouts/layout.astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
 
 const collection = await getCollection('careers')
-const published = collection.filter((career) => career.data.status === 'Published')
-const careers = published.sort((a, b) => a.data.order - b.data.order)
-const count = published.length
+const careers = collection.filter((career) => career.data.status === 'published')
+const count = careers.length
 
 const grouped = careers.reduce((acc: Record<string, CollectionEntry<'careers'>[]>, career) => {
   const department = career.data.department
   ;(acc[department] ||= []).push(career)
   return acc
 }, {})
-const departments = Object.keys(grouped).sort()
+const departments = Object.keys(grouped).sort() as (keyof typeof departmentNames)[]
 ---
 
 <Layout>
@@ -43,36 +43,47 @@ const departments = Object.keys(grouped).sort()
     {
       count > 0 && (
         <div class='space-y-10'>
-          {departments.map((dept) => (
-            <section>
-              <h2 class='mb-4 text-2xl font-semibold tracking-tight text-stone-900'>{dept}</h2>
-              <ul class='grid gap-4 md:gap-6'>
-                {grouped[dept].map((career) => (
-                  <li>
-                    <a
-                      href={`/careers/${career.slug}`}
-                      class='group block rounded-2xl border border-stone-200 p-6 no-underline transition-colors hover:bg-stone-50'>
-                      <div class='flex flex-col justify-between gap-2 md:flex-row md:items-center'>
-                        <div>
-                          <h3 class='text-xl font-semibold tracking-tight md:text-2xl'>{career.data.title}</h3>
-                          <div class='mt-1 flex flex-wrap items-center gap-2 text-sm text-stone-600'>
-                            {career.data.locations.map((loc) => (
-                              <span class='inline-flex items-center rounded-full border border-stone-200 px-2.5 py-1'>
-                                {loc}
+          {departments.map((dept) => {
+            const departmentName = departmentNames[dept]
+
+            return (
+              <section>
+                <h2 class='mb-4 text-2xl font-semibold tracking-tight text-stone-900'>{departmentName}</h2>
+                <ul class='grid gap-4 md:gap-6'>
+                  {grouped[dept].map((career) => {
+                    return (
+                      <li>
+                        <a
+                          href={`/careers/${career.slug}`}
+                          class='group block rounded-2xl border border-stone-200 p-6 no-underline transition-colors hover:bg-stone-50'>
+                          <div class='flex flex-col justify-between gap-2 md:flex-row md:items-center'>
+                            <div>
+                              <h3 class='text-xl font-semibold tracking-tight md:text-2xl'>{career.data.title}</h3>
+                              <div class='mt-1 flex flex-wrap items-center gap-2 text-sm text-stone-600'>
+                                {career.data.locations.map((loc) => {
+                                  const locationName = locationNames[loc]
+                                  return (
+                                    <span class='inline-flex items-center rounded-full border border-stone-200 px-2.5 py-1'>
+                                      {locationName}
+                                    </span>
+                                  )
+                                })}
+                              </div>
+                            </div>
+                            <div class='mt-2 md:mt-0'>
+                              <span class='text-sm font-medium text-stone-700 group-hover:text-stone-900'>
+                                View role →
                               </span>
-                            ))}
+                            </div>
                           </div>
-                        </div>
-                        <div class='mt-2 md:mt-0'>
-                          <span class='text-sm font-medium text-stone-700 group-hover:text-stone-900'>View role →</span>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
+                        </a>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </section>
+            )
+          })}
         </div>
       )
     }
