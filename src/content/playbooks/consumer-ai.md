@@ -1,6 +1,6 @@
 ---
 title: Winning Market Share in Consumer AI SaaS (2025-2027)
-description: A CFO-proof growth system: incrementality-first MMM, GeoLift, and 10+ tests/week
+description: 'A CFO-proof growth system: incrementality-first MMM, GeoLift, and 10+ tests/week'
 author: matthias
 tags: [growth, saas]
 date: 2025-07-21
