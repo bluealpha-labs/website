@@ -1,9 +1,8 @@
 ---
 title: Founding Full Stack Engineer
-department: Engineering
-locations: [San Francisco, Remote]
-status: Published
-order: 0
+department: engineering
+locations: [sf, remote]
+status: published
 ---
 
 # About BlueAlpha

@@ -1,9 +1,8 @@
 ---
 title: Founding AI Engineer
-department: Engineering
-locations: [San Francisco, Remote]
-status: Published
-order: 1
+department: engineering
+locations: [sf, remote]
+status: published
 ---
 
 # About BlueAlpha
