@@ -1,5 +1,5 @@
 ---
-title: Founding AI Engineer
+title: Founding AI Software Engineer
 department: engineering
 locations: [sf, remote]
 status: published
@@ -12,6 +12,7 @@ BlueAlpha is rewriting how marketing technology is engineered. We’re building 
 ## Role Overview
 
 As a **Founding AI Software Engineer** at **BlueAlpha**, you will be one of the core five team members shaping our vision, strategy, and growth. You will architect and develop the foundational infrastructure that powers our multi-agent marketing operating system, ensuring seamless integration of AI capabilities into our platform. Your work will directly empower marketing teams to take control of their measurement, media buying, and insights, delivering immediate ROI and long-term transformation.
+
 This role blends AI engineering, infrastructure development, and system design to deliver intelligent, automated tools that empower marketers. Your contributions will not only drive our technology but also define the future of BlueAlpha as a leader in marketing innovation. Collaborating closely with our team of talented engineers, you will take ownership and pioneer the agentic backbone of our system to ensure seamless integration of our measurement solution and platform, delivering AI powered insights and changing the way marketing works.
 
 ## Responsibilities
