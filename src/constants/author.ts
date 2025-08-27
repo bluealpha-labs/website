@@ -1,3 +1,6 @@
+import matthias from '#assets/authors/matthias.png'
+import peter from '#assets/authors/peter.png'
+
 export const authors = ['matthias', 'peter'] as const
 export type Author = (typeof authors)[number]
 
@@ -7,6 +10,6 @@ export const authorNames = {
 } as const satisfies Record<Author, string>
 
 export const authorImages = {
-  matthias: '/images/authors/matthias.png',
-  peter: '/images/authors/peter.png'
-} as const satisfies Record<Author, string>
+  matthias,
+  peter
+} as const satisfies Record<Author, ImageMetadata>
