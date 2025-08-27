@@ -1,11 +1,12 @@
 ---
 title: 'What Every CMO Must Know Before Investing in a Marketing Mix Model'
-subtitle: 'Why static MMMs mislead budgets and how to fix them with incrementality and time‑varying betas'
+description: 'Why static MMMs mislead budgets and how to fix them with incrementality and time‑varying betas'
+author: peter
+tags: ['incrementality']
 date: 2025-03-12
-status: 'Published'
-tags: ['Marketing Mix Modeling', 'Incrementality', 'Bayesian']
-author: 'Peter Grafe'
-image: '/playbooks/consumer-ai/mmm-geolift-stack.webp'
+time: 4
+image: /playbooks/consumer-ai/mmm-geolift-stack.webp
+status: 'published'
 ---
 
 > Executive summary
