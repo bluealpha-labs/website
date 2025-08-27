@@ -38,4 +38,4 @@ const playbooks = defineCollection({
   })
 })
 
-export const collections = { articles, careers, playbooks, }
+export const collections = { articles, careers, playbooks }
