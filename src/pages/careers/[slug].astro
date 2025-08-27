@@ -1,0 +1,46 @@
+---
+import { locationNames, locations } from '#constants/career.ts'
+import Layout from '#layouts/layout.astro'
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+  const collection = await getCollection('careers')
+  const published = collection.filter((career) => career.data.status === 'published')
+  return published.map((career) => ({ params: { slug: career.slug }, props: { career } }))
+}
+
+const { career } = Astro.props
+const { Content } = await career.render()
+const title = `${career.data.title} — BlueAlpha Careers`
+const description = `${career.data.title} in ${career.data.department} · ${career.data.locations.join(', ')}`
+---
+
+<Layout
+  {title}
+  {description}>
+  <article class='mx-auto max-w-3xl px-6 pt-40 pb-20'>
+    <header class='mb-8'>
+      <a
+        href='/careers'
+        class='text-sm text-stone-600 hover:text-stone-900'
+        >← Back to careers</a
+      >
+      <h1 class='mt-4 text-3xl font-semibold tracking-tight md:text-5xl'>{career.data.title}</h1>
+      <div class='mt-6 flex flex-wrap items-center gap-2 text-sm text-stone-700'>
+        {
+          career.data.locations.map((loc) => {
+            const locationName = locationNames[loc]
+            return (
+              <span class='inline-flex items-center rounded-full border border-stone-200 px-2.5 py-1'>
+                {locationName}
+              </span>
+            )
+          })
+        }
+      </div>
+    </header>
+    <div class='prose max-w-none'>
+      <Content />
+    </div>
+  </article>
+</Layout>

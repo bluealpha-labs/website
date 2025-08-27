@@ -8,9 +8,12 @@ import { useEffect, useRef } from 'react'
 
 export function Actions() {
   const ref = useRef<HTMLDivElement>(null)
-  const inView = useInView(ref, { initial: true })
+  const inView = useInView(ref)
 
-  useEffect(() => $showCta.set(!inView), [inView])
+  useEffect(() => {
+    $showCta.set(!inView)
+    return () => $showCta.set(false)
+  }, [inView])
 
   function scrollToNextSection() {
     const currentSection = ref.current?.closest('section')

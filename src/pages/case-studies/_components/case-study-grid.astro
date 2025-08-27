@@ -25,9 +25,5 @@ export type CaseStudy = (typeof caseStudies)[number]
 ---
 
 <div class='grid grid-cols-1 gap-8 md:grid-cols-2'>
-  {
-    caseStudies.map((caseStudy) => (
-      <CaseStudyItem caseStudy={caseStudy} />
-    ))
-  }
+  {caseStudies.map((caseStudy) => <CaseStudyItem caseStudy={caseStudy} />)}
 </div>

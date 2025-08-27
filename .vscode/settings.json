@@ -1,9 +1,13 @@
 {
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.linkedEditing": true,
-  "eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+  "eslint.validate": ["astro", "javascript", "javascriptreact", "typescript", "typescriptreact"],
   "explorer.compactFolders": false,
-  "explorer.sortOrder": "type"
+  "explorer.sortOrder": "type",
+  "tailwindCSS.classFunctions": ["cva", "cx"]
 }

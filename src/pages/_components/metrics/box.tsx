@@ -1,6 +1,6 @@
+import { cn } from '#utils/cn.ts'
 import { motion } from 'motion/react'
 import type { ComponentType, SVGProps } from 'react'
-import { cn } from '#utils/cn.ts'
 
 export type BoxProps = {
   index: number
@@ -19,7 +19,10 @@ export function Box({ index, isInView, icon: Icon, position, className }: BoxPro
 
   return (
     <motion.div
-      className={cn('absolute flex size-12 items-center justify-center rounded-2xl bg-stone-100 sm:size-16 md:size-20', className)}
+      className={cn(
+        'absolute flex size-12 items-center justify-center rounded-2xl bg-stone-100 sm:size-16 md:size-20',
+        className
+      )}
       style={{ top: position.top, left: position.left }}
       initial={{ top: '50%', left: '50%', scale: 0, opacity: 0, x: 0, y: 0 }}
       animate={

@@ -20,7 +20,6 @@ export function DesktopNav() {
             <span className='text-xl font-semibold tracking-[-.01em] select-none max-sm:hidden'>BlueAlpha</span>
           </a>
         </div>
-        {/* <Link href='/about'>About</Link> */}
         <Link href='/case-studies'>Case studies</Link>
         <AnimatePresence mode='popLayout'>
           {showCta && (
