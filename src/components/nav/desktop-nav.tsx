@@ -21,7 +21,7 @@ export function DesktopNav() {
           </a>
         </div>
         <Link href='/case-studies'>Case studies</Link>
-        <Link href='/careers'>Careers</Link>
+        <Link href='/playbooks'>Playbooks</Link>
         <AnimatePresence mode='popLayout'>
           {showCta && (
             <CallWithFounder

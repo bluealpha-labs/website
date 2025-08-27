@@ -11,4 +11,17 @@ const careers = defineCollection({
   })
 })
 
-export const collections = { careers }
+const playbooks = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+    date: z.date(),
+    status: z.enum(['Draft', 'Published']),
+    tags: z.array(z.enum(['Consumer AI', 'Growth', 'SaaS'])),
+    image: z.string(),
+    order: z.number()
+  })
+})
+
+export const collections = { careers, playbooks }
