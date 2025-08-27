@@ -7,6 +7,6 @@ export const authorNames = {
 } as const satisfies Record<Author, string>
 
 export const authorImages = {
-  matthias: '/images/authors/matthias.webp',
-  peter: '/images/authors/peter.webp'
+  matthias: '/images/authors/matthias.png',
+  peter: '/images/authors/peter.png'
 } as const satisfies Record<Author, string>
