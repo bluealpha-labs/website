@@ -2,7 +2,7 @@ import { cva } from '#utils/cva.ts'
 import type { ComponentProps } from 'react'
 
 const styles = cva({
-  base: 'text-primary outline-focus-ring flex justify-between gap-x-4 rounded-md text-lg font-semibold focus-visible:outline-2 focus-visible:outline-offset-2'
+  base: 'flex justify-between gap-x-4 rounded-md text-lg font-semibold text-gray-900 outline-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2'
 })
 
 type Props = ComponentProps<'a'>
