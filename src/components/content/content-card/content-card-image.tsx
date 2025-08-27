@@ -2,7 +2,7 @@ import { cva } from '#utils/cva.ts'
 import type { ComponentProps } from 'react'
 
 const styles = cva({
-  base: 'overflow-hidden rounded-2xl'
+  base: 'aspect-[1.5] w-full object-cover'
 })
 
 type Props = ComponentProps<'img'>
