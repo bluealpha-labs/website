@@ -1,40 +1,42 @@
+import { tags as articleTags } from '#constants/article.ts'
+import { authors } from '#constants/author.ts'
+import { departments, locations } from '#constants/career.ts'
+import { statuses } from '#constants/content.ts'
+import { tags as playbookTags } from '#constants/playbook.ts'
 import { defineCollection, z } from 'astro:content'
 
 const articles = defineCollection({
-  type: 'content',
   schema: z.object({
     title: z.string(),
-    subtitle: z.string().optional(),
+    description: z.string(),
+    author: z.enum(authors),
+    tags: z.array(z.enum(articleTags)),
     date: z.date(),
-    status: z.enum(['Draft', 'Published']),
-    tags: z.array(z.string()).optional(),
-    author: z.string().optional(),
-    image: z.string().optional(),
-    order: z.number().optional()
+    time: z.number(),
+    image: z.string(),
+    status: z.enum(statuses)
   })
 })
 
 const careers = defineCollection({
-  type: 'content',
   schema: z.object({
     title: z.string(),
-    department: z.enum(['Engineering']),
-    locations: z.array(z.enum(['Remote', 'San Francisco'])),
-    status: z.enum(['Draft', 'Published']),
-    order: z.number()
+    department: z.enum(departments),
+    locations: z.array(z.enum(locations)),
+    status: z.enum(statuses)
   })
 })
 
 const playbooks = defineCollection({
-  type: 'content',
   schema: z.object({
     title: z.string(),
-    subtitle: z.string(),
+    description: z.string(),
+    author: z.enum(authors),
+    tags: z.array(z.enum(playbookTags)),
     date: z.date(),
-    status: z.enum(['Draft', 'Published']),
-    tags: z.array(z.enum(['Consumer AI', 'Growth', 'SaaS'])),
+    time: z.number(),
     image: z.string(),
-    order: z.number()
+    status: z.enum(statuses)
   })
 })
 
