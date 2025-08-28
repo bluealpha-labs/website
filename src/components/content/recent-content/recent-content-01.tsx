@@ -1,5 +1,5 @@
-import { ContentCardHorizontal } from '../content-card/content-card-horizontal'
-import { ContentCardVertical } from '../content-card/content-card-vertical'
+import { ContentCard01 } from '../content-card/content-card-01'
+import { ContentCard02 } from '../content-card/content-card-02'
 import { RecentContent } from './recent-content'
 import { RecentContentGrid } from './recent-content-grid'
 import { RecentContentGridItem } from './recent-content-grid-item'
@@ -30,7 +30,7 @@ export function RecentContent01({ title, items }: Props) {
             <RecentContentGridItem
               key={item.title}
               isFeatured={isFeatured}>
-              {isFeatured ? <ContentCardVertical {...item} /> : <ContentCardHorizontal {...item} />}
+              {isFeatured ? <ContentCard01 {...item} /> : <ContentCard02 {...item} />}
             </RecentContentGridItem>
           )
         })}

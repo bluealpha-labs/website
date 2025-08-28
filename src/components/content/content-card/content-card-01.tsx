@@ -16,7 +16,7 @@ type Props = {
   href: string
 }
 
-export function ContentCardVertical({ title, description, image, author, date, tags, href }: Props) {
+export function ContentCard01({ title, description, image, author, date, tags, href }: Props) {
   return (
     <ContentCardGroup
       direction='column'

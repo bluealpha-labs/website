@@ -16,7 +16,7 @@ type Props = {
   href: string
 }
 
-export function ContentCardHorizontal({ title, description, image, author, date, tags, href }: Props) {
+export function ContentCard02({ title, description, image, author, date, tags, href }: Props) {
   return (
     <ContentCardGroup
       className='xl:flex-row xl:items-start'
