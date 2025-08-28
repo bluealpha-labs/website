@@ -2,7 +2,7 @@
 import Layout from '#layouts/layout.astro'
 import { getCollection } from 'astro:content'
 import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
-import { companyNames, tagColors, tagNames } from '#constants/case-study.ts'
+import { companyLogos, companyNames, tagColors, tagNames } from '#constants/case-study.ts'
 import { formatDate } from '#utils/format.ts'
 import { RemainingContent } from '#components/content/remaining-content/remaining-content.tsx'
 import { RemainingContentTitle } from '#components/content/remaining-content/remaining-content-title.tsx'
@@ -34,6 +34,7 @@ const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.
       {
         sorted.map(({ data, slug }) => {
           const companyName = companyNames[data.company]
+          const CompanyLogo = companyLogos[data.company]
           const formattedDate = formatDate(data.date)
 
           return (
@@ -41,7 +42,10 @@ const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.
               <ContentGroup
                 direction='column'
                 gap={4}>
-                <ContentCardImageLink href={`/case-studies/${slug}`}>
+                <ContentCardImageLink
+                  className='relative'
+                  href={`/case-studies/${slug}`}>
+                  <CompanyLogo className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-gray-25' />
                   <ContentCardImage
                     src={data.image.src}
                     alt={data.title}
