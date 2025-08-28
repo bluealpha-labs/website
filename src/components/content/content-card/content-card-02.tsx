@@ -1,3 +1,4 @@
+import { Badge, type BadgeProps } from '#components/badge.tsx'
 import { ContentGroup } from '../content-group'
 import { ContentCardDescription } from './content-card-description'
 import { ContentCardImage } from './content-card-image'
@@ -12,7 +13,7 @@ type Props = {
   image: string
   author: string
   date: string
-  tags: { name: string; color: string }[]
+  tags: { name: string; color: BadgeProps['color'] }[]
   href: string
 }
 
@@ -49,7 +50,9 @@ export function ContentCard02({ title, description, image, author, date, tags, h
         </ContentGroup>
         <ContentGroup gap={2}>
           {tags.map(({ name, color }) => (
-            <ContentCardTagLink key={name}>{name}</ContentCardTagLink>
+            <ContentCardTagLink key={name}>
+              <Badge color={color}>{name}</Badge>
+            </ContentCardTagLink>
           ))}
         </ContentGroup>
       </ContentGroup>

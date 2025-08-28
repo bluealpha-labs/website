@@ -1,3 +1,5 @@
+import type { BadgeProps } from '#components/badge.tsx'
+
 export const tags = ['incrementality', 'mmm'] as const
 export type Tag = (typeof tags)[number]
 
@@ -7,6 +9,6 @@ export const tagNames = {
 } as const satisfies Record<Tag, string>
 
 export const tagColors = {
-  incrementality: 'green',
-  mmm: 'blue'
-} as const satisfies Record<Tag, string>
+  incrementality: 'blue',
+  mmm: 'orange'
+} as const satisfies Record<Tag, BadgeProps['color']>
