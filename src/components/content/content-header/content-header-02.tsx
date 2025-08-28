@@ -3,6 +3,7 @@ import { ContentGroup } from '../content-group'
 import { ContentHeader } from './content-header'
 import { ContentHeaderContainer } from './content-header-container'
 import { ContentHeaderDescription } from './content-header-description'
+import { ContentHeaderImage } from './content-header-image'
 import { ContentHeaderLabel } from './content-header-label'
 import { ContentHeaderTitle } from './content-header-title'
 import { ContentHeaderWrapper } from './content-header-wrapper'
@@ -10,11 +11,12 @@ import { ContentHeaderWrapper } from './content-header-wrapper'
 type Props = {
   label: string
   title: string
+  image: string
   description: string
   tags: { name: string; color: string }[]
 }
 
-export function ContentHeader02({ label, title, description, tags }: Props) {
+export function ContentHeader02({ label, title, image, description, tags }: Props) {
   return (
     <ContentHeader>
       <ContentHeaderContainer>
@@ -30,6 +32,10 @@ export function ContentHeader02({ label, title, description, tags }: Props) {
             ))}
           </ContentGroup>
         </ContentHeaderWrapper>
+        <ContentHeaderImage
+          src={image}
+          alt={title}
+        />
       </ContentHeaderContainer>
     </ContentHeader>
   )

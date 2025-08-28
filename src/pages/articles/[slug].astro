@@ -14,7 +14,7 @@ export async function getStaticPaths() {
 }
 
 const {
-  entry: { data, slug, render }
+  entry: { data, render }
 } = Astro.props
 
 const { Content } = await render()
@@ -26,6 +26,7 @@ const formattedDate = formatDate(data.date)
   <ContentHeader02
     label={`Published ${formattedDate}`}
     title={data.title}
+    image={data.image.src}
     description={data.description}
     tags={data.tags.map((tag) => ({
       name: tagNames[tag],
