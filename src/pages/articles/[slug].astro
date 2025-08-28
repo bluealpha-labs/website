@@ -4,14 +4,14 @@ import { getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
   const collection = await getCollection('articles')
-  const published = collection.filter((entry) => entry.data.status === 'Published')
+  const published = collection.filter((entry) => entry.data.status === 'published')
   return published.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }))
 }
 
 const { entry } = Astro.props
 const { Content } = await entry.render()
 const title = `${entry.data.title} — BlueAlpha Articles`
-const description = entry.data.subtitle ?? entry.data.title
+const description = entry.data.description ?? entry.data.title
 ---
 
 <Layout
@@ -25,7 +25,7 @@ const description = entry.data.subtitle ?? entry.data.title
         >← Back to articles</a
       >
       <h1 class='mt-4 text-3xl font-semibold tracking-tight md:text-5xl'>{entry.data.title}</h1>
-      {entry.data.subtitle && <p class='mt-2 max-w-2xl text-stone-600'>{entry.data.subtitle}</p>}
+      {entry.data.description && <p class='mt-2 max-w-2xl text-stone-600'>{entry.data.description}</p>}
       {
         entry.data.image && (
           <img
