@@ -1,3 +1,4 @@
+import type { BadgeProps } from '#components/badge.tsx'
 import { ContentCard01 } from '../content-card/content-card-01'
 import { RemainingContent } from './remaining-content'
 import { RemainingContentGrid } from './remaining-content-grid'
@@ -12,7 +13,7 @@ type Props = {
     image: string
     author: string
     date: string
-    tags: { name: string; color: string }[]
+    tags: { name: string; color: BadgeProps['color'] }[]
     href: string
   }[]
 }
