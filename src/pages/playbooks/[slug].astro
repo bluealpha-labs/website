@@ -7,6 +7,7 @@ import { tagColors, tagNames } from '#constants/playbook.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
+import { PlaybookCta } from './_components/playbook-cta'
 
 export async function getStaticPaths() {
   const collection = await getCollection('playbooks')
@@ -38,6 +39,7 @@ const formattedDate = formatDate(data.date)
     <ContentWrapper>
       <ContentProse>
         <Content />
+        <PlaybookCta />
       </ContentProse>
     </ContentWrapper>
   </ContentContainer>
