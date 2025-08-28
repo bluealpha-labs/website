@@ -1,8 +1,9 @@
 ---
-title: Founding AI Software Engineer
-department: engineering
-locations: [sf, remote]
-status: published
+title: 'Founding AI Software Engineer'
+image: '#assets/backgrounds/background-1.png'
+department: 'engineering'
+locations: ['sf', 'remote']
+status: 'published'
 ---
 
 ## About BlueAlpha

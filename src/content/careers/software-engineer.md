@@ -1,8 +1,9 @@
 ---
-title: Software Engineer
-department: engineering
-locations: [sf, remote]
-status: published
+title: 'Software Engineer'
+image: '#assets/backgrounds/background-1.png'
+department: 'engineering'
+locations: ['sf', 'remote']
+status: 'published'
 ---
 
 ## About BlueAlpha
