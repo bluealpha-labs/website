@@ -26,7 +26,7 @@ export function ContentCardHorizontal({ title, description, image, author, date,
         className='shrink-0'
         href={href}>
         <ContentCardImage
-          className='xl:w-91.5'
+          className='xl:w-80'
           src={image}
           alt={title}
         />
