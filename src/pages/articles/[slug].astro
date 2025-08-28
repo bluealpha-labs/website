@@ -1,7 +1,8 @@
 ---
-import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
-import { ContentGroup } from '#components/content/content-group.tsx'
+import { ContentContainer } from '#components/content/content-container.tsx'
 import { ContentHeader02 } from '#components/content/content-header/content-header-02.tsx'
+import { ContentProse } from '#components/content/content-prose.tsx'
+import { ContentWrapper } from '#components/content/content-wrapper.tsx'
 import { tagColors, tagNames } from '#constants/article.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
@@ -33,4 +34,11 @@ const formattedDate = formatDate(data.date)
       color: tagColors[tag]
     }))}
   />
+  <ContentContainer>
+    <ContentWrapper>
+      <ContentProse>
+        <Content />
+      </ContentProse>
+    </ContentWrapper>
+  </ContentContainer>
 </Layout>
