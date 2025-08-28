@@ -1,6 +1,6 @@
 ---
 title: 'Software Engineer'
-image: '#assets/backgrounds/background-1.png'
+image: '#assets/backgrounds/background-2.png'
 department: 'engineering'
 locations: ['sf', 'remote']
 status: 'published'
