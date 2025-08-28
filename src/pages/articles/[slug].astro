@@ -1,5 +1,7 @@
 ---
+import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
 import Layout from '#layouts/layout.astro'
+import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
@@ -10,6 +12,14 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props
 const { Content } = await entry.render()
+
+const formattedDate = formatDate(entry.data.date)
 ---
 
-<Layout />
+<Layout className='py-20'>
+  <ContentHeader01
+    label={`Published ${formattedDate}`}
+    title={entry.data.title}
+    description={entry.data.description}
+  />
+</Layout>
