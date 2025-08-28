@@ -19,7 +19,7 @@ const styles = cva({
 
 type Props = ComponentProps<'div'> & VariantProps<typeof styles>
 
-export function ContentCardGroup({ direction, gap, className, ...props }: Props) {
+export function ContentGroup({ direction, gap, className, ...props }: Props) {
   return (
     <div
       className={styles({ direction, gap, className })}

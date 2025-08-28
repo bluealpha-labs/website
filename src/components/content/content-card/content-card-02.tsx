@@ -1,5 +1,5 @@
+import { ContentGroup } from '../content-group'
 import { ContentCardDescription } from './content-card-description'
-import { ContentCardGroup } from './content-card-group'
 import { ContentCardImage } from './content-card-image'
 import { ContentCardImageLink } from './content-card-image-link'
 import { ContentCardMetadata } from './content-card-metadata'
@@ -18,7 +18,7 @@ type Props = {
 
 export function ContentCard02({ title, description, image, author, date, tags, href }: Props) {
   return (
-    <ContentCardGroup
+    <ContentGroup
       className='xl:flex-row xl:items-start'
       direction='column'
       gap={4}>
@@ -31,28 +31,28 @@ export function ContentCard02({ title, description, image, author, date, tags, h
           alt={title}
         />
       </ContentCardImageLink>
-      <ContentCardGroup
+      <ContentGroup
         direction='column'
         gap={6}>
-        <ContentCardGroup
+        <ContentGroup
           direction='column'
           gap={2}>
           <ContentCardMetadata>
             {author} • {date}
           </ContentCardMetadata>
-          <ContentCardGroup
+          <ContentGroup
             direction='column'
             gap={1}>
             <ContentCardTitle href={href}>{title}</ContentCardTitle>
             <ContentCardDescription>{description}</ContentCardDescription>
-          </ContentCardGroup>
-        </ContentCardGroup>
-        <ContentCardGroup gap={2}>
+          </ContentGroup>
+        </ContentGroup>
+        <ContentGroup gap={2}>
           {tags.map(({ name, color }) => (
             <ContentCardTagLink key={name}>{name}</ContentCardTagLink>
           ))}
-        </ContentCardGroup>
-      </ContentCardGroup>
-    </ContentCardGroup>
+        </ContentGroup>
+      </ContentGroup>
+    </ContentGroup>
   )
 }
