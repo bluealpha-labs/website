@@ -1,50 +1,64 @@
 ---
 import Layout from '#layouts/layout.astro'
 import { getCollection } from 'astro:content'
+import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { RecentContent01 } from '#components/content/recent-content/recent-content-01.tsx'
+import { authorNames } from '#constants/author.ts'
+import { RemainingContent01 } from '#components/content/remaining-content/remaining-content-01.tsx'
+import { tagColors, tagNames } from '#constants/article.ts'
+import { formatDate } from '#utils/format.ts'
 
 const collection = await getCollection('articles')
-const published = collection.filter((entry) => entry.data.status === 'Published')
-const articles = published.sort((a, b) => (b.data.date?.getTime?.() ?? 0) - (a.data.date?.getTime?.() ?? 0))
+const published = collection.filter((entry) => entry.data.status === 'published')
+const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
+const recent = sorted.slice(0, 3)
+const remaining = sorted.slice(3)
 ---
 
-<Layout>
-  <section class='mx-auto min-h-screen max-w-5xl px-6 pt-40 pb-20'>
-    <header class='mb-12'>
-      <h1 class='text-3xl font-semibold tracking-tight md:text-5xl'>Articles</h1>
-      <p class='mt-4 max-w-2xl text-stone-600'>Thoughts on MMM, incrementality, and growth operations.</p>
-    </header>
+<Layout className='py-20'>
+  <ContentHeader01
+    label='Articles'
+    title='Reads the latest from BlueAlpha'
+    description='Thoughts on MMM, incrementality, and growth operations from our team.'
+  />
+  <RecentContent01
+    title='Recent articles'
+    items={recent.map(({ data, slug }) => {
+      const authorName = authorNames[data.author]
+      const formattedDate = formatDate(data.date)
 
-    <ul class='grid gap-6 md:grid-cols-2'>
-      {
-        articles.map((entry) => (
-          <li>
-            <a
-              href={`/articles/${entry.slug}`}
-              class='group block overflow-hidden rounded-2xl border border-stone-200 no-underline transition-colors hover:bg-stone-50'>
-              {entry.data.image && (
-                <img
-                  src={entry.data.image}
-                  alt={entry.data.title}
-                  class='aspect-[16/9] w-full object-cover'
-                />
-              )}
-              <div class='p-6'>
-                <h2 class='text-xl font-semibold tracking-tight md:text-2xl'>{entry.data.title}</h2>
-                {entry.data.subtitle && <p class='mt-2 line-clamp-2 text-stone-600'>{entry.data.subtitle}</p>}
-                <div class='mt-3 text-sm text-stone-600'>
-                  {entry.data.author && <span>By {entry.data.author} · </span>}
-                  {new Date(entry.data.date).toLocaleDateString(undefined, {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric'
-                  })}
-                </div>
-                <div class='mt-4 text-sm font-medium text-stone-700 group-hover:text-stone-900'>Read article →</div>
-              </div>
-            </a>
-          </li>
-        ))
+      return {
+        title: data.title,
+        description: data.description,
+        image: data.image.src,
+        author: authorName,
+        date: formattedDate,
+        tags: data.tags.map((tag) => ({
+          name: tagNames[tag],
+          color: tagColors[tag]
+        })),
+        href: `/articles/${slug}`
       }
-    </ul>
-  </section>
+    })}
+  />
+  <RemainingContent01
+    title='All articles'
+    items={remaining.map(({ data, slug }) => {
+      const authorName = authorNames[data.author]
+      const formattedDate = formatDate(data.date)
+
+      return {
+        title: data.title,
+        description: data.description,
+        image: data.image.src,
+        author: authorName,
+        date: formattedDate,
+        tags: data.tags.map((tag) => ({
+          name: tagNames[tag],
+          color: tagColors[tag]
+        })),
+        href: `/articles/${slug}`
+      }
+    })}
+  />
 </Layout>
