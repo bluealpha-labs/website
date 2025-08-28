@@ -3,6 +3,13 @@ import { DesktopNav } from '#components/nav/desktop-nav.tsx'
 import Head from '#components/head.astro'
 import Footer from '#components/footer.astro'
 import '#styles/global.css'
+import { cx } from '#utils/cva.ts'
+
+type Props = {
+  className?: string
+}
+
+const { className }: Props = Astro.props
 ---
 
 <!doctype html>
@@ -20,7 +27,7 @@ import '#styles/global.css'
     >
     <!-- End Google Tag Manager (noscript) -->
     <DesktopNav client:load />
-    <main class='relative z-10 rounded-b-4xl bg-white'>
+    <main class={cx('relative z-10 rounded-b-4xl bg-white', className)}>
       <slot />
     </main>
     <Footer />
