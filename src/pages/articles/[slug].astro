@@ -10,40 +10,6 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props
 const { Content } = await entry.render()
-const title = `${entry.data.title} — BlueAlpha Articles`
-const description = entry.data.description ?? entry.data.title
 ---
 
-<Layout
-  {title}
-  {description}>
-  <article class='mx-auto max-w-4xl px-6 pt-40 pb-20'>
-    <header class='mb-8'>
-      <a
-        href='/articles'
-        class='text-sm text-stone-600 hover:text-stone-900'
-        >← Back to articles</a
-      >
-      <h1 class='mt-4 text-3xl font-semibold tracking-tight md:text-5xl'>{entry.data.title}</h1>
-      {entry.data.description && <p class='mt-2 max-w-2xl text-stone-600'>{entry.data.description}</p>}
-      {
-        entry.data.image && (
-          <img
-            src={entry.data.image}
-            alt={entry.data.title}
-            class='mt-6 w-full rounded-2xl border border-stone-200'
-          />
-        )
-      }
-      <div class='mt-4 text-sm text-stone-600'>
-        {entry.data.author && <span>By {entry.data.author} · </span>}
-        {new Date(entry.data.date).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
-      </div>
-    </header>
-
-    <div
-      class='prose prose-stone prose-headings:font-semibold prose-headings:tracking-tight prose-h1:text-3xl md:prose-h1:text-4xl prose-h1:mt-12 prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mt-10 prose-h3:text-xl md:prose-h3:text-2xl prose-h3:mt-8 prose-p:text-stone-800 prose-p:leading-7 prose-a:text-stone-900 prose-a:font-medium hover:prose-a:underline prose-strong:text-stone-900 prose-code:text-stone-900 prose-code:bg-stone-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-pre:bg-stone-950 prose-pre:text-stone-100 prose-pre:rounded-xl prose-pre:p-5 prose-li:my-1 prose-ul:my-4 prose-ol:my-4 prose-hr:my-10 prose-hr:border-stone-200 prose-blockquote:border-l-stone-300 mt-10 max-w-none'>
-      <Content />
-    </div>
-  </article>
-</Layout>
+<Layout />
