@@ -1,7 +1,7 @@
 ---
 import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
 import { ContentGroup } from '#components/content/content-group.tsx'
-import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { ContentHeader02 } from '#components/content/content-header/content-header-02.tsx'
 import { tagColors, tagNames } from '#constants/article.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
@@ -23,21 +23,13 @@ const formattedDate = formatDate(data.date)
 ---
 
 <Layout className='py-20'>
-  <ContentHeader01
+  <ContentHeader02
     label={`Published ${formattedDate}`}
     title={data.title}
     description={data.description}
+    tags={data.tags.map((tag) => ({
+      name: tagNames[tag],
+      color: tagColors[tag]
+    }))}
   />
-  <ContentGroup
-    className='mt-8'
-    gap={2}>
-    {
-      data.tags.map((tag) => {
-        const name = tagNames[tag]
-        const color = tagColors[tag]
-
-        return <ContentCardTagLink key={tag}>{name}</ContentCardTagLink>
-      })
-    }
-  </ContentGroup>
 </Layout>
