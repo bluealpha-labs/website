@@ -6,7 +6,7 @@ author: 'matthias'
 date: 2025-07-21
 time: 10
 tags: ['growth', 'saas']
-status: published
+status: 'published'
 ---
 
 ## Why this playbook exists
