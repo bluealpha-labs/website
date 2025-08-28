@@ -1,5 +1,8 @@
 ---
+import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
+import { ContentGroup } from '#components/content/content-group.tsx'
 import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { tagColors, tagNames } from '#constants/article.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
@@ -10,16 +13,31 @@ export async function getStaticPaths() {
   return published.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }))
 }
 
-const { entry } = Astro.props
-const { Content } = await entry.render()
+const {
+  entry: { data, slug, render }
+} = Astro.props
 
-const formattedDate = formatDate(entry.data.date)
+const { Content } = await render()
+
+const formattedDate = formatDate(data.date)
 ---
 
 <Layout className='py-20'>
   <ContentHeader01
     label={`Published ${formattedDate}`}
-    title={entry.data.title}
-    description={entry.data.description}
+    title={data.title}
+    description={data.description}
   />
+  <ContentGroup
+    className='mt-8'
+    gap={2}>
+    {
+      data.tags.map((tag) => {
+        const name = tagNames[tag]
+        const color = tagColors[tag]
+
+        return <ContentCardTagLink key={tag}>{name}</ContentCardTagLink>
+      })
+    }
+  </ContentGroup>
 </Layout>
