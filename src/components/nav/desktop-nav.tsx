@@ -20,10 +20,26 @@ export function DesktopNav() {
             <span className='text-xl font-semibold tracking-[-.01em] select-none max-sm:hidden'>BlueAlpha</span>
           </a>
         </div>
-        <Link href='/articles'>Articles</Link>
-        <Link href='/playbooks'>Playbooks</Link>
-        <Link href='/case-studies'>Case studies</Link>
-        <Link href='/careers'>Careers</Link>
+        <Link
+          className='max-sm:hidden'
+          href='/articles'>
+          Articles
+        </Link>
+        <Link
+          className='max-sm:hidden'
+          href='/playbooks'>
+          Playbooks
+        </Link>
+        <Link
+          className='max-sm:text-sm'
+          href='/case-studies'>
+          Case studies
+        </Link>
+        <Link
+          className='max-sm:text-sm'
+          href='/careers'>
+          Careers
+        </Link>
         <AnimatePresence mode='popLayout'>
           {showCta && (
             <CallWithFounder
