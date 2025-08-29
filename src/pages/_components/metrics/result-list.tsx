@@ -4,7 +4,7 @@ import type { RefObject } from 'react'
 import { ResultItem } from './result-item'
 
 const results = [
-  { value: '$14x', description: 'revenue for every $1 newly routed through BlueAlpha' },
+  { value: '14x', description: 'revenue for every $1 newly routed through BlueAlpha' },
   { value: '21%', description: 'reduction in Cost per Acquisition, while growing top-line revenue' },
   { value: '5x', description: 'productivity, more campaigns and channels with the same headcount' }
 ] as const
