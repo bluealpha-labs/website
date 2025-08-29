@@ -88,7 +88,3 @@ Agencies that take the lead in adopting these advanced methodologies will not on
 MarTech solutions like **BlueAlpha** offer cutting-edge solutions that help optimize marketing spend and demonstrate your agency’s value as a **long-term strategic partner**. With the ability to handle complex, multi-channel campaigns and provide real-time results, your agency can stand out in the crowded market and build long-term relationships with clients. Your agency will move from being a vendor to becoming a trusted advisor, helping your clients navigate the complexities of modern marketing.
 
 Ultimately, adopting advanced marketing measurement solutions, looking at your clients’ activities with a more holistic view, and reporting on _incremental_ results helps you meet today’s demands for transparency, accountability, and measurable ROI, ensuring your agency’s growth in an increasingly competitive and privacy-conscious world.
-
-_Interested in offering your clients MMM and Incrementality Testing?_
-
-_Feel free to reach out to our team to get started._

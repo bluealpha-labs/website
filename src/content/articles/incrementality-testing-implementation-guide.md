@@ -46,6 +46,3 @@ Great, you have empirically proven whether a specific channel or channel mix yie
 Fortunately, beside incrementality tests, another powerful statistical model comes in handy: [Marketing Mix Models (MMM)](https://bluealpha.ai/media-mix-modeling/). MMMs provide a holistic analytical overview of how each channel or campaign influences your target KPIs (e.g., sales).
 
 Furthermore, MMMs can incorporate the results of your incrementality tests, increasing their predictive accuracy with each test. Over time, this integration builds a robust tool fueled by causality, allowing you to steer your marketing operations in the most efficient, forward-looking way.
-
-_Interested in designing and running your first incrementality test or understanding how to combine incrementality tests with Marketing Mix Models?  
-Feel free to reach out to our team to get started._

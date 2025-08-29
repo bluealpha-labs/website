@@ -102,6 +102,3 @@ GeoLift experimentation is a popular and accessible method for measuring increme
 - Requires careful selection and matching of geographic regions to ensure comparability.
 
 ![Accuracy and Causality in Marketing Data Science](#assets/articles/media-transparency-optimization-framework/accuracy-causality-marketing.png)
-
-_Interested in learning more about Matched Market Testing and running your first MMT to elevate your marketing strategy?  
-Feel free to reach out to our team to get started._

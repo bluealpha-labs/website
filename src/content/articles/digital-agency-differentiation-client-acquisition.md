@@ -89,6 +89,3 @@ To truly differentiate your agency and get more clients, staying at the forefron
 
 In the digital marketing industry, standing out has always been essential for growth and survival. Without clear differentiation, your agency risks blending into a sea of competitors, battling solely on price.  
 By adopting strategies such as specialization, offering advanced MarTech solutions, and delivering a superior client experience, you can position your agency as a leader in the field. This will not only help you get more clients, but also ensure your agency’s long-term success in a crowded marketplace.
-
-_Interested in integrating Marketing Mix Models and Incrementality Testing into your agency’s services?_  
-_Feel free to reach out to our team to get started._

@@ -73,5 +73,3 @@ By integrating incrementality testing with Marketing Mix Models, we overcome the
 
 This approach combines the best of both worlds, helping marketers measure marketing incrementality, allocate budgets efficiently, and maximize growth.  
 At **BlueAlpha**, we provide a robust framework that ensures your marketing strategies are not only effective, but also grounded in rigorous, data-driven insights.
-
-_Interested? Contact us and let’s work together on a tailored solution for your business._

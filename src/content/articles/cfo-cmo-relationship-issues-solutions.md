@@ -46,6 +46,3 @@ Lastly, a significant disconnect arises from the differing focus of CFOs and CMO
 [Marketing Mix Models (MMM)](https://bluealpha.ai/media-mix-modeling/) are well-suited to bridge this gap, as they provide CMOs with sophisticated statistical forecasting. This enables CMOs to present a clear vision of the business’s future in terms CFOs understand—revenues and ROI. Additionally, MMMs combined with [incrementality tests](https://bluealpha.ai/incremental-marketing/) capture the impact of top-of-funnel campaigns, clearly demonstrating their long-term effects and vision. This approach not only justifies current spending but also supports potential budget increases by aligning short-term financial goals with long-term marketing strategies.
 
 By adopting these advanced measurement tools, organizations can ensure that both Finance and Marketing are working towards common objectives. This alignment fosters a more cohesive strategy, driving sustainable growth and reinforcing the value of a strong CFO-CMO partnership.
-
-_Interested in finding out more about implementing Marketing Mix Models (MMMs) and incrementality tests in your business?  
-Feel free to reach out for a detailed consultation and discover how these advanced tools can drive your marketing success and enhance collaboration between your CFO and CMO._
