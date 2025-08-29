@@ -2,17 +2,13 @@
 import Layout from '#layouts/layout.astro'
 import { getCollection } from 'astro:content'
 import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
-import { RecentContent01 } from '#components/content/recent-content/recent-content-01.tsx'
 import { authorNames } from '#constants/author.ts'
-import { RemainingContent01 } from '#components/content/remaining-content/remaining-content-01.tsx'
-import { tagColors, tagNames } from '#constants/article.ts'
+import { tags, tagColors, tagNames, type Tag } from '#constants/article.ts'
 import { formatDate } from '#utils/format.ts'
 import { RecentContent } from '#components/content/recent-content/recent-content.tsx'
 import { RecentContentTitle } from '#components/content/recent-content/recent-content-title.tsx'
 import { RecentContentGrid } from '#components/content/recent-content/recent-content-grid.tsx'
 import { RecentContentGridItem } from '#components/content/recent-content/recent-content-grid-item.tsx'
-import { ContentCard01 } from '#components/content/content-card/content-card-01.tsx'
-import { ContentCard02 } from '#components/content/content-card/content-card-02.tsx'
 import { ContentGroup } from '#components/content/content-group.tsx'
 import { ContentCardImageLink } from '#components/content/content-card/content-card-image-link.tsx'
 import { ContentCardImageTitle } from '#components/content/content-card/content-card-image-title.tsx'
@@ -45,6 +41,19 @@ const remaining = sorted.slice(3)
     description='Thoughts on MMM, incrementality, and growth operations from our team.'
   />
   <RecentContent>
+    <ContentGroup
+      className='flex-wrap'
+      gap={2}>
+      {
+        tags.map((tag) => (
+          <ContentCardTagLink
+            key={tag}
+            href={`/articles/tags/${tag}`}>
+            <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
+          </ContentCardTagLink>
+        ))
+      }
+    </ContentGroup>
     <RecentContentTitle>Recent articles</RecentContentTitle>
     <RecentContentGrid>
       {
@@ -86,7 +95,9 @@ const remaining = sorted.slice(3)
                       className='flex-wrap'
                       gap={2}>
                       {data.tags.map((tag) => (
-                        <ContentCardTagLink key={tag}>
+                        <ContentCardTagLink
+                          key={tag}
+                          href={`/articles/tags/${tag}`}>
                           <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
                         </ContentCardTagLink>
                       ))}
@@ -128,7 +139,9 @@ const remaining = sorted.slice(3)
                       className='flex-wrap'
                       gap={2}>
                       {data.tags.map((tag) => (
-                        <ContentCardTagLink key={tag}>
+                        <ContentCardTagLink
+                          key={tag}
+                          href={`/articles/tags/${tag}`}>
                           <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
                         </ContentCardTagLink>
                       ))}
@@ -180,7 +193,9 @@ const remaining = sorted.slice(3)
                     className='flex-wrap'
                     gap={2}>
                     {data.tags.map((tag) => (
-                      <ContentCardTagLink key={tag}>
+                      <ContentCardTagLink
+                        key={tag}
+                        href={`/articles/tags/${tag}`}>
                         <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
                       </ContentCardTagLink>
                     ))}

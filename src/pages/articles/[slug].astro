@@ -70,7 +70,8 @@ const articleSchema = {
     description={data.description}
     tags={data.tags.map((tag) => ({
       name: tagNames[tag],
-      color: tagColors[tag]
+      color: tagColors[tag],
+      href: `/articles/tags/${tag}`
     }))}
   />
   <ContentContainer>

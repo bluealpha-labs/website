@@ -1,0 +1,226 @@
+---
+import Layout from '#layouts/layout.astro'
+import { getCollection } from 'astro:content'
+import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { tags, tagColors, tagNames } from '#constants/article.ts'
+import { authorNames } from '#constants/author.ts'
+import { formatDate } from '#utils/format.ts'
+import { RecentContent } from '#components/content/recent-content/recent-content.tsx'
+import { RecentContentTitle } from '#components/content/recent-content/recent-content-title.tsx'
+import { RecentContentGrid } from '#components/content/recent-content/recent-content-grid.tsx'
+import { RecentContentGridItem } from '#components/content/recent-content/recent-content-grid-item.tsx'
+import { ContentGroup } from '#components/content/content-group.tsx'
+import { ContentCardImageLink } from '#components/content/content-card/content-card-image-link.tsx'
+import { ContentCardImageTitle } from '#components/content/content-card/content-card-image-title.tsx'
+import { ContentCardImage } from '#components/content/content-card/content-card-image.tsx'
+import { ContentCardMetadata } from '#components/content/content-card/content-card-metadata.tsx'
+import { ContentCardTitle } from '#components/content/content-card/content-card-title.tsx'
+import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
+import { ContentCardDescription } from '#components/content/content-card/content-card-description.tsx'
+import { Badge } from '#components/badge.tsx'
+import { RemainingContent } from '#components/content/remaining-content/remaining-content.tsx'
+import { RemainingContentTitle } from '#components/content/remaining-content/remaining-content-title.tsx'
+import { RemainingContentGrid } from '#components/content/remaining-content/remaining-content-grid.tsx'
+import { RemainingContentGridItem } from '#components/content/remaining-content/remaining-content-grid-item.tsx'
+import type { Tag } from '#constants/article.ts'
+
+export async function getStaticPaths() {
+  const collection = await getCollection('articles')
+  const published = collection.filter((entry) => entry.data.status === 'published')
+  
+  return tags.map((tag) => {
+    const articlesWithTag = published.filter((entry) => 
+      entry.data.tags.includes(tag)
+    )
+    return {
+      params: { tag },
+      props: { articles: articlesWithTag, tag }
+    }
+  })
+}
+
+const { articles, tag } = Astro.props
+const tagName = tagNames[tag as Tag]
+
+const sorted = articles.toSorted((a: any, b: any) => b.data.date.getTime() - a.data.date.getTime())
+const recent = sorted.slice(0, 3)
+const remaining = sorted.slice(3)
+---
+
+<Layout
+  className='py-20'
+  title={`${tagName} Articles | BlueAlpha`}
+  description={`Expert insights and articles about ${tagName.toLowerCase()}. Learn strategies, best practices, and industry insights from BlueAlpha's team.`}
+  keywords={`${tagName.toLowerCase()} articles, ${tagName.toLowerCase()} guides, marketing ${tagName.toLowerCase()}, ${tagName.toLowerCase()} strategies`}>
+  <ContentHeader01
+    label='Articles'
+    title={tagName}
+    description={`All articles tagged with "${tagName}"`}
+  />
+  
+  {recent.length > 0 && (
+    <RecentContent>
+      <RecentContentTitle>Recent {tagName.toLowerCase()} articles</RecentContentTitle>
+      <RecentContentGrid>
+        {
+          recent.map(({ data, slug }: any, index: number) => {
+            const isFeatured = index === 0
+
+            return (
+              <RecentContentGridItem
+                key={data.title}
+                isFeatured={isFeatured}>
+                {isFeatured ? (
+                  <ContentGroup
+                    direction='column'
+                    gap={4}>
+                    <ContentCardImageLink href={`/articles/${slug}`}>
+                      <ContentCardImageTitle>{data.title}</ContentCardImageTitle>
+                      <ContentCardImage
+                        src={data.image.src}
+                        alt={data.title}
+                      />
+                    </ContentCardImageLink>
+                    <ContentGroup
+                      direction='column'
+                      gap={6}>
+                      <ContentGroup
+                        direction='column'
+                        gap={2}>
+                        <ContentCardMetadata>
+                          {authorNames[data.author as keyof typeof authorNames]} • {formatDate(data.date)}
+                        </ContentCardMetadata>
+                        <ContentGroup
+                          direction='column'
+                          gap={1}>
+                          <ContentCardTitle href={`/articles/${slug}`}>{data.title}</ContentCardTitle>
+                          <ContentCardDescription>{data.description}</ContentCardDescription>
+                        </ContentGroup>
+                      </ContentGroup>
+                      <ContentGroup
+                        className='flex-wrap'
+                        gap={2}>
+                        {data.tags.map((articleTag: Tag) => (
+                          <ContentCardTagLink 
+                            key={articleTag}
+                            href={`/articles/tags/${articleTag}`}>
+                            <Badge color={tagColors[articleTag]}>{tagNames[articleTag]}</Badge>
+                          </ContentCardTagLink>
+                        ))}
+                      </ContentGroup>
+                    </ContentGroup>
+                  </ContentGroup>
+                ) : (
+                  <ContentGroup
+                    className='xl:flex-row xl:items-start'
+                    direction='column'
+                    gap={4}>
+                    <ContentCardImageLink
+                      className='shrink-0'
+                      href={`/articles/${slug}`}>
+                      <ContentCardImageTitle>{data.title}</ContentCardImageTitle>
+                      <ContentCardImage
+                        className='xl:w-80'
+                        src={data.image.src}
+                        alt={data.title}
+                      />
+                    </ContentCardImageLink>
+                    <ContentGroup
+                      direction='column'
+                      gap={6}>
+                      <ContentGroup
+                        direction='column'
+                        gap={2}>
+                        <ContentCardMetadata>
+                          {authorNames[data.author as keyof typeof authorNames]} • {formatDate(data.date)}
+                        </ContentCardMetadata>
+                        <ContentGroup
+                          direction='column'
+                          gap={1}>
+                          <ContentCardTitle href={`/articles/${slug}`}>{data.title}</ContentCardTitle>
+                          <ContentCardDescription>{data.description}</ContentCardDescription>
+                        </ContentGroup>
+                      </ContentGroup>
+                      <ContentGroup
+                        className='flex-wrap'
+                        gap={2}>
+                        {data.tags.map((articleTag: Tag) => (
+                          <ContentCardTagLink 
+                            key={articleTag}
+                            href={`/articles/tags/${articleTag}`}>
+                            <Badge color={tagColors[articleTag]}>{tagNames[articleTag]}</Badge>
+                          </ContentCardTagLink>
+                        ))}
+                      </ContentGroup>
+                    </ContentGroup>
+                  </ContentGroup>
+                )}
+              </RecentContentGridItem>
+            )
+          })
+        }
+      </RecentContentGrid>
+    </RecentContent>
+  )}
+
+  {remaining.length > 0 && (
+    <RemainingContent>
+      <RemainingContentTitle>All {tagName.toLowerCase()} articles</RemainingContentTitle>
+      <RemainingContentGrid>
+        {
+          remaining.map(({ data, slug }: any) => {
+            return (
+              <RemainingContentGridItem key={data.title}>
+                <ContentGroup
+                  direction='column'
+                  gap={4}>
+                  <ContentCardImageLink href={`/articles/${slug}`}>
+                    <ContentCardImageTitle>{data.title}</ContentCardImageTitle>
+                    <ContentCardImage
+                      src={data.image.src}
+                      alt={data.title}
+                    />
+                  </ContentCardImageLink>
+                  <ContentGroup
+                    direction='column'
+                    gap={6}>
+                    <ContentGroup
+                      direction='column'
+                      gap={2}>
+                      <ContentCardMetadata>
+                        {authorNames[data.author as keyof typeof authorNames]} • {formatDate(data.date)}
+                      </ContentCardMetadata>
+                      <ContentGroup
+                        direction='column'
+                        gap={1}>
+                        <ContentCardTitle href={`/articles/${slug}`}>{data.title}</ContentCardTitle>
+                        <ContentCardDescription>{data.description}</ContentCardDescription>
+                      </ContentGroup>
+                    </ContentGroup>
+                    <ContentGroup
+                      className='flex-wrap'
+                      gap={2}>
+                      {data.tags.map((articleTag: Tag) => (
+                        <ContentCardTagLink 
+                          key={articleTag}
+                          href={`/articles/tags/${articleTag}`}>
+                          <Badge color={tagColors[articleTag]}>{tagNames[articleTag]}</Badge>
+                        </ContentCardTagLink>
+                      ))}
+                    </ContentGroup>
+                  </ContentGroup>
+                </ContentGroup>
+              </RemainingContentGridItem>
+            )
+          })
+        }
+      </RemainingContentGrid>
+    </RemainingContent>
+  )}
+  
+  {articles.length === 0 && (
+    <div class="text-center py-12">
+      <p class="text-muted-foreground">No articles found with the "{tagName}" tag.</p>
+    </div>
+  )}
+</Layout>

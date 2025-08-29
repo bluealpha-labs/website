@@ -14,7 +14,7 @@ type Props = {
   title: string
   image: string
   description: string
-  tags: { name: string; color: BadgeProps['color'] }[]
+  tags: { name: string; color: BadgeProps['color']; href?: string }[]
 }
 
 export function ContentHeader02({ label, title, image, description, tags }: Props) {
@@ -28,8 +28,10 @@ export function ContentHeader02({ label, title, image, description, tags }: Prop
           <ContentGroup
             className='mt-8'
             gap={2}>
-            {tags.map(({ name, color }) => (
-              <ContentCardTagLink key={name}>
+            {tags.map(({ name, color, href }) => (
+              <ContentCardTagLink
+                key={name}
+                href={href}>
                 <Badge color={color}>{name}</Badge>
               </ContentCardTagLink>
             ))}

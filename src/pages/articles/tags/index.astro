@@ -1,0 +1,98 @@
+---
+import Layout from '#layouts/layout.astro'
+import { getCollection } from 'astro:content'
+import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { tags, tagColors, tagNames } from '#constants/article.ts'
+import { Badge } from '#components/badge.tsx'
+import { ContentContainer } from '#components/content/content-container.tsx'
+import { ContentWrapper } from '#components/content/content-wrapper.tsx'
+import type { Tag } from '#constants/article.ts'
+
+const collection = await getCollection('articles')
+const published = collection.filter((entry) => entry.data.status === 'published')
+
+const tagCounts = tags.reduce((acc, tag) => {
+  const count = published.filter((entry) => 
+    entry.data.tags.includes(tag)
+  ).length
+  if (count > 0) {
+    acc[tag] = count
+  }
+  return acc
+}, {} as Record<Tag, number>)
+
+const sortedTags = Object.entries(tagCounts)
+  .sort(([, a], [, b]) => b - a)
+  .map(([tag]) => tag as Tag)
+
+const tagDescriptions: Record<Tag, string> = {
+  incrementality: 'Measure the true impact of your marketing efforts beyond correlation',
+  mmm: 'Statistical modeling to understand marketing effectiveness across channels',
+  attribution: 'Track and assign credit to marketing touchpoints in the customer journey',
+  measurement: 'Comprehensive approaches to quantifying marketing performance',
+  optimization: 'Strategies to improve marketing efficiency and ROI',
+  strategy: 'High-level planning and decision-making for marketing success',
+  creative: 'Design, messaging, and content strategies that drive engagement',
+  testing: 'Experimentation methodologies to validate marketing hypotheses',
+  'data-infrastructure': 'Building robust systems for marketing data collection and analysis',
+  privacy: 'Navigating privacy regulations and ethical data practices',
+  'ai-ml': 'Leveraging artificial intelligence and machine learning in marketing',
+  channels: 'Platform-specific strategies and best practices',
+  budget: 'Allocation, planning, and optimization of marketing spend',
+  leadership: 'Executive insights for marketing and business leaders',
+  agencies: 'Working with and managing marketing agency relationships',
+  platforms: 'Technology solutions and tools for marketing operations'
+}
+
+function getTagDescription(tag: Tag): string {
+  return tagDescriptions[tag] || `Explore articles about ${tagNames[tag]}`
+}
+---
+
+<Layout
+  className='py-20'
+  title='Article Tags | BlueAlpha'
+  description='Browse all article categories and topics. Find expert insights on MMM, incrementality, measurement, and more marketing topics.'
+  keywords='article tags, marketing topics, article categories, marketing insights, BlueAlpha articles'>
+  <ContentHeader01
+    label='Browse by Topic'
+    title='Article Tags'
+    description='Explore our articles organized by topic'
+  />
+  
+  <ContentContainer>
+    <ContentWrapper>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {sortedTags.map((tag) => (
+          <a 
+            href={`/articles/tags/${tag}`}
+            class="group relative flex flex-col gap-4 rounded-lg border border-border bg-card p-6 transition-all hover:shadow-lg hover:border-primary/50">
+            <div class="flex items-start justify-between">
+              <Badge color={tagColors[tag]}>
+                {tagNames[tag]}
+              </Badge>
+              <span class="text-sm text-muted-foreground">
+                {tagCounts[tag]} {tagCounts[tag] === 1 ? 'article' : 'articles'}
+              </span>
+            </div>
+            <div class="space-y-2">
+              <h3 class="font-semibold text-foreground group-hover:text-primary transition-colors">
+                {tagNames[tag]}
+              </h3>
+              <p class="text-sm text-muted-foreground">
+                {getTagDescription(tag)}
+              </p>
+            </div>
+            <div class="absolute inset-0 rounded-lg ring-2 ring-primary/0 transition-all group-hover:ring-primary/20" />
+          </a>
+        ))}
+      </div>
+      
+      {sortedTags.length === 0 && (
+        <div class="text-center py-12">
+          <p class="text-muted-foreground">No tags available at the moment.</p>
+        </div>
+      )}
+    </ContentWrapper>
+  </ContentContainer>
+</Layout>
