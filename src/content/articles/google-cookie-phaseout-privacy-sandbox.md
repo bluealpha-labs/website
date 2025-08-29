@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-15.png'
 author: 'matthias'
 date: 2025-02-26
 time: 6
-tags: ['privacy', 'platforms']
+tags: ['privacy']
 status: 'published'
 ---
 
