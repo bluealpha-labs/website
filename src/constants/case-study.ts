@@ -21,10 +21,10 @@ export const companyLogos = {
 
 export const tagNames = {
   incrementality: 'Incrementality',
-  mmm: 'MMM'
+  mmm: 'Marketing Mix Modeling'
 } as const satisfies Record<Tag, string>
 
 export const tagColors = {
   incrementality: 'blue',
-  mmm: 'green'
+  mmm: 'indigo'
 } as const satisfies Record<Tag, BadgeProps['color']>

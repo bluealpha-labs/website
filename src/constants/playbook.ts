@@ -6,11 +6,11 @@ export type Tag = (typeof tags)[number]
 export const tagNames = {
   growth: 'Growth',
   saas: 'SaaS',
-  mmm: 'MMM'
+  mmm: 'Marketing Mix Modeling'
 } as const satisfies Record<Tag, string>
 
 export const tagColors = {
-  growth: 'blue',
-  saas: 'orange',
-  mmm: 'purple'
+  growth: 'moss',
+  saas: 'orangeDark',
+  mmm: 'indigo'
 } as const satisfies Record<Tag, BadgeProps['color']>
