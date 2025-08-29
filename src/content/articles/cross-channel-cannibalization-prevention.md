@@ -15,11 +15,11 @@ status: 'published'
 
 For small and mid-sized retail businesses, precision matters. Every customer interaction should be strategic, ensuring that marketing efforts drive maximum impact without wasted spend. The right customer segmentation software makes this possible, by offering data-driven insights, streamlined targeting, and actionable strategies in one intuitive platform.
 
-  - - [Targeted Marketing with Maximum ROI](#Targeted_Marketing_with_Maximum_ROI)
-  - - [User-Friendly Interface](#User-Friendly_Interface)
-  - - [Seamless Data Integration](#Seamless_Data_Integration)
-  - - [1\. Define Clear Objectives](#1_Define_Clear_Objectives)
-  - - [Can growth-stage businesses benefit from segmentation software?](#Can_growth-stage_businesses_benefit_from_segmentation_software)
+- - [Targeted Marketing with Maximum ROI](#Targeted_Marketing_with_Maximum_ROI)
+- - [User-Friendly Interface](#User-Friendly_Interface)
+- - [Seamless Data Integration](#Seamless_Data_Integration)
+- - [1\. Define Clear Objectives](#1_Define_Clear_Objectives)
+- - [Can growth-stage businesses benefit from segmentation software?](#Can_growth-stage_businesses_benefit_from_segmentation_software)
 
 ## Why Customer Segmentation Matters for Retail Brands
 

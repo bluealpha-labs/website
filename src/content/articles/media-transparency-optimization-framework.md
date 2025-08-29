@@ -15,7 +15,7 @@ Traditional [Multi-Touch Attribution (MTA)](https://bluealpha.ai/multi-touch-att
 
 These changes have reduced the granularity of customer tracking and online data collection, compelling advertisers to rethink their ad targeting and attribution methods. Consequently, there is a growing need for new measurement tools that can accurately quantify the true impact of marketing campaigns (incrementality).
 
-  - - [Inconsistent Availability and Methods Across Platforms](#Inconsistent_Availability_and_Methods_Across_Platforms)
+- - [Inconsistent Availability and Methods Across Platforms](#Inconsistent_Availability_and_Methods_Across_Platforms)
 
 One of the most effective being…
 

@@ -21,8 +21,8 @@ CMOs in 2025 face unprecedented pressure to demonstrate their impact on revenue 
 
 The challenge isn’t just about marketing measurement – it’s about business growth. With customer acquisition costs (CAC) rising every year (more than doubling from 2014 to 2025, if we extrapolate from [Paddle’s research](https://www.paddle.com/blog/how-is-cac-changing-over-time)) and iOS privacy changes disrupting traditional attribution models, CMOs need new approaches to maintain efficient growth trajectories.
 
-  - - [Week 1: Data Preparation and Customer Insights](#Week_1_Data_Preparation_and_Customer_Insights)
-  - - [Week 1-3: Quick Wins](#Week_1-3_Quick_Wins)
+- - [Week 1: Data Preparation and Customer Insights](#Week_1_Data_Preparation_and_Customer_Insights)
+- - [Week 1-3: Quick Wins](#Week_1-3_Quick_Wins)
 
 ## Breaking Through Attribution Barriers
 

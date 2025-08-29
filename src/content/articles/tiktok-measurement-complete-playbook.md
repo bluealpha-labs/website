@@ -16,7 +16,7 @@ status: 'published'
 For growth-stage and mid-market companies, every marketing dollar must drive measurable impact.  
 Choosing the right [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) software empowers lean marketing teams with data-driven insights to optimize budgets, identify the most effective channels and campaigns, and stay competitive – without needing an in-house data science team or enterprise-level resources.
 
-  - - [Can SMBs use MMM effectively without large datasets?](#Can_SMBs_use_MMM_effectively_without_large_datasets)
+- - [Can SMBs use MMM effectively without large datasets?](#Can_SMBs_use_MMM_effectively_without_large_datasets)
 
 ## Why Mid-Market Brands Need Marketing Mix Modeling Software
 

@@ -17,7 +17,7 @@ status: 'published'
 
 While out-of-home (OOH) advertising is often presumed difficult to measure, today’s standards and technologies allow marketers to track real-world exposures with near-digital precision. Below, we’ll break down the new best practices for OOH measurement, highlight advanced frameworks for daily frame-level forecasting, and demonstrate how to integrate OOH analytics with your broader marketing strategy.
 
-  - - [Step 1: Clarify Your Objectives](#Step_1_Clarify_Your_Objectives)
+- - [Step 1: Clarify Your Objectives](#Step_1_Clarify_Your_Objectives)
 
 ## **OOH and Its Place in the Modern Marketing Mix**
 

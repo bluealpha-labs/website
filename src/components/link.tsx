@@ -11,9 +11,9 @@ export const linkStyles = tv({
       simple: 'text-sm font-[450]'
     },
     color: {
-      default: 'hover:text-stone-800',
-      inverse: 'text-white hover:text-stone-100',
-      inverseMuted: 'text-stone-400 hover:text-stone-300'
+      default: 'hover:text-gray-800',
+      inverse: 'text-white hover:text-gray-100',
+      inverseMuted: 'text-gray-400 hover:text-gray-300'
     }
   },
   defaultVariants: {

@@ -333,7 +333,7 @@ _Third row →_ Cash runway, burn multiple.
 | Incremental ROAS negative after GeoLift | Pause channel; rerun creative test; cross-check cannibalization in MMM                                              |
 | CAC pay-back > 10 months in Phase 4     | Re-run channel incrementality test. Cut bottom quartile creatives. Cut spend on channels with <1.5 incremental ROAS |
 | Test win rate <15% in Phase 3           | Review hypothesis quality; enforce pre-registration; raise minimum detectable effect.                               |
-| NRR <100% at Phase 5 review             | Trigger expansion nudges tied to power-user milestones.                                                             |
+| NRR <100% at Phase 5 review             | Trigger expansion nudges tied to power-user milegrays.                                                              |
 
 ## Benchmark cheat-sheet
 
