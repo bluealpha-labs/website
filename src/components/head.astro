@@ -15,8 +15,8 @@ type Props = {
   noindex?: boolean
 }
 
-const { 
-  title, 
+const {
+  title,
   description = 'BlueAlpha helps brands measure and optimize marketing performance with AI-powered incrementality testing and media mix modeling.',
   ogImage = '/og-image.png',
   ogType = 'website',
@@ -67,34 +67,118 @@ const fullOGImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, site
     content={Astro.generator}
   />
   <title>{title}</title>
-  
+
   <!-- Primary Meta Tags -->
-  <meta name='title' content={title} />
-  <meta name='description' content={description} />
-  {keywords && <meta name='keywords' content={keywords} />}
-  {author && <meta name='author' content={author} />}
-  {noindex && <meta name='robots' content='noindex, nofollow' />}
-  
+  <meta
+    name='title'
+    content={title}
+  />
+  <meta
+    name='description'
+    content={description}
+  />
+  {
+    keywords && (
+      <meta
+        name='keywords'
+        content={keywords}
+      />
+    )
+  }
+  {
+    author && (
+      <meta
+        name='author'
+        content={author}
+      />
+    )
+  }
+  {
+    noindex && (
+      <meta
+        name='robots'
+        content='noindex, nofollow'
+      />
+    )
+  }
+
   <!-- Open Graph / Facebook -->
-  <meta property='og:type' content={ogType} />
-  <meta property='og:url' content={fullCanonicalURL} />
-  <meta property='og:title' content={title} />
-  <meta property='og:description' content={description} />
-  <meta property='og:image' content={fullOGImage} />
-  <meta property='og:site_name' content='BlueAlpha' />
-  {publishedTime && <meta property='article:published_time' content={publishedTime} />}
-  {modifiedTime && <meta property='article:modified_time' content={modifiedTime} />}
-  {author && <meta property='article:author' content={author} />}
-  
+  <meta
+    property='og:type'
+    content={ogType}
+  />
+  <meta
+    property='og:url'
+    content={fullCanonicalURL}
+  />
+  <meta
+    property='og:title'
+    content={title}
+  />
+  <meta
+    property='og:description'
+    content={description}
+  />
+  <meta
+    property='og:image'
+    content={fullOGImage}
+  />
+  <meta
+    property='og:site_name'
+    content='BlueAlpha'
+  />
+  {
+    publishedTime && (
+      <meta
+        property='article:published_time'
+        content={publishedTime}
+      />
+    )
+  }
+  {
+    modifiedTime && (
+      <meta
+        property='article:modified_time'
+        content={modifiedTime}
+      />
+    )
+  }
+  {
+    author && (
+      <meta
+        property='article:author'
+        content={author}
+      />
+    )
+  }
+
   <!-- Twitter -->
-  <meta property='twitter:card' content='summary_large_image' />
-  <meta property='twitter:url' content={fullCanonicalURL} />
-  <meta property='twitter:title' content={title} />
-  <meta property='twitter:description' content={description} />
-  <meta property='twitter:image' content={fullOGImage} />
-  
+  <meta
+    property='twitter:card'
+    content='summary_large_image'
+  />
+  <meta
+    property='twitter:url'
+    content={fullCanonicalURL}
+  />
+  <meta
+    property='twitter:title'
+    content={title}
+  />
+  <meta
+    property='twitter:description'
+    content={description}
+  />
+  <meta
+    property='twitter:image'
+    content={fullOGImage}
+  />
+
   <!-- Canonical URL -->
-  <link rel='canonical' href={fullCanonicalURL} />
+  <link
+    rel='canonical'
+    href={fullCanonicalURL}
+  />
 
   <!-- Google Tag Manager -->
   <script is:inline>

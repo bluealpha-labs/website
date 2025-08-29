@@ -11,11 +11,9 @@ const organizationSchema = {
   name: 'BlueAlpha',
   url: 'https://www.bluealpha.ai',
   logo: 'https://www.bluealpha.ai/logo.svg',
-  description: 'BlueAlpha helps brands measure and optimize marketing performance with AI-powered incrementality testing and media mix modeling.',
-  sameAs: [
-    'https://twitter.com/bluealpha',
-    'https://www.linkedin.com/company/bluealpha'
-  ],
+  description:
+    'BlueAlpha helps brands measure and optimize marketing performance with AI-powered incrementality testing and media mix modeling.',
+  sameAs: ['https://twitter.com/bluealpha', 'https://www.linkedin.com/company/bluealpha'],
   contactPoint: {
     '@type': 'ContactPoint',
     contactType: 'sales',
@@ -27,11 +25,14 @@ const organizationSchema = {
 <Layout
   title='BlueAlpha — Make Every Ad Dollar Work Harder'
   description='BlueAlpha delivers AI-powered marketing measurement and optimization. Get real-time incrementality testing, media mix modeling, and creative optimization to maximize your marketing ROI.'
-  keywords='marketing measurement, incrementality testing, media mix modeling, MMM, marketing optimization, creative testing, marketing analytics, marketing attribution'
->
+  keywords='marketing measurement, incrementality testing, media mix modeling, MMM, marketing optimization, creative testing, marketing analytics, marketing attribution'>
   <Hero />
   <Problem />
   <Metrics client:visible />
   <Cta />
-  <script type='application/ld+json' is:inline set:html={JSON.stringify(organizationSchema)} />
+  <script
+    type='application/ld+json'
+    is:inline
+    set:html={JSON.stringify(organizationSchema)}
+  />
 </Layout>
