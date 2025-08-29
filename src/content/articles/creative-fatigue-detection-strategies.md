@@ -46,7 +46,7 @@ The MMM process typically involves three main stages:
 
 ## Why MMM is Essential to Marketing
 
-Businesses with ambitious growth targets usually invest heavily in various channels to reach their target audience. Understanding the effectiveness of each channel is crucial for optimizing marketing strategies and maximizing return on investment (ROI). Here are some key reasons why using an [MMM software](https://bluealpha.ai/the-best-marketing-mix-modeling-software/) is essential for modern marketing:
+Businesses with ambitious growth targets usually invest heavily in various channels to reach their target audience. Understanding the effectiveness of each channel is crucial for optimizing marketing strategies and maximizing return on investment (ROI). Here are some key reasons why using an [MMM software](/articles/tiktok-measurement-complete-playbook) is essential for modern marketing:
 
 1.  **Holistic View of Marketing Impact:** MMM provides a comprehensive view of how different marketing activities contribute to sales and revenue. Unlike digital analytics tools that focus on online interactions, MMM can encompass both online and offline (TV, radio, print, out-of-home advertising) channels.
 2.  **[Optimized Budget Allocation](https://bluealpha.ai/services/budget-optimization/):** By quantifying the impact of different marketing activities on sales, MMM helps marketers identify which channels deliver the highest ROI. This allows businesses to allocate their budgets more efficiently, reducing waste and maximizing the effectiveness of their marketing spend.
@@ -57,7 +57,7 @@ Businesses with ambitious growth targets usually invest heavily in various chann
 
 ## Why Incrementality Works Best with MMM
 
-Marketing Mix Modeling (MMM) can be made more effective when working with [incrementality tests](https://bluealpha.ai/incremental-marketing/). Incrementality measures the additional impact of a specific marketing activity on sales, helping businesses understand how each tactic truly contributes beyond what would have happened anyway. By isolating this effect, MMMs can accurately pinpoint the real value of each marketing channel. This is greater than the effect of traditional MMMs because typically MMMs don’t take into account baseline sales or incrementality.
+Marketing Mix Modeling (MMM) can be made more effective when working with [incrementality tests](/articles/what-is-incremental-marketing). Incrementality measures the additional impact of a specific marketing activity on sales, helping businesses understand how each tactic truly contributes beyond what would have happened anyway. By isolating this effect, MMMs can accurately pinpoint the real value of each marketing channel. This is greater than the effect of traditional MMMs because typically MMMs don’t take into account baseline sales or incrementality.
 
 When combined, incrementality and MMM provide a comprehensive view of marketing performance. While MMMs track overall effectiveness across various channels, incrementality focuses on the added value of individual efforts. As you can imagine this synergy helps businesses fine-tune their strategies, ensuring that every marketing dollar spent is driving real, measurable results. In essence, incrementality complements MMM by offering a more precise look at how different marketing activities influence success.
 
@@ -111,7 +111,7 @@ Implementing MMM can be complex and resource-intensive, requiring deep expertise
 
 ### 3\. Integration with Other Measurement Techniques
 
-MMM should be integrated with other measurement techniques, a common one being [Multi-Touch Attribution (MTA)](https://bluealpha.ai/multi-touch-attribution/), to provide a comprehensive view of marketing effectiveness. Combining MMM with MTA allows businesses to capture the impact of both offline and online channels, providing a more holistic understanding of the customer journey​.
+MMM should be integrated with other measurement techniques, a common one being [Multi-Touch Attribution (MTA)](/articles/multi-touch-attribution-pitfalls), to provide a comprehensive view of marketing effectiveness. Combining MMM with MTA allows businesses to capture the impact of both offline and online channels, providing a more holistic understanding of the customer journey​.
 
 ### 4\. Managing Stakeholder Expectations
 

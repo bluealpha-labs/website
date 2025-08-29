@@ -15,7 +15,7 @@ status: 'published'
 
 In recent years, affiliate marketing has evolved into one of the most flexible and potent tools for driving sales, subscriptions, and brand awareness. It can connect your business with niche influencers, leading industry websites, coupon and cashback platforms, and more. However, capturing the true value of affiliates isn’t as straightforward as setting a commission and watching the dollars roll in. If you want an accurate read on which partners truly move the needle (and which ones just show up at the last step), you need a robust measurement framework.
 
-This guide is your roadmap: from classic affiliate metrics such as click-through rate and average order value, to advanced measurement challenges like coupon intercepts, partial-funnel influences, and [marketing mix modeling (MMM)](https://bluealpha.ai/media-mix-modeling/). We’ll dig deep into [incrementality testing](https://bluealpha.ai/incremental-testing/), from straightforward holdouts to more nuanced experiments, and show you how to avoid the mistakes that lead to over- or under-crediting your affiliate partners.
+This guide is your roadmap: from classic affiliate metrics such as click-through rate and average order value, to advanced measurement challenges like coupon intercepts, partial-funnel influences, and [marketing mix modeling (MMM)](/articles/what-is-media-mix-modeling). We’ll dig deep into [incrementality testing](/articles/incrementality-testing-implementation-guide), from straightforward holdouts to more nuanced experiments, and show you how to avoid the mistakes that lead to over- or under-crediting your affiliate partners.
 
 By the end, you’ll have the tools to:  
 – Track the right day-to-day KPIs (clicks, conversions, earnings per click, etc.).  
@@ -42,7 +42,7 @@ Affiliate marketing, at its core, is a performance-based model. You pay a partne
       Each partner type requires different measurement nuances.
 
 3.  **Attribution Complexity  
-    **Last-click reporting is still common in many affiliate platforms. [Attribution models are flawed](https://bluealpha.ai/multi-touch-attribution/), and last-click models are especially prone to undercounting the contribution of top- or mid-funnel partners. They can also over-credit coupon extensions that show up at checkout, awarding them 100% of the sale despite minimal influence on the actual purchase decision.
+    **Last-click reporting is still common in many affiliate platforms. [Attribution models are flawed](/articles/multi-touch-attribution-pitfalls), and last-click models are especially prone to undercounting the contribution of top- or mid-funnel partners. They can also over-credit coupon extensions that show up at checkout, awarding them 100% of the sale despite minimal influence on the actual purchase decision.
 4.  **Fraud and Coupon Issues  
     **Because affiliates get paid for each conversion, unscrupulous players might exploit technical loopholes or inflate traffic with questionable methods. Separately, coupon affiliates can claim credit for a sale that was going to happen anyway, diminishing your real net gain if you’re not careful.
 5.  **Differing Maturity Levels  
@@ -188,7 +188,7 @@ To get a more realistic read on affiliate performance in MMM, you need these str
 
 ## **Incrementality Testing for Affiliate Marketing**
 
-The word “[incrementality](https://bluealpha.ai/incremental-marketing/)” keeps coming up. In plain terms, it asks: “_Would these sales still occur if we switched off or scaled back an affiliate partner?_” If the answer is mostly yes, then the affiliate is capturing existing demand more than creating new business. If the answer is no, then the affiliate truly drives incremental revenue that wouldn’t happen otherwise.
+The word “[incrementality](/articles/what-is-incremental-marketing)” keeps coming up. In plain terms, it asks: “_Would these sales still occur if we switched off or scaled back an affiliate partner?_” If the answer is mostly yes, then the affiliate is capturing existing demand more than creating new business. If the answer is no, then the affiliate truly drives incremental revenue that wouldn’t happen otherwise.
 
 ### **Why Incrementality Matters**
 

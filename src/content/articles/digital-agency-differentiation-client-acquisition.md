@@ -13,7 +13,7 @@ status: 'published'
 
 ![How to Get More Clients for Your Digital Marketing Agency](#assets/articles/digital-agency-differentiation-client-acquisition/digital-marketing-agency.webp)
 
-Without a clear strategy for differentiation, your agency risks becoming just another option for potential clients. By adopting key strategies, you can not only stand out from the competition but also get more clients for your [digital marketing agency](https://bluealpha.ai/bluealpha-for-digital-marketing-agencies/).  
+Without a clear strategy for differentiation, your agency risks becoming just another option for potential clients. By adopting key strategies, you can not only stand out from the competition but also get more clients for your [digital marketing agency](/articles/why-agencies-need-mmm-incrementality).  
 Let’s dive into some actionable insights to help you carve out your niche and grow your business.
 
 ## 1\. Specialization and Niche Focus
@@ -30,7 +30,7 @@ In digital marketing, providing exceptional results is important, but the experi
 
 ## 3\. Use Data-Driven Strategies and MarTech Measurement Solutions to Demonstrate Results
 
-To convince potential clients that your agency is the right choice, data is your most powerful tool. Tracking metrics such as real ROI, conversion rates, and customer acquisition costs provides the evidence clients need to trust your work. Beyond traditional data, leveraging advanced MarTech measurement solutions like [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) and [Incrementality Testing](https://bluealpha.ai/incremental-testing/) is a game-changer.
+To convince potential clients that your agency is the right choice, data is your most powerful tool. Tracking metrics such as real ROI, conversion rates, and customer acquisition costs provides the evidence clients need to trust your work. Beyond traditional data, leveraging advanced MarTech measurement solutions like [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [Incrementality Testing](/articles/incrementality-testing-implementation-guide) is a game-changer.
 
 MMM helps you analyze the historical contribution of each marketing channel and external factors, while Incrementality Testing isolates the true impact of your campaigns by using test-and-control experiments. These tools offer precise insights into which media dollars are truly driving conversions.
 

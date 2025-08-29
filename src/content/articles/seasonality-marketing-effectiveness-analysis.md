@@ -108,7 +108,7 @@ When it comes to aggregating and analyzing data from your Reddit campaigns, this
 
 1.  **Google Analytics**: Used to track goals (like purchases or sign-ups) and map user journeys from Reddit to site.
 2.  **Reddit Ads Dashboard**: Offers baseline metrics: impressions, clicks, and conversions as measured by Reddit.
-3.  **Attribution-based Third-Party Analytics:** Tools like Mixpanel can offer more granular user-behavior insights, while still employing [attribution models](https://bluealpha.ai/multi-touch-attribution/) to assign credit to the specific campaigns or ads that generated revenue.
+3.  **Attribution-based Third-Party Analytics:** Tools like Mixpanel can offer more granular user-behavior insights, while still employing [attribution models](/articles/multi-touch-attribution-pitfalls) to assign credit to the specific campaigns or ads that generated revenue.
 4.  **Heatmaps**: Used for visualizing how Reddit-driven visitors interact with landing pages.
 
 ### Limitations of Standard Tracking
@@ -160,9 +160,9 @@ With consistent effort, you can turn curious Redditors into lifelong brand fans,
 
 While the above-mentioned common tracking tactics (tracking pixels, UTM parameters, and coupon codes) offer a useful baseline to track Reddit ads’ ROI, they only reveal part of the story, especially in an environment where potential customers might engage with your brand multiple times across different channels.
 
-If you’re new to Reddit campaigns, the only way to measure the ROI of Reddit ads with true accuracy is by designing and launching an [incrementality test](https://bluealpha.ai/incremental-marketing/). Incrementality testing helps you isolate the effect of a specific channel or campaign from other marketing activities, by comparing performance in controlled environments. This approach can tell you whether your revenue is actually increasing because of your Reddit campaigns, or if the same increase would’ve happened anyway, even without those ads.
+If you’re new to Reddit campaigns, the only way to measure the ROI of Reddit ads with true accuracy is by designing and launching an [incrementality test](/articles/what-is-incremental-marketing). Incrementality testing helps you isolate the effect of a specific channel or campaign from other marketing activities, by comparing performance in controlled environments. This approach can tell you whether your revenue is actually increasing because of your Reddit campaigns, or if the same increase would’ve happened anyway, even without those ads.
 
-For businesses that have been running Reddit ads for at least one to two years (and thus have historical data to review), [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) combined with incrementality testing is the gold standard. MMM analyzes how all your marketing channels interact over time, while incrementality testing refines these insights by confirming the unique contribution of Reddit ads. The combination offers the clearest picture of how each part of your marketing strategy works together, letting you confidently scale campaigns or make budget shifts based on data-driven insights.
+For businesses that have been running Reddit ads for at least one to two years (and thus have historical data to review), [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) combined with incrementality testing is the gold standard. MMM analyzes how all your marketing channels interact over time, while incrementality testing refines these insights by confirming the unique contribution of Reddit ads. The combination offers the clearest picture of how each part of your marketing strategy works together, letting you confidently scale campaigns or make budget shifts based on data-driven insights.
 
 ### Why This Matters
 

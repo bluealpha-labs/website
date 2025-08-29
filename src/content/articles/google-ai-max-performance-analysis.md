@@ -40,7 +40,7 @@ Can you afford to turn AI Max on, without independent visibility into how the 
 
 ### We Saw That Coming
 
-Voice search, multimodal Lens queries and AI Overviews have already pushed Google to interpret meaning rather than characters. Keywords, match types, even creative inputs are progressively collapsing into a few “signals” Google ingests. AI Max is one of the many steps in this roadmap, and formalizes that shift for advertisers who want [PMax](https://bluealpha.ai/pmax/)‑style reach inside Search‑only inventory.
+Voice search, multimodal Lens queries and AI Overviews have already pushed Google to interpret meaning rather than characters. Keywords, match types, even creative inputs are progressively collapsing into a few “signals” Google ingests. AI Max is one of the many steps in this roadmap, and formalizes that shift for advertisers who want [PMax](/articles/google-ai-max-performance-analysis)‑style reach inside Search‑only inventory.
 
 It also simplifies keyword management. Google’s own guidance now suggests collapsing sprawling ad groups into a handful of generic terms paired with geo targets. That reduces operational bloat but cedes more matching discretion to the algorithm.
 
@@ -73,8 +73,8 @@ Google sales reps stress that “keywords are simpler, not gone”. They’re ri
 
 BlueAlpha rebuilds that audit trail through
 
-- Fully customized [Marketing Mix Models](https://bluealpha.ai/media-mix-modeling/)
-- Properly designed [incrementality tests](https://bluealpha.ai/incrementality-testing/)
+- Fully customized [Marketing Mix Models](/articles/what-is-media-mix-modeling)
+- Properly designed [incrementality tests](/articles/incrementality-testing-implementation-guide)
 
 Download our free white paper:
 

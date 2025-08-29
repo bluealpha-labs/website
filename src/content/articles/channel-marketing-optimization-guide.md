@@ -17,7 +17,7 @@ The marketing chessboard keeps adding new pieces: TikTok ads, retail media netwo
 
 Many brands have responded to this by doubling down on what felt measurable and safe. They pour money into lower‑funnel channels, celebrate platform‑reported ROAS, and miss the larger question: _What is the next incremental dollar really worth?_
 
-Channel marketing optimization is the disciplined practice of managing every paid, owned, and earned touchpoint as a single, dynamic portfolio. It uses causal measurement, not [click‑based attribution](https://bluealpha.ai/multi-touch-attribution/), to see which moves generate genuine lift and which produce nothing more than noise. The payoff is profound. We have seen from our own clients that shifting even 15% of budget according to causal insights unlocks an average profit lift of 18% in the following quarter (and sets them up for faster compound growth the rest of the year).
+Channel marketing optimization is the disciplined practice of managing every paid, owned, and earned touchpoint as a single, dynamic portfolio. It uses causal measurement, not [click‑based attribution](/articles/multi-touch-attribution-pitfalls), to see which moves generate genuine lift and which produce nothing more than noise. The payoff is profound. We have seen from our own clients that shifting even 15% of budget according to causal insights unlocks an average profit lift of 18% in the following quarter (and sets them up for faster compound growth the rest of the year).
 
 This guide explains how to make that transformation. We move from defining vocabulary to auditing your current mix, then walk through measurement, modeling, creative alignment, governance, and the human dynamics that make or break even the smartest model. By the end, you will know how to turn incrementality and diminishing‑returns curves into an operating system for high‑profit growth.
 
@@ -78,8 +78,8 @@ Attribution answers the question, “_Which tracked event happened latest before
 
 Causal measurement rests on three legs:
 
-- **[Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/)**: A top‑down statistical regression that ingests spend, media exposure, seasonality, price, promotions, and external factors, then returns marginal ROI curves by channel and interactions between channels. Modern MMM, [including our BlueAlpha approach](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/), refreshes weekly, not yearly, thanks to Bayesian priors and GPU acceleration.
-- **[Incrementality testing](https://bluealpha.ai/incremental-testing/)**: Geo splits, matched‑market tests, ghost ads, or randomized holdouts. They deliver yes‑or‑no answers about lift, and they also feed stronger priors back into the MMM.
+- **[Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling)**: A top‑down statistical regression that ingests spend, media exposure, seasonality, price, promotions, and external factors, then returns marginal ROI curves by channel and interactions between channels. Modern MMM, [including our BlueAlpha approach](/articles/cmo-guide-before-investing-in-mmm), refreshes weekly, not yearly, thanks to Bayesian priors and GPU acceleration.
+- **[Incrementality testing](/articles/incrementality-testing-implementation-guide)**: Geo splits, matched‑market tests, ghost ads, or randomized holdouts. They deliver yes‑or‑no answers about lift, and they also feed stronger priors back into the MMM.
 - **Scenario simulation**: Once you own marginal ROI curves, you can run what‑if scenarios. Move 20 percent of prospecting budget from Meta to TikTok and see the predicted profit delta before risking real dollars ([see a real-world case study here](https://bluealpha.ai/case-studies/how-beehiiv-transformed-its-marketing-efficiency-with-bluealpha/)).
 
 Collectively these tools expose diminishing returns in precise dollar terms and free you to invest where incrementality is highest.
@@ -149,7 +149,7 @@ Many companies drown in MarTech bloat yet still lack the tools that matter for o
 
 1.  **Unified data lake**: raw spend, cost of goods, inventory, pricing, offline sales, and macroeconomics land in one repository with common keys.
 2.  **Privacy‑first identity resolution**: deterministic where regulations allow, probabilistic where they do not. The goal is stable aggregates, not user‑level voyeurism.
-3.  **Causal modeling engine**: MMM refreshed weekly, [enriched by incrementality test inputs and equipped with Bayesian priors](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/) so it learns even when data is sparse.
+3.  **Causal modeling engine**: MMM refreshed weekly, [enriched by incrementality test inputs and equipped with Bayesian priors](/articles/cmo-guide-before-investing-in-mmm) so it learns even when data is sparse.
 4.  **Scenario planner**: a UI that lets marketers drag sliders for spend by channel, geography, and audience, then shows profit, revenue, and payback predictions instantly.
 5.  **Activation hooks**: bi‑directional APIs that push new budget splits to ad platforms and pull performance data back into the lake so the loop closes without manual CSV drama.
 

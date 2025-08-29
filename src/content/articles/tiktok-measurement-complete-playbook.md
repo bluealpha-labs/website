@@ -14,7 +14,7 @@ status: 'published'
 ![The Best Marketing Mix Modeling Software for Mid-Market Brands - BlueAlpha](#assets/articles/tiktok-measurement-complete-playbook/mmm-software-mid-market.webp)
 
 For growth-stage and mid-market companies, every marketing dollar must drive measurable impact.  
-Choosing the right [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) software empowers lean marketing teams with data-driven insights to optimize budgets, identify the most effective channels and campaigns, and stay competitive – without needing an in-house data science team or enterprise-level resources.
+Choosing the right [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) software empowers lean marketing teams with data-driven insights to optimize budgets, identify the most effective channels and campaigns, and stay competitive – without needing an in-house data science team or enterprise-level resources.
 
 - - [Can SMBs use MMM effectively without large datasets?](#Can_SMBs_use_MMM_effectively_without_large_datasets)
 
@@ -24,13 +24,13 @@ Choosing the right [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix
 
 **Adapt Quickly to Market Changes**: Growth-stage and mid-market brands have the agility to shift strategies faster than large enterprises. With MMM insights, businesses can adjust media spend dynamically, based on what’s working.
 
-**Validate Marketing Experiments**: MMM delivers the most value when paired with [incrementality testing](https://bluealpha.ai/incremental-testing/), including [geo-lift experiments](https://bluealpha.ai/matched-market-testing/); this combination of tools helps companies simulate “what-if” scenarios before committing important budgets to new channels or campaigns.
+**Validate Marketing Experiments**: MMM delivers the most value when paired with [incrementality testing](/articles/incrementality-testing-implementation-guide), including [geo-lift experiments](/articles/matched-market-testing-guide); this combination of tools helps companies simulate “what-if” scenarios before committing important budgets to new channels or campaigns.
 
 **Communicate ROI with Clarity**: Stakeholders – from CFOs to board members – need proof of marketing’s financial impact. MMM software generates dashboards that show incremental revenue and justify investment in marketing initiatives.
 
 ## The Growing Importance of MMM in a Privacy-First World
 
-With stricter privacy laws (GDPR, CCPA, and ITP) and browsers limiting third-party cookies, [attribution models are becoming less effective](https://bluealpha.ai/multi-touch-attribution/).
+With stricter privacy laws (GDPR, CCPA, and ITP) and browsers limiting third-party cookies, [attribution models are becoming less effective](/articles/multi-touch-attribution-pitfalls).
 
 **MMM provides a future-proof measurement framework by relying on aggregated data rather than user-level tracking, ensuring compliance with privacy regulations.**
 

@@ -52,8 +52,8 @@ Marketers should adopt several strategies to adapt to the current situation and 
 
 Despite Google’s decision to retain third-party cookies, the need for a first-party data strategy and for sophisticated marketing measurement techniques built on it, like incrementality testing and media mix modeling, remains critical. These methods provide deeper insights into the effectiveness of marketing campaigns beyond what third-party cookies can offer. 
 
-[Incrementality testing](https://bluealpha.ai/incremental-testing/) helps identify the true contribution of marketing activities by measuring the difference between exposed and non-exposed groups.  
-[Media Mix Modeling](https://bluealpha.ai/media-mix-modeling/) evaluates the impact of various marketing channels and optimizes budget allocation. 
+[Incrementality testing](/articles/incrementality-testing-implementation-guide) helps identify the true contribution of marketing activities by measuring the difference between exposed and non-exposed groups.  
+[Media Mix Modeling](/articles/what-is-media-mix-modeling) evaluates the impact of various marketing channels and optimizes budget allocation. 
 
 By leveraging these techniques, marketers can make data-driven decisions, optimize their strategies, and ensure they are prepared for a future where privacy and data protection are paramount. This approach not only enhances campaign effectiveness, but also builds consumer trust by respecting their privacy preferences.
 

@@ -11,7 +11,7 @@ status: 'published'
 
 # How to Implement Incrementality Testing in Marketing | BlueAlpha
 
-For a business operating in today’s world, not being data-driven is not an option. Measuring the [incremental](https://bluealpha.ai/incremental-marketing/) impact of your paid channels in marketing is more important than ever. You’ve probably heard about running [GeoLift experiments](https://bluealpha.ai/matched-market-testing/) as the gold standard for this purpose. Perhaps you’ve even implemented some incremental tests in-house. But are you confident that you executed them correctly? Poorly designed and executed incremental testing can harm your business rather than benefit it, leading to misguided strategies and wasted resources.
+For a business operating in today’s world, not being data-driven is not an option. Measuring the [incremental](/articles/what-is-incremental-marketing) impact of your paid channels in marketing is more important than ever. You’ve probably heard about running [GeoLift experiments](/articles/matched-market-testing-guide) as the gold standard for this purpose. Perhaps you’ve even implemented some incremental tests in-house. But are you confident that you executed them correctly? Poorly designed and executed incremental testing can harm your business rather than benefit it, leading to misguided strategies and wasted resources.
 
 In this article, we will explore the essentials of properly designing an incrementality test, look under the hood explaining how things are working, and discuss the critical steps to take after testing. Whether you’re a seasoned marketer or just getting started with incremental measurement, this guide will provide valuable insights to ensure your tests drive meaningful and accurate results.
 
@@ -43,6 +43,6 @@ _Understanding Incrementality Testing for Marketing and Financial Success_
 
 Great, you have empirically proven whether a specific channel or channel mix yields incremental results. You now know if the attributed metrics reported by a given platform are accurate. But what’s next? You don’t want these valuable test results to get lost in spreadsheets or forgotten in presentations.
 
-Fortunately, beside incrementality tests, another powerful statistical model comes in handy: [Marketing Mix Models (MMM)](https://bluealpha.ai/media-mix-modeling/). MMMs provide a holistic analytical overview of how each channel or campaign influences your target KPIs (e.g., sales).
+Fortunately, beside incrementality tests, another powerful statistical model comes in handy: [Marketing Mix Models (MMM)](/articles/what-is-media-mix-modeling). MMMs provide a holistic analytical overview of how each channel or campaign influences your target KPIs (e.g., sales).
 
 Furthermore, MMMs can incorporate the results of your incrementality tests, increasing their predictive accuracy with each test. Over time, this integration builds a robust tool fueled by causality, allowing you to steer your marketing operations in the most efficient, forward-looking way.

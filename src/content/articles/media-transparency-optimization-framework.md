@@ -11,7 +11,7 @@ status: 'published'
 
 # Does Your Business Need Matched Market Testing? | BlueAlpha
 
-Traditional [Multi-Touch Attribution (MTA)](https://bluealpha.ai/multi-touch-attribution/) models are no longer sufficient due to significant changes in the privacy landscape. For example, the introduction of the CCPA, GDPR, and recent iOS 17 updates that block tag managers and remove tracking parameters for users browsing in privacy mode on their iOS devices.
+Traditional [Multi-Touch Attribution (MTA)](/articles/multi-touch-attribution-pitfalls) models are no longer sufficient due to significant changes in the privacy landscape. For example, the introduction of the CCPA, GDPR, and recent iOS 17 updates that block tag managers and remove tracking parameters for users browsing in privacy mode on their iOS devices.
 
 These changes have reduced the granularity of customer tracking and online data collection, compelling advertisers to rethink their ad targeting and attribution methods. Consequently, there is a growing need for new measurement tools that can accurately quantify the true impact of marketing campaigns (incrementality).
 
@@ -21,7 +21,7 @@ One of the most effective being…
 
 ## Matched Market Testing (MMT)
 
-Matched market tests have emerged as a vital solution in this context. They offer the closest available option to replicate real lab-based experiments in a real-world setting. Unlike slow [Marketing Mix Models (MMMs)](https://bluealpha.ai/media-mix-modeling/), a matched market test can provide a speedier solution, allowing marketers to learn fast, calibrate their MMMs, and validate MTA modeling. This is crucial, as the speed of obtaining actionable insights can significantly impact the effectiveness of marketing strategies.
+Matched market tests have emerged as a vital solution in this context. They offer the closest available option to replicate real lab-based experiments in a real-world setting. Unlike slow [Marketing Mix Models (MMMs)](/articles/what-is-media-mix-modeling), a matched market test can provide a speedier solution, allowing marketers to learn fast, calibrate their MMMs, and validate MTA modeling. This is crucial, as the speed of obtaining actionable insights can significantly impact the effectiveness of marketing strategies.
 
 Advertisers are now rethinking their methods, and incrementality studies have become essential. However, not all incrementality studies on different platforms are equal, as they offer varying tools and methodologies. This variation necessitates a cohesive tool that ensures comparability across different platforms and campaigns.
 
@@ -71,7 +71,7 @@ Randomized Controlled Testing (RCT) is often considered the gold standard for me
 - Often impractical due to high costs and logistical complexity.
 - Requires significant planning and coordination, making it challenging for smaller companies or those with limited budgets.
 
-### [Marketing Mix Models (MMM)](https://bluealpha.ai/media-mix-modeling/)
+### [Marketing Mix Models (MMM)](/articles/what-is-media-mix-modeling)
 
 Marketing Mix Models (MMM) are powerful tools used to understand the contribution of each paid channel to overall performance. They help allocate and optimize budgets and forecast future performance, aiding in budget justification and planning. MMMs, especially those using a Bayesian approach, require less data and use transaction data, avoiding the need for personal information.
 

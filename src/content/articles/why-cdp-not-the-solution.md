@@ -41,7 +41,7 @@ Implementing a CDP isn’t just about the initial purchase price. The hidden cos
 
 ## A better allocation for your money: Media Mix Modeling and Incrementality Testing.
 
-Instead of throwing money at a CDP, consider incorporating to your Marketing strategy some advanced measurement techniques like [Media Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) and [Incrementality Testing](https://bluealpha.ai/incremental-testing/).
+Instead of throwing money at a CDP, consider incorporating to your Marketing strategy some advanced measurement techniques like [Media Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [Incrementality Testing](/articles/incrementality-testing-implementation-guide).
 
 Media Mix Modeling uses statistical analysis to estimate the impact of various marketing tactics on sales and other business outcomes. By analyzing historical data, MMM helps you allocate marketing budgets more effectively and identify the channels that drive the most value, giving you a holistic view of marketing performance without needing a centralized data platform.
 

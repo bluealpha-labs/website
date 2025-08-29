@@ -25,11 +25,11 @@ status: 'published'
 
 **“Give me all of your data and I’ll tell you what you need to do.”**
 
-[Marketing Mix Models (MMMs)](https://bluealpha.ai/media-mix-modeling/) promise a grand unification of marketing insights, turning spend and exposure data into actionable strategies. In theory, this sounds amazing. In practice (especially in a Bayesian context), MMM-based conclusions can diverge drastically from reality. While MMMs offer a great macro-level view, they often need help in capturing true causality at a more granular level. That’s where incrementality tests come into play.
+[Marketing Mix Models (MMMs)](/articles/what-is-media-mix-modeling) promise a grand unification of marketing insights, turning spend and exposure data into actionable strategies. In theory, this sounds amazing. In practice (especially in a Bayesian context), MMM-based conclusions can diverge drastically from reality. While MMMs offer a great macro-level view, they often need help in capturing true causality at a more granular level. That’s where incrementality tests come into play.
 
 ## 5 Warning Signs Your Current MMM Is Misleading You
 
-1.  **Lack of [Incrementality Testing](https://bluealpha.ai/incremental-testing/):** If your MMM vendor doesn’t integrate incrementality testing, their model may never fully validate its assumptions.
+1.  **Lack of [Incrementality Testing](/articles/incrementality-testing-implementation-guide):** If your MMM vendor doesn’t integrate incrementality testing, their model may never fully validate its assumptions.
 2.  **Static Channel Effectiveness:** Reports showing unchanging channel effectiveness (static betas) signal that the model isn’t adapting to real market dynamics.
 3.  **Overvalued High-Spend Channels:** Models that consistently overvalue high-spend channels might be misleading your budget decisions.
 4.  **Diminishing Returns Despite Recommendations:** Following model advice that still leads to declining returns is a red flag.
@@ -141,7 +141,7 @@ Even with a well-specified Bayesian MMM, you might still wonder: How do I truly 
 
 **More Causal Insights**
 
-- While MMMs can correlate marketing spend or exposure with sales, incrementality tests (e.g., [matched-market experiments](https://bluealpha.ai/matched-market-testing/), synthetic control methods) isolate the effect of a single channel or campaign under near-experimental conditions.
+- While MMMs can correlate marketing spend or exposure with sales, incrementality tests (e.g., [matched-market experiments](/articles/matched-market-testing-guide), synthetic control methods) isolate the effect of a single channel or campaign under near-experimental conditions.
 
 **Validation of Single Channels**
 
@@ -187,8 +187,9 @@ Our approach uses incremental time-varying effects. In other words, we incorpora
 - **Contextual Accuracy**: Causal test results are “slotted in” precisely where they apply (e.g., _Channel A_ in Q4, _Channel B_ in Region X during a holiday campaign).
 - **Scalable Automation**: This cycle can be automated if your data pipelines are well-structured, letting you run frequent incrementality tests and continuously refine the MMM.
 
-\_**Ease of Use Highlight**  
-\_Every step in this workflow is supported by an automated platform that handles data integration, analysis, and visualization. This means that even if you do not have a dedicated team of data scientists, you can set up and run BlueAlpha with minimal hassle – and [our team](https://bluealpha.ai/about/) provides direct technical support to help you every step of the way.
+**Ease of Use Highlight**
+
+Every step in this workflow is supported by an automated platform that handles data integration, analysis, and visualization. This means that even if you do not have a dedicated team of data scientists, you can set up and run BlueAlpha with minimal hassle – and [our team](https://bluealpha.ai/about/) provides direct technical support to help you every step of the way.
 
 **_[Case Study: Beehiiv’s Channel Performance Shifts](https://bluealpha.ai/case-studies/how-beehiiv-transformed-its-marketing-efficiency-with-bluealpha/)_**  
 Thanks to our methodology that combines Marketing Mix Models with incrementality testing, [Beehiiv](https://www.beehiiv.com/) discovered that while TikTok was actually performing better than platform metrics suggested, Meta appeared to have a reasonable CPA based on platform reporting, but its true incremental cost was 345% higher. You can read [more case studies here](https://bluealpha.ai/case-studies/).
@@ -228,7 +229,7 @@ Answer these five questions to evaluate your marketing measurement strategy:
 If you answered “no” to any of these questions, it’s time to consider a more robust approach to marketing measurement.  
 _You’re likely overspending for suboptimal results, missing significant growth opportunities_.
 
-[Schedule a free 30-minute MMM assessment](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/#contact) to see how your current model compares to BlueAlpha’s integrated approach.
+[Schedule a free 30-minute MMM assessment](/articles/cmo-guide-before-investing-in-mmm#contact) to see how your current model compares to BlueAlpha’s integrated approach.
 
 ## For Marketing Leaders Researching MMM Solutions
 

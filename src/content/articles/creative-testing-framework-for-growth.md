@@ -17,7 +17,7 @@ status: 'published'
 
 Establishing a strong brand is critical to staying relevant and fueling long-term growth. Yet many marketing leaders hesitate to invest in brand campaigns because the results often feel “unmeasurable”. Brand marketing is more complex to track than bottom-of-funnel performance efforts, so it’s easy for finance teams (or even some members of your executive suite) to view brand investments as purely speculative.
 
-This guide lays out practical, data-backed ways to measure brand campaign success. You’ll learn the essentials of brand health tracking, the importance of leading indicators, and how to harness techniques like [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) and [incrementality testing](https://bluealpha.ai/incremental-testing/). Throughout, we’ll show how brand marketing can (and should) be held accountable, while still acknowledging the unique challenges that make brand efforts trickier to measure than direct-response campaigns.
+This guide lays out practical, data-backed ways to measure brand campaign success. You’ll learn the essentials of brand health tracking, the importance of leading indicators, and how to harness techniques like [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/incrementality-testing-implementation-guide). Throughout, we’ll show how brand marketing can (and should) be held accountable, while still acknowledging the unique challenges that make brand efforts trickier to measure than direct-response campaigns.
 
 Whether you’re a marketing decision-maker in a B2C subscription company, an established e-commerce player with a hefty media budget, or a growth-stage tech brand looking to scale, this guide offers a future-oriented approach to proving that brand spend contributes to sustainable outcomes. We’ll also highlight how BlueAlpha, with our authoritative yet accessible analytics expertise, can help you confidently navigate brand measurement while maximizing ROI.
 
@@ -43,7 +43,7 @@ Brand efforts, by definition, create longer-term uplift. Many brand campaigns do
 
 ### 2\. Data Gaps
 
-Brand marketing often unfolds across channels not linked to immediate clicks, such as TV spots, billboards, or word-of-mouth. In comparison, performance marketing relies more on potentially trackable digital interactions (e.g., last-click). The truth is that [attribution models are already misleading](https://bluealpha.ai/multi-touch-attribution/) in performance marketing, and brand campaigns only compound their flaws. Without a direct line to a webpage, brand signals are more challenging to measure.
+Brand marketing often unfolds across channels not linked to immediate clicks, such as TV spots, billboards, or word-of-mouth. In comparison, performance marketing relies more on potentially trackable digital interactions (e.g., last-click). The truth is that [attribution models are already misleading](/articles/multi-touch-attribution-pitfalls) in performance marketing, and brand campaigns only compound their flaws. Without a direct line to a webpage, brand signals are more challenging to measure.
 
 ### 3\. Intangible Areas
 
@@ -105,7 +105,7 @@ _Practical example_ – Let’s say your brand sells premium skincare via subscr
 
 ## **Step 3: Use Marketing Mix Modeling (MMM) to Estimate Impact**
 
-One of the most powerful ways to measure brand campaign success is [**Marketing Mix Modeling** (MMM)](https://bluealpha.ai/media-mix-modeling/). Rather than depending on click data alone, MMM uses statistical analysis to explore how different marketing channels (and external factors) drive your key outcomes (like sales or signups).
+One of the most powerful ways to measure brand campaign success is [**Marketing Mix Modeling** (MMM)](/articles/what-is-media-mix-modeling). Rather than depending on click data alone, MMM uses statistical analysis to explore how different marketing channels (and external factors) drive your key outcomes (like sales or signups).
 
 ### How MMM Works
 
@@ -123,7 +123,7 @@ For smaller or mid-size brands, building an MMM from scratch can be daunting. Th
 
 ## **Step 4: Validate Results with Incrementality Testing**
 
-MMM provides a top-down macro view of how brand channels drive outcomes. But you can further validate brand campaigns through **[incrementality testing](https://bluealpha.ai/incremental-testing/)**. While it’s common to run incrementality tests for short-term performance channels (like paid social or search), brand marketing can benefit too.
+MMM provides a top-down macro view of how brand channels drive outcomes. But you can further validate brand campaigns through **[incrementality testing](/articles/incrementality-testing-implementation-guide)**. While it’s common to run incrementality tests for short-term performance channels (like paid social or search), brand marketing can benefit too.
 
 ### What is Incrementality Testing?
 
@@ -133,7 +133,7 @@ Many marketers assume incrementality testing doesn’t suit brand marketing beca
 
 ### Combining MMM and Incrementality
 
-Think of MMM as your strategic coordinator and incrementality tests as the rigorous experiments that confirm which channels or messages truly drive brand lift in real-world conditions. [When you merge both](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/), you get:
+Think of MMM as your strategic coordinator and incrementality tests as the rigorous experiments that confirm which channels or messages truly drive brand lift in real-world conditions. [When you merge both](/articles/cmo-guide-before-investing-in-mmm), you get:
 
 - A holistic, multi-touch perspective of how each channel drives results (MMM).
 - Causal proof that a given brand marketing initiative (say a streaming TV spot in a pilot city) yields real gains you wouldn’t have seen otherwise (incrementality test).

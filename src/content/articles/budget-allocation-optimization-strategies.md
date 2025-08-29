@@ -17,7 +17,7 @@ status: 'published'
 
 Direct-to-consumer brands navigate a complex digital world where fragmented customer journeys, limited data visibility, and strict privacy rules make it tough to measure marketing success. Terms like “multi-touch attribution” and “data-driven attribution” promise answers, but many brands still can’t crack the code on what drives growth.
 
-This article unpacks the key challenges of marketing attribution, explains why traditional models fall short, and shows how blending [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) with [incrementality testing](https://bluealpha.ai/incremental-testing/) delivers clearer insights into marketing performance.
+This article unpacks the key challenges of marketing attribution, explains why traditional models fall short, and shows how blending [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) with [incrementality testing](/articles/incrementality-testing-implementation-guide) delivers clearer insights into marketing performance.
 
 We’ll explore:
 
@@ -85,7 +85,7 @@ It can be tempting to think that with more data or better algorithms, you can ge
 
 ## **Why Marketers Keep Searching for a “Better Model”**
 
-Despite these pitfalls, marketers still need to figure out which channels deserve budget. They often try to refine multi-touch attribution (MTA) or sign up for [Google’s data-driven approach](https://bluealpha.ai/multi-touch-attribution/). But they keep running into the same walls:
+Despite these pitfalls, marketers still need to figure out which channels deserve budget. They often try to refine multi-touch attribution (MTA) or sign up for [Google’s data-driven approach](/articles/multi-touch-attribution-pitfalls). But they keep running into the same walls:
 
 - Not enough granular data
 - Conversions that happen offline
@@ -101,7 +101,7 @@ It is similar to trying to piece together a puzzle when many pieces are missing 
 
 Where attribution tries to measure user-level paths, Marketing Mix Modeling (MMM) looks at the broader interplay of marketing channels, budgets, external conditions, and time. Instead of focusing on the path of a specific user, MMM correlates changes in media spend (and other factors) with changes in overall sales or a key performance metric.
 
-### [What Is an MMM?](https://bluealpha.ai/media-mix-modeling/)
+### [What Is an MMM?](/articles/what-is-media-mix-modeling)
 
 An MMM is a statistical model that usually takes as inputs:
 
@@ -122,7 +122,7 @@ From there, the model estimates how each channel or factor contributes to the ou
 
 ## **Why Incrementality Testing Is Essential**
 
-When you truly want to know whether a channel or campaign is driving _[incremental](https://bluealpha.ai/incremental-marketing/)_ conversions, meaning conversions that would not have occurred otherwise, you need an incrementality test. Also known as lift tests or holdout tests, incrementality experiments divide audiences or regions into test and control groups. Then, you observe the difference in outcomes between the group that is exposed to your campaign versus the one that is not.
+When you truly want to know whether a channel or campaign is driving _[incremental](/articles/what-is-incremental-marketing)_ conversions, meaning conversions that would not have occurred otherwise, you need an incrementality test. Also known as lift tests or holdout tests, incrementality experiments divide audiences or regions into test and control groups. Then, you observe the difference in outcomes between the group that is exposed to your campaign versus the one that is not.
 
 ### The Basic Principle of Incrementality
 
@@ -132,7 +132,7 @@ If your ads, promotions, or channels really matter, the test group should show a
 
 For D2C products or subscription models, it is easy to misread correlation as causal impact. Let us say your brand invests big in retargeting. You see plenty of conversions. An incrementality test might reveal that many of those customers would have purchased anyway, with or without the retargeting ad. In that case, your real incremental effect is much lower than the attribution platform claims.
 
-### [Common Approaches to Incrementality](https://bluealpha.ai/incremental-testing/)
+### [Common Approaches to Incrementality](/articles/incrementality-testing-implementation-guide)
 
 1.  **Geo-Based Tests (GeoLift)**: Split different regions or markets into “test” (where you scale up or activate a campaign) and “control” (where you scale down or pause it). Compare the difference in sales or signups, controlling for external factors.
 2.  **Holdout Groups**: If your database is large enough, you might systematically withhold campaign exposure from a random portion of your audience. Compare their conversion rate to the exposed group.
@@ -141,7 +141,7 @@ Either way, incrementality testing adds an experimental, cause-and-effect backbo
 
 ## **Putting It All Together: MMM + Incrementality = Real Insights**
 
-[Combining Marketing Mix Modeling with a roadmap of incrementality tests](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/) solves the biggest pitfalls of each approach:
+[Combining Marketing Mix Modeling with a roadmap of incrementality tests](/articles/cmo-guide-before-investing-in-mmm) solves the biggest pitfalls of each approach:
 
 - **MMM** provides a macro-level, holistic understanding of how all your channels (online and offline) impact sales or brand growth, including external market conditions.
 - **Incrementality tests** confirm the true, causal lift from any given channel or campaign. They validate the assumptions going into your MMM, ensuring the correlations in your model align with reality.
@@ -198,7 +198,7 @@ With a [team](https://bluealpha.ai/about/) that understands both advanced modeli
 
 ## **Practical Insights for the D2C Marketing Leader**
 
-If your brand aligns with the typical BlueAlpha customer (spending a significant amount of your revenue on paid media, operating in competitive D2C markets, and lacking an extensive in-house marketing data science team), chances are you stand to benefit significantly from a [combined MMM + incrementality approach](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/).
+If your brand aligns with the typical BlueAlpha customer (spending a significant amount of your revenue on paid media, operating in competitive D2C markets, and lacking an extensive in-house marketing data science team), chances are you stand to benefit significantly from a [combined MMM + incrementality approach](/articles/cmo-guide-before-investing-in-mmm).
 
 Consider the following questions to guide your next steps:
 
@@ -229,7 +229,7 @@ Building a robust measurement system using MMM and incrementality tests does mor
 - **Education and Buy-In**: Stakeholders see how “attribution” can be misleading, prompting them to trust a broader, more reliable approach.
 - **Flexibility and Adaptation**: With a series of well-planned tests, you can pivot campaigns or channels faster, rather than waiting months for uncertain attribution numbers.
 
-When your team views marketing decisions through this lens (backed by aggregated data trends and actual experiments), you [build a more resilient and future-focused organization](https://bluealpha.ai/marketing-measurement-for-growth-focused-cmos/).
+When your team views marketing decisions through this lens (backed by aggregated data trends and actual experiments), you [build a more resilient and future-focused organization](/articles/marketing-measurement-guide-2025).
 
 ## **Projecting Your Growth Path: MMM as the Strategic Compass**
 

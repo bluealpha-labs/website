@@ -67,7 +67,7 @@ _Why It Matters_: Going beyond basic demographics allows for smarter targeting. 
 
 #### **Automation & Personalization**
 
-_Why It Matters_: [Automated workflows](https://bluealpha.ai/ai-agents-for-marketing/) deliver the right recommendation at the right time, without manual effort.
+_Why It Matters_: [Automated workflows](/articles/ai-agents-for-marketing-csuite-guide) deliver the right recommendation at the right time, without manual effort.
 
 #### **Scalability & Flexible Pricing**
 
@@ -153,9 +153,9 @@ BlueAlpha connects effortlessly with eCommerce platforms, CRMs, and the other ma
 
 Once segmented, customers can be automatically enrolled in targeted campaigns. Whether through personalized emails, dynamic on-site messaging, or strategic social media ads, BlueAlpha ensures every interaction is timely and relevant, without manual effort.
 
-#### **[Incrementality Testing](https://bluealpha.ai/incremental-testing/) and [Media Mix Modeling](https://bluealpha.ai/media-mix-modeling/)**
+#### **[Incrementality Testing](/articles/incrementality-testing-implementation-guide) and [Media Mix Modeling](/articles/what-is-media-mix-modeling)**
 
-Beyond segmentation, BlueAlpha distinguishes itself by offering built-in incrementality testing and media mix modeling. These features empower you to understand the true lift each campaign provides and optimize your media spend across channels. Rather than guessing which channel or tactic is most effective, you can now measure and validate your decisions with precision. Combined with high-value segment identification, they increase the [incrementality of your marketing efforts](https://bluealpha.ai/incremental-marketing/) even further.
+Beyond segmentation, BlueAlpha distinguishes itself by offering built-in incrementality testing and media mix modeling. These features empower you to understand the true lift each campaign provides and optimize your media spend across channels. Rather than guessing which channel or tactic is most effective, you can now measure and validate your decisions with precision. Combined with high-value segment identification, they increase the [incrementality of your marketing efforts](/articles/what-is-incremental-marketing) even further.
 
 ## Best Practices for Implementing Customer Segmentation Software
 
@@ -207,7 +207,7 @@ Pricing varies, but many vendors offer flexible plans that scale with your busin
 
 #### **How do I measure segmentation success?**
 
-Track metrics like open rates, click-through rates, customer retention, and revenue lift. A/B testing different segment strategies can further optimize results. BlueAlpha’s integrated [Media Mix Modeling](https://bluealpha.ai/media-mix-modeling/) and [incrementality testing](https://bluealpha.ai/incremental-testing/) features ensure you isolate and measure the true impact of your segmentation efforts, eliminating guesswork and making every marketing dollar count.
+Track metrics like open rates, click-through rates, customer retention, and revenue lift. A/B testing different segment strategies can further optimize results. BlueAlpha’s integrated [Media Mix Modeling](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/incrementality-testing-implementation-guide) features ensure you isolate and measure the true impact of your segmentation efforts, eliminating guesswork and making every marketing dollar count.
 
 #### Ready to Scale You Retail Brand with Smarter Customer Segmentation?
 

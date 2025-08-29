@@ -40,7 +40,7 @@ Attribution models show how many people you have reached, but do not prove wheth
 
 Additionally, recent privacy changes (CCPA, CCPR, GDPR, iOS 14+) have made it even more challenging for attribution models to track and attribute accurately.
 
-As a result, the best companies are now shifting towards focusing their strategies on first-party data, and employing solutions such as [Marketing Mix Models (MMM)](https://bluealpha.ai/media-mix-modeling/) and incrementality tests.
+As a result, the best companies are now shifting towards focusing their strategies on first-party data, and employing solutions such as [Marketing Mix Models (MMM)](/articles/what-is-media-mix-modeling) and incrementality tests.
 
 Marketing Mix Models are useful for identifying correlations in historical data and predicting future outcomes. However, they are often time-consuming and costly, lack frequency, and do not measure true incrementality.
 

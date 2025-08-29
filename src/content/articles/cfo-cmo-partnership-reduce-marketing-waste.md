@@ -17,7 +17,7 @@ As a CFO, you’re well aware of the increasing pressure to show the business im
 
 The root of the problem lies in the way most marketing teams currently measure performance. They rely heavily on the tracking and attribution models provided by the ad platforms themselves, which tend to overstate the impact of digital advertising and ad interactions very close to the final sale. These models, biased towards “last-click”, give marketers an inflated sense of campaign effectiveness, as they over-attribute success to the final touchpoint before a sale, even if that touchpoint had little to do with the customer’s decision.
 
-Compounding the issue, CFOs often lack a deep understanding of [marketing mix modeling](https://bluealpha.ai/media-mix-modeling/) (MMM) and [incrementality testing](https://bluealpha.ai/incremental-marketing/) – the more rigorous techniques required to isolate the true, causal impact of marketing investments. As a result, CMOs are hesitant to adopt these more advanced measurement approaches, fearful of the scrutiny and potential budget reductions that may follow.
+Compounding the issue, CFOs often lack a deep understanding of [marketing mix modeling](/articles/what-is-media-mix-modeling) (MMM) and [incrementality testing](/articles/what-is-incremental-marketing) – the more rigorous techniques required to isolate the true, causal impact of marketing investments. As a result, CMOs are hesitant to adopt these more advanced measurement approaches, fearful of the scrutiny and potential budget reductions that may follow.
 
 This article will explore why aligning on incrementality measurement is crucial for driving marketing accountability and ROI optimization. We’ll provide a roadmap for CFOs to partner with their CMOs, leveraging data-driven insights to make smarter budget allocation decisions. By the end, you’ll understand how to translate these marketing measurement improvements into tangible business impact.
 
@@ -93,7 +93,7 @@ Implementing a more rigorous, data-driven approach to marketing measurement may 
 
 - **Better Customer Acquisition and Retention**. By understanding which marketing activities drive the most incremental new customer acquisition, CMOs can refine their strategies to attract higher-value, longer-term customers. Simultaneously, they can prioritize retaining existing customers through targeted, high-impact tactics.
 
-- **Stronger [Finance-Marketing Alignment](https://bluealpha.ai/cfo-cmo-relationship/)**. Adopting a shared, data-driven approach to marketing measurement fosters greater collaboration and trust between the finance and marketing functions. This alignment enables CFOs and CMOs to make more informed, cohesive business decisions.
+- **Stronger [Finance-Marketing Alignment](/articles/cfo-cmo-relationship-issues-solutions)**. Adopting a shared, data-driven approach to marketing measurement fosters greater collaboration and trust between the finance and marketing functions. This alignment enables CFOs and CMOs to make more informed, cohesive business decisions.
 
 ## Implementing the Shift to Incrementality Measurement
 

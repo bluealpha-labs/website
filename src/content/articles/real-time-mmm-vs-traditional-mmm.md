@@ -68,7 +68,7 @@ A powerful AI agent system for marketing is built on five foundational elements 
 
 - **Integration Layer**A seamless connection fabric ties the AI system into your existing marketing stack, from analytics platforms to automation tools, ensuring smooth data flow and coordinated action.
 
-LLM-based AI agents excel in this context, as they integrate natural language processing with advanced analytics, enhancing their ability to orchestrate workflows and make informed decisions. BlueAlpha demonstrates this capability by deploying individual agents for sub-tasks such as analyzing [MMM (Marketing Mix Modeling)](https://bluealpha.ai/media-mix-modeling/) results and automating [incrementality testing](https://bluealpha.ai/incremental-marketing/) workflows. These workflows directly contribute to enhanced ROI by optimizing resource allocation and marketing spend.
+LLM-based AI agents excel in this context, as they integrate natural language processing with advanced analytics, enhancing their ability to orchestrate workflows and make informed decisions. BlueAlpha demonstrates this capability by deploying individual agents for sub-tasks such as analyzing [MMM (Marketing Mix Modeling)](/articles/what-is-media-mix-modeling) results and automating [incrementality testing](/articles/what-is-incremental-marketing) workflows. These workflows directly contribute to enhanced ROI by optimizing resource allocation and marketing spend.
 
 ## Applications of AI Marketing Agents
 

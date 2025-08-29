@@ -29,7 +29,7 @@ Unlike traditional marketing measurement tools that rely on attribution models a
 
 ## Transforming Marketing into a Scalable Growth Engine
 
-Scaling marketing activities while maintaining efficiency can be a daunting challenge. BlueAlpha addresses this by measuring the true impact of marketing campaigns on customer acquisition and revenue. Through tools like [marketing mix modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) and [incrementality testing](https://bluealpha.ai/incremental-marketing/), COOs gain visibility into what truly drives growth, helping them allocate resources effectively.
+Scaling marketing activities while maintaining efficiency can be a daunting challenge. BlueAlpha addresses this by measuring the true impact of marketing campaigns on customer acquisition and revenue. Through tools like [marketing mix modeling (MMM)](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/what-is-incremental-marketing), COOs gain visibility into what truly drives growth, helping them allocate resources effectively.
 
 By transforming marketing into a scalable and predictable growth engine, BlueAlpha equips operations teams with the clarity they need to support expansion without sacrificing efficiency. Additionally, by optimizing campaign performance, BlueAlpha helps improve **revenue per employee**, ensuring that workforce contributions are maximized across the organization.
 

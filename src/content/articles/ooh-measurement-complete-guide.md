@@ -54,11 +54,11 @@ This is the fundamental layer. At minimum, you measure how many people pass in f
 **Pros**: Offers a baseline bridging offline to online.  
 **Cons**: Impressions alone don’t necessarily tie to brand outcomes.
 
-### 2) [Incrementality Testing](https://bluealpha.ai/incremental-testing/)
+### 2) [Incrementality Testing](/articles/incrementality-testing-implementation-guide)
 
-This approach uses control vs. test groups to see how much your OOH campaign lifts a specific metric, such as store visits or [brand awareness](https://bluealpha.ai/how-to-measure-brand-campaign-success/). For instance, if you saturate New York with bus panels while leaving Philadelphia as a control, you can compare brand-lift or foot traffic differences between the two regions.
+This approach uses control vs. test groups to see how much your OOH campaign lifts a specific metric, such as store visits or [brand awareness](/articles/creative-testing-framework-for-growth). For instance, if you saturate New York with bus panels while leaving Philadelphia as a control, you can compare brand-lift or foot traffic differences between the two regions.
 
-### 3) [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/)
+### 3) [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling)
 
 MMM uses analytics to see how each channel, including OOH, drives outcomes like revenue. You feed in daily or weekly spend and performance data. The advantage: it captures synergy among multiple channels and is historically proven for large-scale brand planning.
 
@@ -125,7 +125,7 @@ In the RFP, ask vendors for daily frame-level or site-level data that meets reco
 
 #### Step 4: Integrate with Other Channels
 
-Set up foot traffic tests, brand-lift surveys, or [matched-market experiments](https://bluealpha.ai/matched-market-testing/). Feed your OOH impression/spend data into your cross-channel analytics. If you’re running programmatic DOOH, coordinate your creative flights with your social or display campaigns for synergy.
+Set up foot traffic tests, brand-lift surveys, or [matched-market experiments](/articles/matched-market-testing-guide). Feed your OOH impression/spend data into your cross-channel analytics. If you’re running programmatic DOOH, coordinate your creative flights with your social or display campaigns for synergy.
 
 #### Step 5: Validate and Optimize
 
