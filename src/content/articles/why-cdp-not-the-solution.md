@@ -5,24 +5,15 @@ image: '#/assets/backgrounds/background-16.png'
 author: 'peter'
 date: 2025-04-24
 time: 6
-tags: ['data-infrastructure', 'strategy', 'measurement']
+tags: ['data-infrastructure', 'strategy']
 status: 'published'
 ---
 
 # Why a CDP Is Not the Solution You Need Right Now | BlueAlpha
 
-![Customer Data Platforms](https://bluealpha.ai/wp-content/uploads/2024/08/CDP.jpg)
+![Customer Data Platforms](#assets/articles/why-cdp-not-the-solution/customer-data-platforms.jpg)
 
 Analytics and Marketing leaders are increasingly thinking about adopting Customer Data Platforms (CDPs) to manage and analyze their customer data. These platforms promise to revolutionize data management and offer comprehensive insights into customer behavior. Before you commit to a CDP, let’s break down why this might be a misallocation of resources. Here are several reasons why a CDP might not be the golden ticket you’re looking for, along with suggestions for different advanced and data-driven strategies.
-
-- [Think mapping users across all sources is easy? Think again.](#Think_mapping_users_across_all_sources_is_easy_Think_again)
-- [You expect a CDP to become your single source of truth. It won’t.](#You_expect_a_CDP_to_become_your_single_source_of_truth_It_wont)
-- [Analysts need control, not constraints.](#Analysts_need_control_not_constraints)
-- [Say hello to confusion with different versions of the same metrics.](#Say_hello_to_confusion_with_different_versions_of_the_same_metrics)
-- [CDPs are resource hogs.](#CDPs_are_resource_hogs)
-- [CDPs are a money pit.](#CDPs_are_a_money_pit)
-- [A better allocation for your money: Media Mix Modeling and Incrementality Testing.](#A_better_allocation_for_your_money_Media_Mix_Modeling_and_Incrementality_Testing)
-- [Conclusion](#Conclusion)
 
 ## Think mapping users across all sources is easy? Think again.
 

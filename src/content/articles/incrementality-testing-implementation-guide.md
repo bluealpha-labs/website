@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-17.png'
 author: 'matthias'
 date: 2025-03-04
 time: 12
-tags: ['incrementality', 'testing', 'measurement']
+tags: ['incrementality', 'testing']
 status: 'published'
 ---
 
@@ -19,7 +19,7 @@ In this article, we will explore the essentials of properly designing an increme
 
 A GeoLift experiment applies the logic of an incrementality test at a geographical level. This approach compares regions exposed to the campaign (treatment) with similar regions not exposed (control), isolating the true effect of the marketing activity. By focusing on geographic granularity, GeoLift ensures that macroeconomic shocks are represented equally in both the test and control groups, truly isolating the campaign’s impact.
 
-![GeoLift experiments](http://bluealpha.ai/wp-content/uploads/2024/08/GeoLift-experiments.png)
+![GeoLift experiments](#assets/articles/incrementality-testing-implementation-guide/geolift-experiments.png)
 
 ## What Is Happening Under the Hood?
 
@@ -33,7 +33,7 @@ This method enables the accurate measurement of the effectiveness of paid channe
 Additionally, both treatment and control groups account for external shocks during the treatment period, ensuring that the observed impact is genuinely due to the ad treatment.  
 This robust approach provides reliable, actionable insights into the incremental impact of marketing activities, facilitating better strategic decisions and optimized budget allocations.
 
-![Incremental effect in Marketing](http://bluealpha.ai/wp-content/uploads/2024/08/Incremental-effect-in-Marketing.png)
+![Incremental effect in Marketing](#assets/articles/incrementality-testing-implementation-guide/incremental-effect-marketing.png)
 
 ##### Download our free whitepaper:
 

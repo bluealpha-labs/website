@@ -5,28 +5,17 @@ image: '#/assets/backgrounds/background-8.png'
 author: 'peter'
 date: 2025-03-31
 time: 11
-tags: ['attribution', 'measurement', 'strategy']
+tags: ['attribution', 'measurement']
 status: 'published'
 ---
 
 # Multi-Touch Attribution Can Kill Your Marketing Strategy | BlueAlpha
 
-- [What is MTA in Marketing?](#What_is_MTA_in_Marketing)
-- [Why Multi-Touch Attribution Became Widely Adopted](#Why_Multi-Touch_Attribution_Became_Widely_Adopted)
-- [The Misleading Nature of Multi-Touch Attribution Models](#The_Misleading_Nature_of_Multi-Touch_Attribution_Models)
-  - [Deep Dive: 11 Flaws of Multi-Touch Attribution Models](#Deep_Dive_11_Flaws_of_Multi-Touch_Attribution_Models)
-- [Why Performance Marketing Teams Still Rely on MTA](#Why_Performance_Marketing_Teams_Still_Rely_on_MTA)
-- [Google’s Shift from Many Attribution Models to DDA](#Googles_Shift_from_Many_Attribution_Models_to_DDA)
-- [Simply Switching to DDA Is Not the Solution](#Simply_Switching_to_DDA_Is_Not_the_Solution)
-- [The Need for Combining MTA with MMM and Incrementality Testing](#The_Need_for_Combining_MTA_with_MMM_and_Incrementality_Testing)
-- [The Difference Between MTA and MMM](#The_Difference_Between_MTA_and_MMM)
-- [Simplifying the Process with BlueAlpha](#Simplifying_the_Process_with_BlueAlpha)
-
 As your company’s Head of Performance Marketing, you’ve always been well-regarded for your analytical prowess and strategic acumen. You’ve always prided yourself on staying ahead of the curve, leveraging the latest tools and technologies to drive marketing success. With Multi-Touch Attribution (MTA) becoming the industry buzzword, you’ve been quick to integrate it into your strategy. And with Google’s Data-Driven Attribution (DDA) becoming an industry standard, you’ve been quick to adopt it. 
 
 You’ve been long convinced MTA/DDA provide the insights needed to optimize your marketing efforts across different channels. However, despite your team’s best efforts, your campaigns’ results are disappointing, and your competitors are growing stronger day by day. You’re probably wondering if there’s a better way.
 
-![Why Multi-Touch Attribution and DDA Can Kill Your Marketing Strategy](https://bluealpha.ai/wp-content/uploads/2024/08/DDA-1024x585.webp)
+![Why Multi-Touch Attribution and DDA Can Kill Your Marketing Strategy](#assets/articles/multi-touch-attribution-pitfalls/multi-touch-attribution-dda.webp)
 
 ## What is MTA in Marketing?
 

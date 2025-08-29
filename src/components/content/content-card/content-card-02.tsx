@@ -48,7 +48,9 @@ export function ContentCard02({ title, description, image, author, date, tags, h
             <ContentCardDescription>{description}</ContentCardDescription>
           </ContentGroup>
         </ContentGroup>
-        <ContentGroup gap={2}>
+        <ContentGroup
+          className='flex-wrap'
+          gap={2}>
           {tags.map(({ name, color }) => (
             <ContentCardTagLink key={name}>
               <Badge color={color}>{name}</Badge>

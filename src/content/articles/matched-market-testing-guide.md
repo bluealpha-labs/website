@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-3.png'
 author: 'matthias'
 date: 2025-03-16
 time: 9
-tags: ['testing', 'incrementality', 'measurement', 'strategy']
+tags: ['incrementality', 'testing']
 status: 'published'
 ---
 
@@ -15,18 +15,7 @@ Traditional [Multi-Touch Attribution (MTA)](https://bluealpha.ai/multi-touch-att
 
 These changes have reduced the granularity of customer tracking and online data collection, compelling advertisers to rethink their ad targeting and attribution methods. Consequently, there is a growing need for new measurement tools that can accurately quantify the true impact of marketing campaigns (incrementality).
 
-- [Matched Market Testing (MMT)](#Matched_Market_Testing_MMT)
-- [Why Ad Platforms’ Lift Tests Are Not Always Suited](#Why_Ad_Platforms_Lift_Tests_Are_Not_Always_Suited)
   - - [Inconsistent Availability and Methods Across Platforms](#Inconsistent_Availability_and_Methods_Across_Platforms)
-    - [Difficulty Reconciling Platform-Specific Incrementality with First-Party Data](#Difficulty_Reconciling_Platform-Specific_Incrementality_with_First-Party_Data)
-    - [High Budget Requirements for Statistical Significance](#High_Budget_Requirements_for_Statistical_Significance)
-    - [Complex Marketing Mixes (Difficulty Managing Incrementality Programs Objectively)](#Complex_Marketing_Mixes_Difficulty_Managing_Incrementality_Programs_Objectively)
-    - [Limits for Cross-Platform Incrementality Measurement](#Limits_for_Cross-Platform_Incrementality_Measurement)
-    - [Example Scenario – The Complexity of a Cross-Platform Campaign](#Example_Scenario_%E2%80%93_The_Complexity_of_a_Cross-Platform_Campaign)
-- [Alternative Options to Ad Platform Tools for Measuring Incrementality](#Alternative_Options_to_Ad_Platform_Tools_for_Measuring_Incrementality)
-  - [Randomized Controlled Testing (RCT)](#Randomized_Controlled_Testing_RCT)
-  - [Marketing Mix Models (MMM)](#Marketing_Mix_Models_MMM)
-  - [GeoLift Experimentation](#GeoLift_Experimentation)
 
 One of the most effective being…
 
@@ -37,8 +26,6 @@ Matched market tests have emerged as a vital solution in this context. They offe
 Advertisers are now rethinking their methods, and incrementality studies have become essential. However, not all incrementality studies on different platforms are equal, as they offer varying tools and methodologies. This variation necessitates a cohesive tool that ensures comparability across different platforms and campaigns.
 
 In the following part of this article, we will dive into the current options, why marketers need a new measurement approach, and which model to choose (and when).
-
----
 
 ## Why Ad Platforms’ Lift Tests Are Not Always Suited
 
@@ -67,8 +54,6 @@ Ad platform incrementality tests are typically limited to measuring the impact w
 #### Example Scenario – The Complexity of a Cross-Platform Campaign
 
 Consider a company running a holiday marketing campaign across Facebook, Google Search, and Instagram. Each platform offers its own incrementality testing, but the methods and metrics differ. Facebook might show a 10% lift in sales, Google Search a 15% lift, and Instagram a 5% lift. Reconciling these numbers with the company’s overall sales increase is challenging, especially when internal data shows a different total increase. This discrepancy makes it difficult to optimize the budget allocation for future campaigns.
-
----
 
 ## Alternative Options to Ad Platform Tools for Measuring Incrementality
 
@@ -116,7 +101,7 @@ GeoLift experimentation is a popular and accessible method for measuring increme
 - May not capture the full impact of nationwide or global campaigns.
 - Requires careful selection and matching of geographic regions to ensure comparability.
 
-![Accuracy and Causality in Marketing Data Science](http://bluealpha.ai/wp-content/uploads/2024/08/Accuracy-and-Causality-in-Marketing-Data-Science.png)
+![Accuracy and Causality in Marketing Data Science](#assets/articles/matched-market-testing-guide/accuracy-causality-marketing.png)
 
 _Interested in learning more about Matched Market Testing and running your first MMT to elevate your marketing strategy?  
 Feel free to reach out to our team to get started._

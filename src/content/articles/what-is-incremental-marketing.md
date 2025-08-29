@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-13.png'
 author: 'matthias'
 date: 2025-04-15
 time: 7
-tags: ['incrementality', 'measurement', 'strategy']
+tags: ['incrementality', 'measurement']
 status: 'published'
 ---
 
@@ -20,12 +20,6 @@ Imagine unlocking the secret to maximizing every dollar spent, driving real grow
 In today’s privacy-conscious landscape, where tracking customer behavior is becoming increasingly challenging, understanding incrementality is more crucial than ever.
 
 Get ready to unravel the mystery of incrementality and reveal how it can transform your marketing strategy from good to exceptional.
-
-- [What Does ‘Incremental’ Mean in Marketing?](#What_Does_%E2%80%98Incremental_Mean_in_Marketing)
-- [Incremental Models vs. Legacy Models](#Incremental_Models_vs_Legacy_Models)
-- [Incrementality Testing vs. A/B Testing](#Incrementality_Testing_vs_AB_Testing)
-- [How to Measure Incrementality in Marketing](#How_to_Measure_Incrementality_in_Marketing)
-- [You Need an Integrated Approach to Marketing Measurement](#You_Need_an_Integrated_Approach_to_Marketing_Measurement)
 
 ## What Does ‘Incremental’ Mean in Marketing?
 
@@ -52,7 +46,7 @@ Marketing Mix Models are useful for identifying correlations in historical data 
 
 In contrast, incrementality tests directly measure the true causal impact of marketing activities, providing a comprehensive and accurate view of both online and offline efforts. These tests are faster and based on actual sales data, offering a more precise understanding of your marketing effectiveness.
 
-![Incrementality vs Mixed Marketing Models vs Attribution](https://bluealpha.ai/wp-content/uploads/2024/08/incremental.png)
+![Incrementality vs Mixed Marketing Models vs Attribution](#assets/articles/what-is-incremental-marketing/incrementality-vs-mmm-attribution.png)
 
 ## Incrementality Testing vs. A/B Testing
 

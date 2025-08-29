@@ -19,26 +19,6 @@ On the other hand, comprehending the whole MMM spectrum and aligning it smoothly
 
 How can you leverage the potential of MMM to analyze your marketing performance, make strategic decisions, and thus push your business to the next level?
 
-- [What is Marketing Mix Modeling?](#What_is_Marketing_Mix_Modeling)
-  - [What’s the Difference Between Marketing Mix Modeling and Media Mix Modeling?](#Whats_the_Difference_Between_Marketing_Mix_Modeling_and_Media_Mix_Modeling)
-- [How Does MMM Work?](#How_Does_MMM_Work)
-- [Why MMM is Essential to Marketing](#Why_MMM_is_Essential_to_Marketing)
-- [Why Incrementality Works Best with MMM](#Why_Incrementality_Works_Best_with_MMM)
-- [How CMOs Can Apply MMM to Their Marketing Strategy](#How_CMOs_Can_Apply_MMM_to_Their_Marketing_Strategy)
-  - [1\. Establish Clear Objectives](#1_Establish_Clear_Objectives)
-  - [2\. Gather and Integrate Data](#2_Gather_and_Integrate_Data)
-  - [3\. Collaborate with Cross-Functional Teams](#3_Collaborate_with_Cross-Functional_Teams)
-  - [4\. Build and Validate the Model](#4_Build_and_Validate_the_Model)
-  - [5\. Analyze Results and Generate Insights](#5_Analyze_Results_and_Generate_Insights)
-  - [6\. Implement Data-Driven Decisions](#6_Implement_Data-Driven_Decisions)
-  - [7\. Continuously Monitor and Update](#7_Continuously_Monitor_and_Update)
-- [Challenges and Considerations in Implementing MMM](#Challenges_and_Considerations_in_Implementing_MMM)
-  - [1\. Data Quality and Availability](#1_Data_Quality_and_Availability)
-  - [2\. Complexity and Resource Requirements](#2_Complexity_and_Resource_Requirements)
-  - [3\. Integration with Other Measurement Techniques](#3_Integration_with_Other_Measurement_Techniques)
-  - [4\. Managing Stakeholder Expectations](#4_Managing_Stakeholder_Expectations)
-- [Does Your Business Need Marketing Mix Modeling or Media Mix Modeling?](#Does_Your_Business_Need_Marketing_Mix_Modeling_or_Media_Mix_Modeling)
-
 ## What is Marketing Mix Modeling?
 
 Marketing Mix Modeling (MMM) is a statistical analysis technique used to evaluate the impact of various marketing efforts on sales and other business outcomes. It provides insights into how different media in the marketing mix contribute to business performance. By analyzing historical data, MMM helps marketers allocate their budgets more effectively and optimize their strategies.
@@ -60,7 +40,7 @@ The MMM process typically involves three main stages:
 2.  **Model Building:** Using statistical techniques to build a model that quantifies the impact of different marketing activities on sales, identifying relationships and interactions between variables​.
 3.  **Insights and Recommendations:** Analyzing the model’s results to generate insights and recommendations for optimizing marketing strategies and budget allocations​.
 
-[![10% Revenue Increase with Media Mix Modeling](https://old.bluealpha.ai/wp-content/uploads/2025/01/10-Revenue-Increase-with-Media-Mix-Modeling.jpg)
+[![10% Revenue Increase with Media Mix Modeling](#assets/articles/what-is-media-mix-modeling/revenue-increase-mmm.jpg)
 
 ](https://bluealpha.ai/services/budget-optimization/)
 

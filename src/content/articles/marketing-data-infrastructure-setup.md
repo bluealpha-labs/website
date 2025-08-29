@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-18.png'
 author: 'peter'
 date: 2025-03-07
 time: 8
-tags: ['platforms', 'measurement', 'optimization']
+tags: ['platforms', 'optimization']
 status: 'published'
 ---
 
@@ -13,32 +13,19 @@ status: 'published'
 
 ## Why You Still Shouldn’t Fully Trust PMax (Even After the 2025 Updates)
 
-![Why You Still Shouldn't Fully Trust PMax (Even After the 2025 Updates) - BlueAlpha](https://bluealpha.ai/wp-content/uploads/2025/02/Why-You-Still-Shouldnt-Fully-Trust-PMax-Even-After-the-2025-Updates-BlueAlpha-1024x585.webp)
+![Why You Still Shouldn't Fully Trust PMax (Even After the 2025 Updates) - BlueAlpha](#assets/articles/marketing-data-infrastructure-setup/pmax-trust-issues.webp)
 
 It’s your first month as Head of Performance Marketing. Your brand has serious issues, and your CMO tells you to start showing good numbers. You decide to invest in Performance Max (PMax), and launch a flurry of PMax campaigns. The numbers coming in look great. You keep optimizing your channel mix reallocating budget towards what looks best. Your manager is satisfied. You’re showcasing impressive ROAS. You feel like a stellar Marketing leader. You start posting on LinkedIn that PMax is the future of Marketing. “_Join or die_”! And the best part is, you can’t believe how easy reaching such results was. Meanwhile, your brand is quietly dying, and the competition is leaving you in the dust. Then, you get fired. The worst part? You still have no idea why, because those numbers *did* look great!
 
-- [The Reason Why PMax Was Originally Launched](#The_Reason_Why_PMax_Was_Originally_Launched)
-- [Bad Management Practices](#Bad_Management_Practices)
-- [The Evolution of PMax: From Marketer Demand to Widespread Skepticism](#The_Evolution_of_PMax_From_Marketer_Demand_to_Widespread_Skepticism)
-- [What’s Changing in 2025: Google’s Attempt to Address PMax’s Biggest Issues](#Whats_Changing_in_2025_Googles_Attempt_to_Address_PMaxs_Biggest_Issues)
-- [What These Updates Fix – And What They Don’t](#What_These_Updates_Fix_%E2%80%93_And_What_They_Dont)
   - - [What’s Better:](#Whats_Better)
-    - [What’s Still Problematic:](#Whats_Still_Problematic)
-- [How Modern Marketing Leaders Should Approach PMax in 2025](#How_Modern_Marketing_Leaders_Should_Approach_PMax_in_2025)
-
----
 
 ## The Reason Why PMax Was Originally Launched
 
 The truth is that PMax is Google’s answer to what a lot of business leaders were asking. Performance Max campaigns were developed in response to business leaders’ demands for a more streamlined approach to digital advertising. Firstly, PMax simplifies the process of starting ad campaigns by automating much of the setup, reducing the complexity that often deters new advertisers. Secondly, it addresses the need for simplified marketing performance analysis and optimization by encapsulating campaign data in a “black box” approach. This means marketers are not overwhelmed with granular data but can trust the system to optimize for them. Lastly, PMax aims to deliver “impressive” results, often showcasing a high Return on Ad Spend (ROAS), which appeals to businesses looking for tangible, positive outcomes from their marketing investments. PMax is undoubtedly a great mainstream product, because it delivered exactly what the mainstream was asking for.
 
----
-
 ## Bad Management Practices
 
 Those requests, however, stem from a deeper issue: a lack of expertise in Performance Marketing, and a tendency for businesses to chase short-term results over sustainable, long-term success – which creates misaligned incentives. Many business leaders prioritize quick wins and impressive-looking metrics to report to stakeholders, rather than investing the time and effort required to tackle complex marketing challenges. This obsession with immediate, “good” numbers can undermine the foundational work needed to build strong, enduring brands. By focusing on instant gratification, businesses risk missing out on the strategic insights and robust optimization that come from a more hands-on, analytical, and nuanced approach to Performance Marketing.
-
----
 
 ## The Evolution of PMax: From Marketer Demand to Widespread Skepticism
 
@@ -53,8 +40,6 @@ By 2024, discontent had reached a tipping point. A growing number of performance
 - **_Budget inefficiencies_**: The lack of transparency and control meant marketers struggled to optimize spend efficiently, particularly when scaling campaigns.
 
 This collective frustration pushed Google to partially reconsider its approach, leading to a series of updates in 2025.
-
----
 
 ## What’s Changing in 2025: Google’s Attempt to Address PMax’s Biggest Issues
 
@@ -79,8 +64,6 @@ The [2025 updates](https://blog.google/products/ads-commerce/new-performance-max
 
 These updates mark a significant shift in how Google is positioning PMax. While it still heavily relies on AI, these added controls show that Google acknowledges the product’s previous limitations and is attempting to restore some level of advertiser autonomy.
 
----
-
 ## What These Updates Fix – And What They Don’t
 
 #### **What’s Better:**
@@ -95,8 +78,6 @@ These updates mark a significant shift in how Google is positioning PMax. While 
 - **Attribution remains murky**: PMax still **overclaims conversions**, often taking credit for sales that may have originated from other marketing efforts.
 - **Budget inefficiencies still exist**: Despite more controls, PMax still prioritizes spending over profitability, meaning marketers need **external tools** to measure true efficiency.
 - **Scaling remains challenging**: Increasing budget allocations can still cause unexpected performance drops, making it hard to scale campaigns predictably.
-
----
 
 ## How Modern Marketing Leaders Should Approach PMax in 2025
 

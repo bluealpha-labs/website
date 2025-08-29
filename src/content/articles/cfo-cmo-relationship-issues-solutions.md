@@ -19,7 +19,7 @@ In challenging times, finance departments scrutinize budgets, including marketin
 
 In this article, we will delve into the top 3 issues that plague the CFO-CMO relationship and provide strategies to overcome them, fostering a stronger CFO-CMO partnership. 
 
-![CMO-CFO Aligment](https://bluealpha.ai/wp-content/uploads/2024/08/CMO-CFO-Aligment-1024x699.webp)
+![CMO-CFO Aligment](#assets/articles/cfo-cmo-relationship-issues-solutions/cmo-cfo-alignment.webp)
 
 ## Bridging the CFO-CMO Language Barrier
 

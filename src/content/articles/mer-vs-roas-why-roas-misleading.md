@@ -5,20 +5,13 @@ image: '#/assets/backgrounds/background-6.png'
 author: 'peter'
 date: 2025-03-25
 time: 10
-tags: ['measurement', 'attribution', 'strategy', 'optimization']
+tags: ['measurement', 'attribution']
 status: 'published'
 ---
 
 # MER vs. ROAS: Why ROAS Is Misleading | BlueAlpha
 
 The metrics you choose to evaluate performance can make or break your marketing campaigns. Return on Ad Spend (ROAS) has been a long-standing favorite as a North Star Metric, but relying solely on ROAS to evaluate campaigns is a mistake that could cost you. As marketing strategies have evolved, it’s become clear that ROAS, while useful, can lead decision-makers astray when viewed in isolation. Savvy CMOs and Heads of Performance Marketing also track a more holistic metric: the Media Efficiency Ratio (MER). This article dives into why ROAS falls short, why MER gives you a clearer picture of marketing efficiency, and how to calculate MER the right way. We’ll also connect the dots on how the same principles behind tracking MER underscore the critical role of [Incrementality Testing](https://bluealpha.ai/incremental-marketing/) and [Marketing Mix Modeling (MMM)](https://bluealpha.ai/media-mix-modeling/) in assessing marketing performance.
-
-- [The Limitations of ROAS](#The_Limitations_of_ROAS)
-- [Why MER Is a Superior Metric to ROAS](#Why_MER_Is_a_Superior_Metric_to_ROAS)
-- [Calculating MER Correctly](#Calculating_MER_Correctly)
-- [MER vs. ROAS: A Comparative Example](#MER_vs_ROAS_A_Comparative_Example)
-  - [MER-Driven Marketing Managers Are Better Managers](#MER-Driven_Marketing_Managers_Are_Better_Managers)
-- [Pairing MER Tracking with Incrementality Testing and MMM](#Pairing_MER_Tracking_with_Incrementality_Testing_and_MMM)
 
 ## The Limitations of ROAS
 

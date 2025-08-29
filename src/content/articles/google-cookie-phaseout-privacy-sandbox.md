@@ -5,20 +5,11 @@ image: '#/assets/backgrounds/background-15.png'
 author: 'matthias'
 date: 2025-02-26
 time: 6
-tags: ['privacy', 'platforms', 'measurement', 'attribution']
+tags: ['privacy', 'platforms']
 status: 'published'
 ---
 
 # Why Google Abandoned the Cookie Phaseout, and What Changes for Your Marketing Strategy | BlueAlpha
-
-- [What are Third-Party Cookies?](#What_are_Third-Party_Cookies)
-- [Why Google Wanted to Phase Out Third-Party Cookies?](#Why_Google_Wanted_to_Phase_Out_Third-Party_Cookies)
-- [Why Did Google Decide Not to Phase Out Third-Party Cookies, in the End?](#Why_Did_Google_Decide_Not_to_Phase_Out_Third-Party_Cookies_in_the_End)
-- [What is Privacy Sandbox?](#What_is_Privacy_Sandbox)
-- [What are Google’s Plans Regarding Privacy Sandbox?](#What_are_Googles_Plans_Regarding_Privacy_Sandbox)
-- [As a Marketer, Should You Still Worry About a “Cookieless” World?](#As_a_Marketer_Should_You_Still_Worry_About_a_%E2%80%9CCookieless%E2%80%9D_World)
-- [What are the Best Strategies to Adapt to the Current Situation?](#What_are_the_Best_Strategies_to_Adapt_to_the_Current_Situation)
-- [Marketers Still Need Incrementality Testing and Media Mix Modeling More Than Ever Before](#Marketers_Still_Need_Incrementality_Testing_and_Media_Mix_Modeling_More_Than_Ever_Before)
 
 In July 2024, Google [announced](https://privacysandbox.com/news/privacy-sandbox-update/) a significant shift in its strategy regarding third-party cookies. Originally planning to phase out these cookies by the end of 2024, Google has now decided to maintain them while introducing a new user-centric approach in its Chrome browser. This decision has wide-ranging implications for marketers and the broader digital advertising ecosystem.
 

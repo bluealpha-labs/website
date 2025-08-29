@@ -5,27 +5,19 @@ image: '#/assets/backgrounds/background-14.png'
 author: 'peter'
 date: 2025-02-23
 time: 8
-tags: ['platforms', 'ai-ml', 'optimization', 'channels']
+tags: ['platforms', 'ai-ml']
 status: 'published'
 ---
 
 # Does Google's AI Max Serve Marketers or Shareholders? | BlueAlpha
 
-![Does Google's AI Max Serve Marketers or Shareholders](https://bluealpha.ai/wp-content/uploads/2025/05/does-googles-ai-max-serve-marketers-or-shareholders-1024x683.webp)
+![Does Google's AI Max Serve Marketers or Shareholders](#assets/articles/google-ai-max-performance-analysis/google-ai-max.webp)
 
 The [recently announced](https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns/) Google’s **AI Max for Search campaigns** is the public codification of a trend performance marketers have felt for years: the ad auction is graduating from exact keyword matching to **machine‑inferred intent**.
 
 Google promises a 10-30% conversion uplift of AI Max vs. accounts dominated by exact and phrase match; the upside sounds attractive, yet it sits behind a single switch that simultaneously activates three automation layers, hides much of the raw query data, and rewrites ads on the fly.
 
 Can you afford to turn AI Max on, without independent visibility into how the money is spent?
-
-- [What Exactly Is AI Max?](#What_Exactly_Is_AI%E2%80%AFMax)
-  - [We Saw That Coming](#We_Saw_That_Coming)
-- [What Changes for Marketers?](#What_Changes_for_Marketers)
-  - [Synthetic Keywords: A New Black-Box](#Synthetic_Keywords_A_New_Black-Box)
-  - [Independent Intelligence Beats Platform Promises](#Independent_Intelligence_Beats_Platform_Promises)
-- [7-Step Action Plan for CMOs](#7-Step_Action_Plan_for_CMOs)
-- [BlueAlpha’s Promise in a “Keywordless” World](#BlueAlphas_Promise_in_a_%E2%80%9CKeywordless%E2%80%9D_World)
 
 > ---
 >
@@ -51,8 +43,6 @@ Can you afford to turn AI Max on, without independent visibility into how the 
 Voice search, multimodal Lens queries and AI Overviews have already pushed Google to interpret meaning rather than characters. Keywords, match types, even creative inputs are progressively collapsing into a few “signals” Google ingests. AI Max is one of the many steps in this roadmap, and formalizes that shift for advertisers who want [PMax](https://bluealpha.ai/pmax/)‑style reach inside Search‑only inventory.
 
 It also simplifies keyword management. Google’s own guidance now suggests collapsing sprawling ad groups into a handful of generic terms paired with geo targets. That reduces operational bloat but cedes more matching discretion to the algorithm.
-
----
 
 ## What Changes for Marketers?
 
@@ -90,8 +80,6 @@ Download our free white paper:
 
 “**_Understanding Incrementality Testing for Marketing and Financial Success_**”
 
----
-
 ## 7-Step Action Plan for CMOs
 
 **Simplify keyword lists**: keep the intent nouns; shift cities, brands, tiers to ad-group-level.
@@ -105,8 +93,6 @@ Download our free white paper:
 **Educate [CFO](https://bluealpha.ai/bluealpha-for-cfos/) & legal** on synthetic keyword reporting and potential compliance gaps from auto‑generated copy.
 
 **[Contact BlueAlpha](#contact) to **design test‑vs‑control geography splits** before flipping the AI Max switch, and to deploy a neutral measurement layer** to validate true incremental profit, not just Google-Ads-reported “conversions”.
-
----
 
 ## BlueAlpha’s Promise in a “Keywordless” World
 

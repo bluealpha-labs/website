@@ -5,13 +5,13 @@ image: '#/assets/backgrounds/background-8.png'
 author: 'peter'
 date: 2025-02-05
 time: 16
-tags: ['mmm', 'leadership', 'strategy', 'measurement']
+tags: ['mmm', 'measurement']
 status: 'published'
 ---
 
 # What Every CMO Must Know Before Investing in a Marketing Mix Model
 
-![BlueAlpha - What Every CMO Must Know Before Investing in a Marketing Mix Model - Integrating Bayesian MMM with Incrementality Testing](https://old.bluealpha.ai/wp-content/uploads/2025/03/bluealpha-integrating-bayesian-mmm-with-incrementality-testing-1.png)
+![BlueAlpha - What Every CMO Must Know Before Investing in a Marketing Mix Model - Integrating Bayesian MMM with Incrementality Testing](#assets/articles/cmo-guide-before-investing-in-mmm/bayesian-mmm-incrementality.png)
 
 ## Executive Summary
 
@@ -21,41 +21,11 @@ status: 'published'
 - Our approach not only provides a holistic, multi-channel view but also includes a practical workflow that enables marketing teams to validate model recommendations and adapt strategies in real time.
 - Even if our methodology is more complex, BlueAlpha’s solution is built for ease of use – enabling a single, skilled marketing professional to implement and manage the system without requiring a data science team.
 
----
-
 ## MMM Alone Can’t Prove What’s Working
 
 **“Give me all of your data and I’ll tell you what you need to do.”**
 
 [Marketing Mix Models (MMMs)](https://bluealpha.ai/media-mix-modeling/) promise a grand unification of marketing insights, turning spend and exposure data into actionable strategies. In theory, this sounds amazing. In practice (especially in a Bayesian context), MMM-based conclusions can diverge drastically from reality. While MMMs offer a great macro-level view, they often need help in capturing true causality at a more granular level. That’s where incrementality tests come into play.
-
-- [Executive Summary](#Executive_Summary)
-- [MMM Alone Can’t Prove What’s Working](#MMM_Alone_Cant_Prove_Whats_Working)
-- [5 Warning Signs Your Current MMM Is Misleading You](#5_Warning_Signs_Your_Current_MMM_Is_Misleading_You)
-- [Unpacking Bayesian Marketing Mix Models](#Unpacking_Bayesian_Marketing_Mix_Models)
-  - [Prior: Powerful But Perilous](#Prior_Powerful_But_Perilous)
-  - [Metrics: Spend, Impressions or GRPs?](#Metrics_Spend_Impressions_or_GRPs)
-  - [Scope: What Are You Modeling?](#Scope_What_Are_You_Modeling)
-  - [Mechanics of Markov Chain Monte Carlo (MCMC)](#Mechanics_of_Markov_Chain_Monte_Carlo_MCMC)
-    - [▸ What Is MCMC?](#%E2%96%B8_What_Is_MCMC)
-    - [▸ Why It Matters](#%E2%96%B8_Why_It_Matters)
-    - [▸ What’s the Trade-Off?](#%E2%96%B8_Whats_the_Trade-Off)
-  - [The Critical Flaw in Most Marketing Mix Models: Static Betas](#The_Critical_Flaw_in_Most_Marketing_Mix_Models_Static_Betas)
-    - [​​▸ Why Do Standard MMMs Usually Use Constant Betas?](#%E2%80%8B%E2%80%8B%E2%96%B8_Why_Do_Standard_MMMs_Usually_Use_Constant_Betas)
-    - [▸ But Why Might You Need Them Anyway?](#%E2%96%B8_But_Why_Might_You_Need_Them_Anyway)
-- [Where Incrementality Tests Come In](#Where_Incrementality_Tests_Come_In)
-  - [Why Incrementality Tests?](#Why_Incrementality_Tests)
-- [Integrating Incrementality Tests with a Bayesian MMM](#Integrating_Incrementality_Tests_with_a_Bayesian_MMM)
-  - [Practical Workflow](#Practical_Workflow)
-  - [Benefits of This Integration](#Benefits_of_This_Integration)
-  - [Competitor Comparison Table on Test Integration](#Competitor_Comparison_Table_on_Test_Integration)
-- [The MMM as an “Orchestrator”](#The_MMM_as_an_%E2%80%9COrchestrator%E2%80%9D)
-- [Self-Assessment: Is Your Current MMM Approach Working?](#Self-Assessment_Is_Your_Current_MMM_Approach_Working)
-- [For Marketing Leaders Researching MMM Solutions](#For_Marketing_Leaders_Researching_MMM_Solutions)
-- [Technical Addendum: Understanding the Math Behind Time-Varying Effects](#Technical_Addendum_Understanding_the_Math_Behind_Time-Varying_Effects)
-- [Your Next Steps](#Your_Next_Steps)
-
----
 
 ## 5 Warning Signs Your Current MMM Is Misleading You
 
@@ -68,8 +38,6 @@ status: 'published'
 BlueAlpha’s system is designed not only to address these issues but also to make the transition to a more reliable system smooth and user-friendly.
 
 Below, we’ll break down our key ideas around building a Bayesian MMM, highlight the significance (and dangers) of prior settings, and then explore how incrementality tests can complement MMMs to deliver more causal and temporally sensitive insights.
-
----
 
 ## Unpacking Bayesian Marketing Mix Models
 
@@ -165,8 +133,6 @@ If you run the model again next week with fresh data, the time-varying approach 
 
 At BlueAlpha, we deploy a smart way of integrating incremental time-varying betas that we derive from incrementality tests into our models. Hereby, we overcome the computational and data requirements while still keeping simplicity and speed top of mind.
 
----
-
 ## Where Incrementality Tests Come In
 
 Even with a well-specified Bayesian MMM, you might still wonder: How do I truly prove causality for _Channel X_? Incrementality tests are designed to answer precisely that question on a more focused, causal basis.
@@ -184,8 +150,6 @@ Even with a well-specified Bayesian MMM, you might still wonder: How do I truly 
 **Temporal Context**
 
 - Results are tied to a unique time window, which is critical because channel effectiveness can vary by season, competitor activity, or economic shifts.
-
----
 
 ## Integrating Incrementality Tests with a Bayesian MMM
 
@@ -239,8 +203,6 @@ Thanks to our methodology that combines Marketing Mix Models with incrementality
 | LightweightMMM    | Static Prior             | Not supported                                |
 | BlueAlpha         | Dynamic Weight (Default) | Support and integrated                       |
 
----
-
 ## The MMM as an “Orchestrator”
 
 Ultimately, Marketing Mix Models should serve as the orchestrator that ties together the overall picture of how different channels drive outcomes at scale. Within that framework, incrementality tests act like specialized instruments – they deliver higher-fidelity, causal insights for specific channels in specific times.
@@ -252,8 +214,6 @@ By calibrating time-varying coefficients using these local tests, you get the be
 - **A fast, iterative process that evolves with each test.**
 
 Our philosophy is all about “technology to move fast and iterate”. Contrary to the image of a massive, black-box solution requiring entire data science teams, the approach is to be lean. We built this system to be used by a single person to run all their performance marketing operations.
-
----
 
 ## Self-Assessment: Is Your Current MMM Approach Working?
 
@@ -270,8 +230,6 @@ _You’re likely overspending for suboptimal results, missing significant growth
 
 [Schedule a free 30-minute MMM assessment](https://bluealpha.ai/what-every-cmo-must-know-before-investing-in-a-marketing-mix-model/#contact) to see how your current model compares to BlueAlpha’s integrated approach.
 
----
-
 ## For Marketing Leaders Researching MMM Solutions
 
 If you’re currently evaluating Marketing Mix Model vendors for the first time, you’re in a powerful position to avoid the pitfalls that plague many organizations.
@@ -284,14 +242,10 @@ When assessing potential MMM partners, look beyond fancy dashboards and ask toug
 
 The choice you make now will determine whether your organization gains genuine marketing insights or merely receives sophisticated-looking but potentially misleading analytics. The most successful CMOs we’ve worked with understand that the right MMM approach should not only allocate your current budget more effectively but should continuously evolve as your marketing strategies change. Your MMM solution should serve as a decision-making partner, not just another analytics tool that sits unused after the initial implementation.
 
----
-
 ## Technical Addendum: Understanding the Math Behind Time-Varying Effects
 
 For those interested in a deeper technical understanding of our approach to time-varying beta coefficients in marketing mix models, we’re happy to provide more mathematical details upon request.  
 That being said, rest assured that our system’s complexity is encapsulated in an intuitive interface designed with the busy marketer in mind, ensuring you reap the benefits without getting bogged down in the technical minutiae.
-
----
 
 ## Your Next Steps
 
