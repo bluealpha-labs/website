@@ -8,6 +8,7 @@ import { authorNames } from '#constants/author.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
+import { ArticlesCta } from './_components/articles-cta'
 
 export async function getStaticPaths() {
   const collection = await getCollection('articles')
@@ -49,11 +50,11 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': articleUrl
   },
-  keywords: data.tags.map(tag => tagNames[tag]).join(', ')
+  keywords: data.tags.map((tag) => tagNames[tag]).join(', ')
 }
 ---
 
-<Layout 
+<Layout
   className='py-20'
   title={`${data.title} | BlueAlpha`}
   description={data.description}
@@ -61,8 +62,7 @@ const articleSchema = {
   ogType='article'
   author={authorName}
   publishedTime={data.date.toISOString()}
-  keywords={data.tags.map(tag => tagNames[tag]).join(', ')}
->
+  keywords={data.tags.map((tag) => tagNames[tag]).join(', ')}>
   <ContentHeader02
     label={`Published ${formattedDate}`}
     title={data.title}
@@ -77,8 +77,13 @@ const articleSchema = {
     <ContentWrapper>
       <ContentProse>
         <Content />
+        <ArticlesCta />
       </ContentProse>
     </ContentWrapper>
   </ContentContainer>
-  <script type='application/ld+json' is:inline set:html={JSON.stringify(articleSchema)} />
+  <script
+    type='application/ld+json'
+    is:inline
+    set:html={JSON.stringify(articleSchema)}
+  />
 </Layout>
