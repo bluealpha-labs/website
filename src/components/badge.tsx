@@ -11,6 +11,7 @@ const styles = cva({
       lg: 'py-1 px-3 text-sm font-medium'
     },
     color: {
+      gray: 'bg-gray-50 text-gray-700 ring-gray-200',
       moss: 'bg-moss-50 text-moss-700 ring-moss-200',
       greenLight: 'bg-green-light-50 text-green-light-700 ring-green-light-200',
       green: 'bg-green-50 text-green-700 ring-green-200',

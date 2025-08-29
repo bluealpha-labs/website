@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-9.png'
 author: 'matthias'
 date: 2025-02-08
 time: 10
-tags: ['leadership', 'optimization']
+tags: ['leadership', 'tools', 'measurement']
 status: 'published'
 ---
 

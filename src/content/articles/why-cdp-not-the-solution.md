@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-16.png'
 author: 'peter'
 date: 2025-04-24
 time: 6
-tags: ['data-infrastructure', 'strategy']
+tags: ['tools', 'privacy', 'measurement']
 status: 'published'
 ---
 

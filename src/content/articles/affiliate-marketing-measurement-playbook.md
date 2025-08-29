@@ -5,7 +5,7 @@ image: '#assets/backgrounds/background-1.png'
 author: 'matthias'
 date: 2025-01-15
 time: 12
-tags: ['channels', 'measurement']
+tags: ['channels', 'measurement', 'incrementality']
 status: 'published'
 ---
 

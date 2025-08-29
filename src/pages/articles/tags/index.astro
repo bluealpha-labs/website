@@ -26,22 +26,17 @@ const sortedTags = Object.entries(tagCounts)
   .map(([tag]) => tag as Tag)
 
 const tagDescriptions: Record<Tag, string> = {
-  incrementality: 'Measure the true impact of your marketing efforts beyond correlation',
   mmm: 'Statistical modeling to understand marketing effectiveness across channels',
-  attribution: 'Track and assign credit to marketing touchpoints in the customer journey',
+  incrementality: 'Measure the true impact of your marketing efforts beyond correlation',
   measurement: 'Comprehensive approaches to quantifying marketing performance',
-  optimization: 'Strategies to improve marketing efficiency and ROI',
-  strategy: 'High-level planning and decision-making for marketing success',
   creative: 'Design, messaging, and content strategies that drive engagement',
-  testing: 'Experimentation methodologies to validate marketing hypotheses',
-  'data-infrastructure': 'Building robust systems for marketing data collection and analysis',
-  privacy: 'Navigating privacy regulations and ethical data practices',
-  'ai-ml': 'Leveraging artificial intelligence and machine learning in marketing',
+  leadership: 'Executive insights for marketing and business leaders',
   channels: 'Platform-specific strategies and best practices',
   budget: 'Allocation, planning, and optimization of marketing spend',
-  leadership: 'Executive insights for marketing and business leaders',
+  privacy: 'Navigating privacy regulations and ethical data practices',
+  ai: 'Leveraging artificial intelligence and machine learning in marketing',
   agencies: 'Working with and managing marketing agency relationships',
-  platforms: 'Technology solutions and tools for marketing operations'
+  tools: 'Technology platforms and infrastructure for marketing operations'
 }
 
 function getTagDescription(tag: Tag): string {

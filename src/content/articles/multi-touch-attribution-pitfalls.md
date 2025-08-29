@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-8.png'
 author: 'peter'
 date: 2025-03-31
 time: 11
-tags: ['attribution', 'measurement']
+tags: ['measurement', 'incrementality', 'privacy']
 status: 'published'
 ---
 

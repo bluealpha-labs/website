@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-12.png'
 author: 'peter'
 date: 2025-02-17
 time: 7
-tags: ['strategy', 'optimization']
+tags: ['channels', 'measurement', 'mmm']
 status: 'published'
 ---
 

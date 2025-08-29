@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-3.png'
 author: 'matthias'
 date: 2025-03-16
 time: 9
-tags: ['incrementality', 'testing']
+tags: ['incrementality', 'measurement', 'mmm']
 status: 'published'
 ---
 

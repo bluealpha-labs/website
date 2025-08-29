@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-11.png'
 author: 'matthias'
 date: 2025-02-14
 time: 12
-tags: ['creative', 'testing']
+tags: ['creative', 'incrementality', 'measurement']
 status: 'published'
 ---
 

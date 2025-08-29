@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-14.png'
 author: 'peter'
 date: 2025-04-18
 time: 9
-tags: ['mmm', 'measurement', 'strategy']
+tags: ['mmm', 'measurement', 'incrementality']
 status: 'published'
 ---
 

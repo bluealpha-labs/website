@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-18.png'
 author: 'peter'
 date: 2025-03-07
 time: 8
-tags: ['platforms', 'optimization']
+tags: ['tools', 'measurement', 'privacy']
 status: 'published'
 ---
 

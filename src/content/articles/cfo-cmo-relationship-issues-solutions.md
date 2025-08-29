@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-6.png'
 author: 'peter'
 date: 2025-01-30
 time: 5
-tags: ['leadership', 'strategy', 'measurement']
+tags: ['leadership', 'measurement', 'mmm']
 status: 'published'
 ---
 

@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-1.png'
 author: 'matthias'
 date: 2025-03-10
 time: 13
-tags: ['measurement', 'strategy']
+tags: ['measurement', 'mmm', 'leadership']
 status: 'published'
 ---
 

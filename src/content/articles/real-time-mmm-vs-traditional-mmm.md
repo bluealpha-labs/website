@@ -5,7 +5,7 @@ image: '#/assets/backgrounds/background-10.png'
 author: 'peter'
 date: 2025-04-06
 time: 12
-tags: ['mmm', 'ai-ml']
+tags: ['mmm', 'ai', 'measurement']
 status: 'published'
 ---
 

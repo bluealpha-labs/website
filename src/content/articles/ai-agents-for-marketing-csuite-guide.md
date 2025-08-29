@@ -5,7 +5,7 @@ image: '#assets/backgrounds/background-2.png'
 author: 'peter'
 date: 2025-01-18
 time: 8
-tags: ['ai-ml', 'strategy']
+tags: ['ai', 'leadership', 'tools']
 status: 'published'
 ---
 
