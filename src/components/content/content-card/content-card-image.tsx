@@ -7,11 +7,14 @@ const styles = cva({
 
 type Props = ComponentProps<'img'>
 
-export function ContentCardImage({ className, ...props }: Props) {
+export function ContentCardImage({ className, alt = '', ...props }: Props) {
   return (
     <img
-      className={styles({ className })}
       {...props}
+      className={styles({ className })}
+      alt={alt}
+      loading='lazy'
+      decoding='async'
     />
   )
 }

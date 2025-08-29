@@ -7,6 +7,25 @@ import { authorNames } from '#constants/author.ts'
 import { RemainingContent01 } from '#components/content/remaining-content/remaining-content-01.tsx'
 import { tagColors, tagNames } from '#constants/article.ts'
 import { formatDate } from '#utils/format.ts'
+import { RecentContent } from '#components/content/recent-content/recent-content.tsx'
+import { RecentContentTitle } from '#components/content/recent-content/recent-content-title.tsx'
+import { RecentContentGrid } from '#components/content/recent-content/recent-content-grid.tsx'
+import { RecentContentGridItem } from '#components/content/recent-content/recent-content-grid-item.tsx'
+import { ContentCard01 } from '#components/content/content-card/content-card-01.tsx'
+import { ContentCard02 } from '#components/content/content-card/content-card-02.tsx'
+import { ContentGroup } from '#components/content/content-group.tsx'
+import { ContentCardImageLink } from '#components/content/content-card/content-card-image-link.tsx'
+import { ContentCardImageTitle } from '#components/content/content-card/content-card-image-title.tsx'
+import { ContentCardImage } from '#components/content/content-card/content-card-image.tsx'
+import { ContentCardMetadata } from '#components/content/content-card/content-card-metadata.tsx'
+import { ContentCardTitle } from '#components/content/content-card/content-card-title.tsx'
+import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
+import { ContentCardDescription } from '#components/content/content-card/content-card-description.tsx'
+import { Badge } from '#components/badge.tsx'
+import { RemainingContent } from '#components/content/remaining-content/remaining-content.tsx'
+import { RemainingContentTitle } from '#components/content/remaining-content/remaining-content-title.tsx'
+import { RemainingContentGrid } from '#components/content/remaining-content/remaining-content-grid.tsx'
+import { RemainingContentGridItem } from '#components/content/remaining-content/remaining-content-grid-item.tsx'
 
 const collection = await getCollection('articles')
 const published = collection.filter((entry) => entry.data.status === 'published')
@@ -15,50 +34,163 @@ const recent = sorted.slice(0, 3)
 const remaining = sorted.slice(3)
 ---
 
-<Layout className='py-20'>
+<Layout
+  className='py-20'
+  title='Marketing Articles & Insights | BlueAlpha'
+  description='Expert insights on marketing measurement, MMM, incrementality testing, and growth strategies. Learn how to optimize your marketing performance with data-driven approaches.'
+  keywords='marketing articles, MMM guides, incrementality testing, marketing measurement, growth strategies, marketing analytics'>
   <ContentHeader01
     label='Articles'
     title='Reads the latest from BlueAlpha'
     description='Thoughts on MMM, incrementality, and growth operations from our team.'
   />
-  <RecentContent01
-    title='Recent articles'
-    items={recent.map(({ data, slug }) => {
-      const authorName = authorNames[data.author]
-      const formattedDate = formatDate(data.date)
+  <RecentContent>
+    <RecentContentTitle>Recent articles</RecentContentTitle>
+    <RecentContentGrid>
+      {
+        recent.map(({ data, slug }, index) => {
+          const isFeatured = index === 0
 
-      return {
-        title: data.title,
-        description: data.description,
-        image: data.image.src,
-        author: authorName,
-        date: formattedDate,
-        tags: data.tags.map((tag) => ({
-          name: tagNames[tag],
-          color: tagColors[tag]
-        })),
-        href: `/articles/${slug}`
+          return (
+            <RecentContentGridItem
+              key={data.title}
+              isFeatured={isFeatured}>
+              {isFeatured ? (
+                <ContentGroup
+                  direction='column'
+                  gap={4}>
+                  <ContentCardImageLink href={`/articles/${slug}`}>
+                    <ContentCardImageTitle size='md'>{data.title}</ContentCardImageTitle>
+                    <ContentCardImage
+                      src={data.image.src}
+                      alt={data.title}
+                    />
+                  </ContentCardImageLink>
+                  <ContentGroup
+                    direction='column'
+                    gap={6}>
+                    <ContentGroup
+                      direction='column'
+                      gap={2}>
+                      <ContentCardMetadata>
+                        {authorNames[data.author]} • {formatDate(data.date)}
+                      </ContentCardMetadata>
+                      <ContentGroup
+                        direction='column'
+                        gap={1}>
+                        <ContentCardTitle href={`/articles/${slug}`}>{data.title}</ContentCardTitle>
+                        <ContentCardDescription>{data.description}</ContentCardDescription>
+                      </ContentGroup>
+                    </ContentGroup>
+                    <ContentGroup
+                      className='flex-wrap'
+                      gap={2}>
+                      {data.tags.map((tag) => (
+                        <ContentCardTagLink key={tag}>
+                          <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
+                        </ContentCardTagLink>
+                      ))}
+                    </ContentGroup>
+                  </ContentGroup>
+                </ContentGroup>
+              ) : (
+                <ContentGroup
+                  className='xl:flex-row xl:items-start'
+                  direction='column'
+                  gap={4}>
+                  <ContentCardImageLink
+                    className='shrink-0'
+                    href={`/articles/${slug}`}>
+                    <ContentCardImageTitle>{data.title}</ContentCardImageTitle>
+                    <ContentCardImage
+                      className='xl:w-80'
+                      src={data.image.src}
+                      alt={data.title}
+                    />
+                  </ContentCardImageLink>
+                  <ContentGroup
+                    direction='column'
+                    gap={6}>
+                    <ContentGroup
+                      direction='column'
+                      gap={2}>
+                      <ContentCardMetadata>
+                        {authorNames[data.author]} • {formatDate(data.date)}
+                      </ContentCardMetadata>
+                      <ContentGroup
+                        direction='column'
+                        gap={1}>
+                        <ContentCardTitle href={`/articles/${slug}`}>{data.title}</ContentCardTitle>
+                        <ContentCardDescription>{data.description}</ContentCardDescription>
+                      </ContentGroup>
+                    </ContentGroup>
+                    <ContentGroup
+                      className='flex-wrap'
+                      gap={2}>
+                      {data.tags.map((tag) => (
+                        <ContentCardTagLink key={tag}>
+                          <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
+                        </ContentCardTagLink>
+                      ))}
+                    </ContentGroup>
+                  </ContentGroup>
+                </ContentGroup>
+              )}
+            </RecentContentGridItem>
+          )
+        })
       }
-    })}
-  />
-  <RemainingContent01
-    title='All articles'
-    items={remaining.map(({ data, slug }) => {
-      const authorName = authorNames[data.author]
-      const formattedDate = formatDate(data.date)
+    </RecentContentGrid>
+  </RecentContent>
 
-      return {
-        title: data.title,
-        description: data.description,
-        image: data.image.src,
-        author: authorName,
-        date: formattedDate,
-        tags: data.tags.map((tag) => ({
-          name: tagNames[tag],
-          color: tagColors[tag]
-        })),
-        href: `/articles/${slug}`
+  <RemainingContent>
+    <RemainingContentTitle>All articles</RemainingContentTitle>
+    <RemainingContentGrid>
+      {
+        remaining.map(({ data, slug }) => {
+          return (
+            <RemainingContentGridItem key={data.title}>
+              <ContentGroup
+                direction='column'
+                gap={4}>
+                <ContentCardImageLink href={`/articles/${slug}`}>
+                  <ContentCardImageTitle>{data.title}</ContentCardImageTitle>
+                  <ContentCardImage
+                    src={data.image.src}
+                    alt={data.title}
+                  />
+                </ContentCardImageLink>
+                <ContentGroup
+                  direction='column'
+                  gap={6}>
+                  <ContentGroup
+                    direction='column'
+                    gap={2}>
+                    <ContentCardMetadata>
+                      {authorNames[data.author]} • {formatDate(data.date)}
+                    </ContentCardMetadata>
+                    <ContentGroup
+                      direction='column'
+                      gap={1}>
+                      <ContentCardTitle href={`/articles/${slug}`}>{data.title}</ContentCardTitle>
+                      <ContentCardDescription>{data.description}</ContentCardDescription>
+                    </ContentGroup>
+                  </ContentGroup>
+                  <ContentGroup
+                    className='flex-wrap'
+                    gap={2}>
+                    {data.tags.map((tag) => (
+                      <ContentCardTagLink key={tag}>
+                        <Badge color={tagColors[tag]}>{tagNames[tag]}</Badge>
+                      </ContentCardTagLink>
+                    ))}
+                  </ContentGroup>
+                </ContentGroup>
+              </ContentGroup>
+            </RemainingContentGridItem>
+          )
+        })
       }
-    })}
-  />
+    </RemainingContentGrid>
+  </RemainingContent>
 </Layout>

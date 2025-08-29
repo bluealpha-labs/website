@@ -3,6 +3,7 @@ import { ContentGroup } from '../content-group'
 import { ContentCardDescription } from './content-card-description'
 import { ContentCardImage } from './content-card-image'
 import { ContentCardImageLink } from './content-card-image-link'
+import { ContentCardImageTitle } from './content-card-image-title'
 import { ContentCardMetadata } from './content-card-metadata'
 import { ContentCardTagLink } from './content-card-tag-link'
 import { ContentCardTitle } from './content-card-title'
@@ -23,6 +24,7 @@ export function ContentCard01({ title, description, image, author, date, tags, h
       direction='column'
       gap={4}>
       <ContentCardImageLink href={href}>
+        <ContentCardImageTitle>{title}</ContentCardImageTitle>
         <ContentCardImage
           src={image}
           alt={title}

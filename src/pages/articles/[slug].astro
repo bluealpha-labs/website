@@ -4,6 +4,7 @@ import { ContentHeader02 } from '#components/content/content-header/content-head
 import { ContentProse } from '#components/content/content-prose.tsx'
 import { ContentWrapper } from '#components/content/content-wrapper.tsx'
 import { tagColors, tagNames } from '#constants/article.ts'
+import { authorNames } from '#constants/author.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
@@ -15,15 +16,53 @@ export async function getStaticPaths() {
 }
 
 const {
-  entry: { data, render }
+  entry: { data, render, slug }
 } = Astro.props
 
 const { Content } = await render()
 
 const formattedDate = formatDate(data.date)
+const authorName = authorNames[data.author]
+const articleUrl = `https://www.bluealpha.ai/articles/${slug}`
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  image: data.image.src.startsWith('http') ? data.image.src : `https://www.bluealpha.ai${data.image.src}`,
+  datePublished: data.date.toISOString(),
+  dateModified: data.date.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: authorName
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'BlueAlpha',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.bluealpha.ai/logo.svg'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': articleUrl
+  },
+  keywords: data.tags.map(tag => tagNames[tag]).join(', ')
+}
 ---
 
-<Layout className='py-20'>
+<Layout 
+  className='py-20'
+  title={`${data.title} | BlueAlpha`}
+  description={data.description}
+  ogImage={data.image.src}
+  ogType='article'
+  author={authorName}
+  publishedTime={data.date.toISOString()}
+  keywords={data.tags.map(tag => tagNames[tag]).join(', ')}
+>
   <ContentHeader02
     label={`Published ${formattedDate}`}
     title={data.title}
@@ -41,4 +80,5 @@ const formattedDate = formatDate(data.date)
       </ContentProse>
     </ContentWrapper>
   </ContentContainer>
+  <script type='application/ld+json' is:inline set:html={JSON.stringify(articleSchema)} />
 </Layout>

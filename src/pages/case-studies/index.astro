@@ -22,7 +22,12 @@ const published = collection.filter((entry) => entry.data.status === 'published'
 const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
 ---
 
-<Layout className='py-20'>
+<Layout 
+  className='py-20'
+  title='Case Studies | BlueAlpha Success Stories'
+  description='Discover how leading brands use BlueAlpha to optimize marketing performance. Real-world examples of incrementality testing, MMM implementation, and marketing optimization.'
+  keywords='case studies, success stories, marketing optimization, incrementality testing examples, MMM case studies'
+>
   <ContentHeader01
     label='Case studies'
     title='See how BlueAlpha is helping companies build with AI'
@@ -48,7 +53,7 @@ const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.
                   <CompanyLogo className='absolute top-1/2 h-12 left-1/2 -translate-x-1/2 -translate-y-1/2 text-gray-25' />
                   <ContentCardImage
                     src={data.image.src}
-                    alt={data.title}
+                    alt={`${companyName} case study: ${data.title}`}
                   />
                 </ContentCardImageLink>
                 <ContentGroup
