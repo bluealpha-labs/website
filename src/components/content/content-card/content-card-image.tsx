@@ -13,8 +13,6 @@ export function ContentCardImage({ className, alt = '', ...props }: Props) {
       {...props}
       className={styles({ className })}
       alt={alt}
-      loading='lazy'
-      decoding='async'
     />
   )
 }
