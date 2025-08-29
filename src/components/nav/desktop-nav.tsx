@@ -11,7 +11,7 @@ export function DesktopNav() {
 
   return (
     <div className='sticky top-0 z-50'>
-      <nav className='absolute top-6 left-1/2 flex h-15 w-[calc(100%-3rem)] max-w-146 -translate-x-1/2 items-center gap-4 rounded-full bg-gray-200/50 px-4 py-2 backdrop-blur-xl sm:gap-4 sm:px-6 md:gap-6'>
+      <nav className='absolute top-6 left-1/2 flex h-15 w-[calc(100%-3rem)] max-w-200 -translate-x-1/2 items-center gap-4 rounded-full bg-gray-200/50 px-4 py-2 backdrop-blur-xl sm:gap-4 sm:px-6 md:gap-6'>
         <div className='flex-1'>
           <a
             href='/'
@@ -20,7 +20,10 @@ export function DesktopNav() {
             <span className='text-xl font-semibold tracking-[-.01em] select-none max-sm:hidden'>BlueAlpha</span>
           </a>
         </div>
+        <Link href='/articles'>Articles</Link>
+        <Link href='/playbooks'>Playbooks</Link>
         <Link href='/case-studies'>Case studies</Link>
+        <Link href='/careers'>Careers</Link>
         <AnimatePresence mode='popLayout'>
           {showCta && (
             <CallWithFounder
