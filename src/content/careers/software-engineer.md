@@ -1,8 +1,9 @@
 ---
-title: Software Engineer
-department: engineering
-locations: [sf, remote]
-status: published
+title: 'Software Engineer'
+image: '#assets/backgrounds/background-5.png'
+department: 'engineering'
+locations: ['sf', 'remote']
+status: 'published'
 ---
 
 ## About BlueAlpha
@@ -35,9 +36,11 @@ This role blends frontend, backend and infrastructure development to deliver str
 
 ## Compensation & Benefits
 
-- **Benefits**: health insurance, flexible PTO, remote work options
-- **Impact**: Ownership of a mission-critical system with significant influence over BlueAlpha’s technical direction
-- **Culture**: A collaborative, high-energy startup environment with a small team of talented builders
+- **Compensation**: competitive salary + meaningful equity — real ownership in BlueAlpha's success
+- **Benefits**: health insurance, flexible PTO, and remote-friendly work
+- **Impact**: Founding GTM engineer, with outsized influence on customer experience and revenue growth
+- **Growth**: Shape and eventually scale the GTM engineering function as BlueAlpha grows
+- **Culture**: A collaborative, high-energy environment where we challenge ideas, not people — small team, big ambition
 
 ## How to Apply
 

@@ -6,8 +6,11 @@ const year = new Date().getFullYear()
 
 const navLinks = [
   { href: '/', label: 'Home' },
+  { href: '/articles', label: 'Articles' },
+  { href: '/playbooks', label: 'Playbooks' },
   { href: '/case-studies', label: 'Case studies' },
-  { href: '/careers', label: 'Careers' }
+  { href: '/careers', label: 'Careers' },
+  { href: '/referral', label: 'Referral program' }
 ]
 
 const socialLinks = [
@@ -22,13 +25,15 @@ const legalLinks = [
 ]
 ---
 
-<footer class='sticky bottom-0 -mt-8 bg-stone-900 px-5 pt-18 pb-12 text-white md:h-119 md:px-29 md:pt-26 md:pb-7'>
+<footer class='sticky bottom-0 -mt-8 bg-gray-900 px-5 pt-18 pb-12 text-white md:h-119 md:px-29 md:pt-26 md:pb-7'>
   <div
     class='grid grid-cols-1 gap-8 md:h-full md:grid-cols-[1fr_auto_auto] md:grid-rows-[1fr_auto] md:gap-x-12 md:gap-y-0 lg:grid-cols-[1fr_192px_192px] lg:gap-x-0'>
     <!-- Logo section -->
     <div class='flex flex-col gap-4'>
       <Logo className='fill-white' />
-      <p class='text-base font-[450] tracking-[.01em] text-stone-400'>Marketing automation platform</p>
+      <p class='text-base font-[450] tracking-[.01em] text-gray-400'>
+        Lead the AI marketing shift. Don't be left behind.
+      </p>
     </div>
 
     <!-- Nav links -->
@@ -75,7 +80,7 @@ const legalLinks = [
     </div>
 
     <!-- Copyright -->
-    <p class='text-sm font-[450] tracking-[.01em] text-stone-400 md:self-end'>
+    <p class='text-sm font-[450] tracking-[.01em] text-gray-400 md:self-end'>
       © BlueAlpha {year}. All rights reserved
     </p>
 

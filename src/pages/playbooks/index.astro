@@ -1,51 +1,41 @@
 ---
 import Layout from '#layouts/layout.astro'
 import { getCollection } from 'astro:content'
+import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { authorNames } from '#constants/author.ts'
+import { RemainingContent01 } from '#components/content/remaining-content/remaining-content-01.tsx'
+import { tagColors, tagNames } from '#constants/playbook.ts'
+import { formatDate } from '#utils/format.ts'
 
 const collection = await getCollection('playbooks')
-const published = collection.filter((entry) => entry.data.status === 'Published')
-const playbooks = published.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0))
+const published = collection.filter((entry) => entry.data.status === 'published')
+const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
 ---
 
-<Layout>
-  <section class='mx-auto min-h-screen max-w-5xl px-6 pt-40 pb-20'>
-    <header class='mb-12'>
-      <h1 class='text-3xl font-semibold tracking-tight md:text-5xl'>Playbooks</h1>
-      <p class='mt-4 max-w-2xl text-stone-600'>Proven, pragmatic growth playbooks for marketing and product leaders.</p>
-    </header>
+<Layout className='py-20'>
+  <ContentHeader01
+    label='Playbooks'
+    title='Learn how to build with BlueAlpha'
+    description='BlueAlpha is rewriting how marketing technology is engineered. If you want to push agentic AI beyond the lab and into production at scale, this is your chance.'
+  />
+  <RemainingContent01
+    title='All playbooks'
+    items={sorted.map(({ data, slug }) => {
+      const authorName = authorNames[data.author]
+      const formattedDate = formatDate(data.date)
 
-    <ul class='grid gap-6 md:grid-cols-2'>
-      {
-        playbooks.map((entry) => (
-          <li>
-            <a
-              href={`/playbooks/${entry.slug}`}
-              class='group block overflow-hidden rounded-2xl border border-stone-200 no-underline transition-colors hover:bg-stone-50'>
-              {entry.data.image && (
-                <img
-                  src={entry.data.image}
-                  alt={entry.data.title}
-                  class='aspect-[16/9] w-full object-cover'
-                />
-              )}
-              <div class='p-6'>
-                <h2 class='text-xl font-semibold tracking-tight md:text-2xl'>{entry.data.title}</h2>
-                {entry.data.subtitle && <p class='mt-2 line-clamp-2 text-stone-600'>{entry.data.subtitle}</p>}
-                {entry.data.tags && entry.data.tags.length > 0 && (
-                  <div class='mt-4 flex flex-wrap gap-2 text-sm text-stone-700'>
-                    {entry.data.tags.map((tag) => (
-                      <span class='inline-flex items-center rounded-full border border-stone-200 px-2.5 py-1'>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-                <div class='mt-4 text-sm font-medium text-stone-700 group-hover:text-stone-900'>Read playbook →</div>
-              </div>
-            </a>
-          </li>
-        ))
+      return {
+        title: data.title,
+        description: data.description,
+        image: data.image.src,
+        author: authorName,
+        date: formattedDate,
+        tags: data.tags.map((tag) => ({
+          name: tagNames[tag],
+          color: tagColors[tag]
+        })),
+        href: `/playbooks/${slug}`
       }
-    </ul>
-  </section>
+    })}
+  />
 </Layout>

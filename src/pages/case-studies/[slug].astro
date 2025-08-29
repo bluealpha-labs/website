@@ -1,0 +1,50 @@
+---
+import { ContentContainer } from '#components/content/content-container.tsx'
+import { ContentHeader02 } from '#components/content/content-header/content-header-02.tsx'
+import { ContentProse } from '#components/content/content-prose.tsx'
+import { ContentWrapper } from '#components/content/content-wrapper.tsx'
+import { Quote } from '#components/content/quote.tsx'
+import { tagColors, tagNames } from '#constants/case-study.ts'
+import Layout from '#layouts/layout.astro'
+import { formatDate } from '#utils/format.ts'
+import { getCollection } from 'astro:content'
+
+export async function getStaticPaths() {
+  const collection = await getCollection('caseStudies')
+  const published = collection.filter((entry) => entry.data.status === 'published')
+  return published.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }))
+}
+
+const {
+  entry: { data, render }
+} = Astro.props
+
+const { Content } = await render()
+
+const formattedDate = formatDate(data.date)
+---
+
+<Layout className='py-20'>
+  <ContentHeader02
+    label={`Published ${formattedDate}`}
+    title={data.title}
+    image={data.image.src}
+    description={data.description}
+    tags={data.tags.map((tag) => ({
+      name: tagNames[tag],
+      color: tagColors[tag]
+    }))}
+  />
+  <ContentContainer>
+    <ContentWrapper>
+      <ContentProse>
+        <Quote
+          quote={data.testimonial.quote}
+          author={data.testimonial.author}
+          title={data.testimonial.title}
+        />
+        <Content />
+      </ContentProse>
+    </ContentWrapper>
+  </ContentContainer>
+</Layout>

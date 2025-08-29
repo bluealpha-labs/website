@@ -1,21 +1,95 @@
 ---
-import ContentDescription from '#components/content2/content-description.astro'
-import ContentTitle from '#components/content2/content-title.astro'
-import Content from '#components/content2/content.astro'
 import Layout from '#layouts/layout.astro'
-import CaseStudyGrid from './_components/case-study-grid.astro'
-import Section from './_components/section.astro'
+import { getCollection } from 'astro:content'
+import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
+import { companyLogos, companyNames, tagColors, tagNames } from '#constants/case-study.ts'
+import { formatDate } from '#utils/format.ts'
+import { RemainingContent } from '#components/content/remaining-content/remaining-content.tsx'
+import { RemainingContentTitle } from '#components/content/remaining-content/remaining-content-title.tsx'
+import { RemainingContentGrid } from '#components/content/remaining-content/remaining-content-grid.tsx'
+import { RemainingContentGridItem } from '#components/content/remaining-content/remaining-content-grid-item.tsx'
+import { ContentGroup } from '#components/content/content-group.tsx'
+import { ContentCardImageLink } from '#components/content/content-card/content-card-image-link.tsx'
+import { ContentCardImage } from '#components/content/content-card/content-card-image.tsx'
+import { ContentCardMetadata } from '#components/content/content-card/content-card-metadata.tsx'
+import { ContentCardTitle } from '#components/content/content-card/content-card-title.tsx'
+import { ContentCardDescription } from '#components/content/content-card/content-card-description.tsx'
+import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
+import { Badge } from '#components/badge.tsx'
+
+const collection = await getCollection('caseStudies')
+const published = collection.filter((entry) => entry.data.status === 'published')
+const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
 ---
 
-<Layout>
-  <Section>
-    <Content>
-      <ContentTitle>Case Studies</ContentTitle>
-      <ContentDescription>
-        See how leading brands discovered their true incremental ROI and transformed their marketing efficiency with
-        BlueAlpha.
-      </ContentDescription>
-    </Content>
-    <CaseStudyGrid />
-  </Section>
+<Layout 
+  className='py-20'
+  title='Case Studies | BlueAlpha Success Stories'
+  description='Discover how leading brands use BlueAlpha to optimize marketing performance. Real-world examples of incrementality testing, MMM implementation, and marketing optimization.'
+  keywords='case studies, success stories, marketing optimization, incrementality testing examples, MMM case studies'
+>
+  <ContentHeader01
+    label='Case studies'
+    title='See how BlueAlpha is helping companies build with AI'
+    description='BlueAlpha is rewriting how marketing technology is engineered. If you want to push agentic AI beyond the lab and into production at scale, this is your chance.'
+  />
+  <RemainingContent>
+    <RemainingContentTitle>All case studies</RemainingContentTitle>
+    <RemainingContentGrid>
+      {
+        sorted.map(({ data, slug }) => {
+          const companyName = companyNames[data.company]
+          const CompanyLogo = companyLogos[data.company]
+          const formattedDate = formatDate(data.date)
+
+          return (
+            <RemainingContentGridItem key={data.title}>
+              <ContentGroup
+                direction='column'
+                gap={4}>
+                <ContentCardImageLink
+                  className='relative'
+                  href={`/case-studies/${slug}`}>
+                  <CompanyLogo className='absolute top-1/2 h-12 left-1/2 -translate-x-1/2 -translate-y-1/2 text-gray-25' />
+                  <ContentCardImage
+                    src={data.image.src}
+                    alt={`${companyName} case study: ${data.title}`}
+                  />
+                </ContentCardImageLink>
+                <ContentGroup
+                  direction='column'
+                  gap={6}>
+                  <ContentGroup
+                    direction='column'
+                    gap={2}>
+                    <ContentCardMetadata>
+                      {companyName} • {formattedDate}
+                    </ContentCardMetadata>
+                    <ContentGroup
+                      direction='column'
+                      gap={1}>
+                      <ContentCardTitle href={`/case-studies/${slug}`}>{data.title}</ContentCardTitle>
+                      <ContentCardDescription>{data.description}</ContentCardDescription>
+                    </ContentGroup>
+                  </ContentGroup>
+                  <ContentGroup gap={2}>
+                    {data.tags.map((tag) => {
+                      const name = tagNames[tag]
+                      const color = tagColors[tag]
+
+                      return (
+                        <ContentCardTagLink key={name}>
+                          <Badge color={color}>{name}</Badge>
+                        </ContentCardTagLink>
+                      )
+                    })}
+                  </ContentGroup>
+                </ContentGroup>
+              </ContentGroup>
+            </RemainingContentGridItem>
+          )
+        })
+      }
+    </RemainingContentGrid>
+  </RemainingContent>
 </Layout>

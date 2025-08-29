@@ -20,7 +20,7 @@ export function Box({ index, isInView, icon: Icon, position, className }: BoxPro
   return (
     <motion.div
       className={cn(
-        'absolute flex size-12 items-center justify-center rounded-2xl bg-stone-100 sm:size-16 md:size-20',
+        'absolute flex size-12 items-center justify-center rounded-2xl bg-gray-100 sm:size-16 md:size-20',
         className
       )}
       style={{ top: position.top, left: position.left }}
@@ -55,7 +55,7 @@ export function Box({ index, isInView, icon: Icon, position, className }: BoxPro
           delay: floatDelay
         }
       }}>
-      <Icon className='size-6 text-stone-600 sm:size-8 md:size-10' />
+      <Icon className='size-6 text-gray-600 sm:size-8 md:size-10' />
     </motion.div>
   )
 }

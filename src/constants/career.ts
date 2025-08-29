@@ -1,7 +1,8 @@
-export const departments = ['engineering'] as const
+export const departments = ['design', 'engineering'] as const
 export type Department = (typeof departments)[number]
 
 export const departmentNames = {
+  design: 'Design',
   engineering: 'Engineering'
 } as const satisfies Record<Department, string>
 

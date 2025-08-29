@@ -1,12 +1,12 @@
 ---
-title: Winning Market Share in Consumer AI SaaS (2025-2027)
+title: 'Winning Market Share in Consumer AI SaaS (2025-2027)'
 description: 'A CFO-proof growth system: incrementality-first MMM, GeoLift, and 10+ tests/week'
-author: matthias
-tags: [growth, saas]
+image: '#assets/backgrounds/background-1.png'
+author: 'matthias'
 date: 2025-07-21
 time: 10
-image: /playbooks/consumer-ai/growth-leader-scorecard.webp
-status: published
+tags: ['growth', 'saas']
+status: 'published'
 ---
 
 ## Why this playbook exists
@@ -70,7 +70,7 @@ _Threats_ → big-tech bundles eroding willingness to pay; GPU cost volatility.
 
 _Objectives, Victory Conditions & Metrics_
 
-![Growth leader scorecard](/playbooks/consumer-ai/growth-leader-scorecard.webp)
+![Growth leader scorecard](#/assets/playbooks/consumer-ai/growth-leader-scorecard.webp)
 
 ## Success definition
 
@@ -240,14 +240,14 @@ _Quality checklist_
 - Post-test decision written before the test starts.
 - Lift fed back into MMM the same day results lock.
 
-![Incrementality tests](/playbooks/consumer-ai/tests.webp)
+![Incrementality tests](#/assets/playbooks/consumer-ai/tests.webp)
 
 > **Best practice:** Run lots of cheap tests, but treat incrementality tests like capital projects. Two high-confidence GeoLift studies per month drive more margin than twenty guess-and-check budget tweaks.
 
 **Benchmarks & dashboards**
 Your dashboard template should show separate panels: **Rapid tests** on the left, **GeoLift tests** on the right, so executives see both the volume of learning and the big dollar shifts.
 
-![Tests dashboard](/playbooks/consumer-ai/tests-dashboard.webp)
+![Tests dashboard](#/assets/playbooks/consumer-ai/tests-dashboard.webp)
 
 ### Phase 4 - Spend orchestration
 
@@ -307,7 +307,7 @@ _Steps_
 2. Map tests to financial impact → cumulative incremental ARR by channel/campaign.
 3. Set next-quarter OKRs; archive orphan road-map items.
 
-![MMM GeoLift stack](/playbooks/consumer-ai/mmm-geolift-stack.webp)
+![MMM GeoLift stack](#/assets/playbooks/consumer-ai/mmm-geolift-stack.webp)
 
 _Checklist_
 
@@ -333,13 +333,13 @@ _Third row →_ Cash runway, burn multiple.
 | Incremental ROAS negative after GeoLift | Pause channel; rerun creative test; cross-check cannibalization in MMM                                              |
 | CAC pay-back > 10 months in Phase 4     | Re-run channel incrementality test. Cut bottom quartile creatives. Cut spend on channels with <1.5 incremental ROAS |
 | Test win rate <15% in Phase 3           | Review hypothesis quality; enforce pre-registration; raise minimum detectable effect.                               |
-| NRR <100% at Phase 5 review             | Trigger expansion nudges tied to power-user milestones.                                                             |
+| NRR <100% at Phase 5 review             | Trigger expansion nudges tied to power-user milegrays.                                                              |
 
 ## Benchmark cheat-sheet
 
 _What good looks like for 90-day retention in consumer AI SaaS_
 
-![Retention benchmark cheat sheet](/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)
+![Retention benchmark cheat sheet](#/assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)
 
 | Cohort benchmark                                       | 30-day retention | 60-day retention | 90-day retention | Source                                                                                                                                |
 | ------------------------------------------------------ | ---------------- | ---------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |

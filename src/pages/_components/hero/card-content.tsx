@@ -7,21 +7,21 @@ export type CardContentProps = {
 }
 
 export function CardContent({ insight, result, position = 0 }: CardContentProps) {
-  const bgColors = ['bg-white', 'bg-stone-50', 'bg-stone-100']
+  const bgColors = ['bg-white', 'bg-gray-50', 'bg-gray-100']
   const bgColor = bgColors[position] || bgColors[bgColors.length - 1]
 
   return (
     <div
       className={cn(
-        'flex flex-col gap-5 rounded-3xl border border-stone-50 p-5 shadow-2xl shadow-stone-900/10 sm:gap-6 sm:p-6',
+        'flex flex-col gap-5 rounded-3xl border border-gray-50 p-5 shadow-2xl shadow-gray-900/10 sm:gap-6 sm:p-6',
         bgColor
       )}>
       <div className='flex flex-col gap-2'>
-        <span className='w-fit rounded-full bg-stone-50 px-3 py-1.5 font-mono text-xs font-semibold tracking-[.01em] text-stone-800 sm:px-4'>
+        <span className='w-fit rounded-full bg-gray-50 px-3 py-1.5 font-mono text-xs font-semibold tracking-[.01em] text-gray-800 sm:px-4'>
           ACTION
         </span>
-        <div className='rounded-2xl bg-stone-50 px-3 py-2.5 sm:px-4 sm:py-3'>
-          <p className='text-base leading-relaxed font-semibold text-stone-800 sm:text-lg'>{insight}</p>
+        <div className='rounded-2xl bg-gray-50 px-3 py-2.5 sm:px-4 sm:py-3'>
+          <p className='text-base leading-relaxed font-semibold text-gray-800 sm:text-lg'>{insight}</p>
         </div>
       </div>
 

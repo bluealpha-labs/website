@@ -6,10 +6,7 @@ export type CircleProps = ComponentProps<'div'>
 export function Circle({ className, ...props }: CircleProps) {
   return (
     <div
-      className={cn(
-        'z-10 flex size-12 items-center justify-center rounded-full bg-stone-100 text-stone-600',
-        className
-      )}
+      className={cn('z-10 flex size-12 items-center justify-center rounded-full bg-gray-100 text-gray-600', className)}
       {...props}
     />
   )

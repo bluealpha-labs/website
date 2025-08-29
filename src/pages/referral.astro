@@ -1,0 +1,38 @@
+---
+import { ContentProse } from '#components/content/content-prose.tsx'
+import Layout from '#layouts/layout.astro'
+import ReferralContent from '#/content/pages/referral.md'
+import { ContentContainer } from '#components/content/content-container.tsx'
+import { ContentWrapper } from '#components/content/content-wrapper.tsx'
+import { ContentHeader } from '#components/content/content-header/content-header.tsx'
+import { ContentHeaderContainer } from '#components/content/content-header/content-header-container.tsx'
+import { ContentHeaderWrapper } from '#components/content/content-header/content-header-wrapper.tsx'
+import { ContentHeaderLabel } from '#components/content/content-header/content-header-label.tsx'
+import { ContentHeaderTitle } from '#components/content/content-header/content-header-title.tsx'
+import { ContentHeaderImage } from '#components/content/content-header/content-header-image.tsx'
+import background1 from '#assets/backgrounds/background-1.png'
+import { ContentHeaderDescription } from '#components/content/content-header/content-header-description.tsx'
+---
+
+<Layout className='py-20'>
+  <ContentHeader>
+    <ContentHeaderContainer>
+      <ContentHeaderWrapper>
+        <ContentHeaderLabel>Referral program</ContentHeaderLabel>
+        <ContentHeaderTitle>Building a partnership that benefits everyone involved</ContentHeaderTitle>
+        <ContentHeaderDescription>How to refer a customer and receive 15% commission.</ContentHeaderDescription>
+      </ContentHeaderWrapper>
+      <ContentHeaderImage
+        src={background1.src}
+        alt='Referral program'
+      />
+    </ContentHeaderContainer>
+  </ContentHeader>
+  <ContentContainer>
+    <ContentWrapper>
+      <ContentProse>
+        <ReferralContent />
+      </ContentProse>
+    </ContentWrapper>
+  </ContentContainer>
+</Layout>

@@ -1,54 +1,61 @@
+import { Badge, type BadgeProps } from '#components/badge.tsx'
+import { ContentGroup } from '../content-group'
 import { ContentCardDescription } from './content-card-description'
-import { ContentCardGroup } from './content-card-group'
 import { ContentCardImage } from './content-card-image'
 import { ContentCardImageLink } from './content-card-image-link'
+import { ContentCardImageTitle } from './content-card-image-title'
 import { ContentCardMetadata } from './content-card-metadata'
 import { ContentCardTagLink } from './content-card-tag-link'
 import { ContentCardTitle } from './content-card-title'
 
-export type ContentCard01Props = {
-  author: string
-  date: string
-  href: string
+type Props = {
   title: string
   description: string
-  tags: { name: string; color: string }[]
+  image: string
+  author: string
+  date: string
+  tags: { name: string; color: BadgeProps['color'] }[]
+  href: string
 }
 
-export function ContentCard01({ author, date, href, title, description, tags }: ContentCard01Props) {
+export function ContentCard01({ title, description, image, author, date, tags, href }: Props) {
   return (
-    <ContentCardGroup
+    <ContentGroup
       direction='column'
       gap={4}>
-      <ContentCardImageLink>
-        <ContentCardImage />
+      <ContentCardImageLink href={href}>
+        <ContentCardImageTitle>{title}</ContentCardImageTitle>
+        <ContentCardImage
+          src={image}
+          alt={title}
+        />
       </ContentCardImageLink>
-      <ContentCardGroup
+      <ContentGroup
         direction='column'
         gap={6}>
-        <ContentCardGroup
+        <ContentGroup
           direction='column'
           gap={2}>
           <ContentCardMetadata>
             {author} • {date}
           </ContentCardMetadata>
-          <ContentCardGroup
+          <ContentGroup
             direction='column'
             gap={1}>
             <ContentCardTitle href={href}>{title}</ContentCardTitle>
             <ContentCardDescription>{description}</ContentCardDescription>
-          </ContentCardGroup>
-        </ContentCardGroup>
-        <ContentCardGroup gap={2}>
+          </ContentGroup>
+        </ContentGroup>
+        <ContentGroup
+          className='flex-wrap'
+          gap={2}>
           {tags.map(({ name, color }) => (
-            <ContentCardTagLink
-              key={name}
-              style={{ backgroundColor: color }}>
-              {name}
+            <ContentCardTagLink key={name}>
+              <Badge color={color}>{name}</Badge>
             </ContentCardTagLink>
           ))}
-        </ContentCardGroup>
-      </ContentCardGroup>
-    </ContentCardGroup>
+        </ContentGroup>
+      </ContentGroup>
+    </ContentGroup>
   )
 }
