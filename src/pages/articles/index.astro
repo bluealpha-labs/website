@@ -22,6 +22,7 @@ import { RemainingContent } from '#components/content/remaining-content/remainin
 import { RemainingContentTitle } from '#components/content/remaining-content/remaining-content-title.tsx'
 import { RemainingContentGrid } from '#components/content/remaining-content/remaining-content-grid.tsx'
 import { RemainingContentGridItem } from '#components/content/remaining-content/remaining-content-grid-item.tsx'
+import { pageTitle } from '#utils/seo.ts'
 
 const collection = await getCollection('articles')
 const published = collection.filter((entry) => entry.data.status === 'published')
@@ -32,7 +33,7 @@ const remaining = sorted.slice(3)
 
 <Layout
   className='py-20'
-  title='Marketing Articles & Insights | BlueAlpha'
+  title={pageTitle('Articles')}
   description='Expert insights on marketing measurement, MMM, incrementality testing, and growth strategies. Learn how to optimize your marketing performance with data-driven approaches.'
   keywords='marketing articles, MMM guides, incrementality testing, marketing measurement, growth strategies, marketing analytics'>
   <ContentHeader01

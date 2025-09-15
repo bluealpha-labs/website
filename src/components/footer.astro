@@ -4,13 +4,17 @@ import { Logo } from './logo'
 
 const year = new Date().getFullYear()
 
-const navLinks = [
+const companyLinks = [
   { href: '/', label: 'Home' },
-  { href: '/articles', label: 'Articles' },
-  { href: '/playbooks', label: 'Playbooks' },
-  { href: '/case-studies', label: 'Case studies' },
   { href: '/careers', label: 'Careers' },
   { href: '/referral', label: 'Referral program' }
+]
+
+// Keep order consistent with header: Case studies → Playbooks → Articles
+const contentLinks = [
+  { href: '/case-studies', label: 'Case studies' },
+  { href: '/playbooks', label: 'Playbooks' },
+  { href: '/articles', label: 'Articles' }
 ]
 
 const socialLinks = [
@@ -27,8 +31,8 @@ const legalLinks = [
 
 <footer class='sticky bottom-0 -mt-8 bg-gray-900 px-5 pt-18 pb-12 text-white md:h-119 md:px-29 md:pt-26 md:pb-7'>
   <div
-    class='grid grid-cols-1 gap-8 md:h-full md:grid-cols-[1fr_auto_auto] md:grid-rows-[1fr_auto] md:gap-x-12 md:gap-y-0 lg:grid-cols-[1fr_192px_192px] lg:gap-x-0'>
-    <!-- Logo section -->
+    class='grid grid-cols-1 gap-8 md:h-full md:grid-cols-[1fr_auto_auto_auto] md:grid-rows-[1fr_auto] md:gap-x-12 md:gap-y-0 lg:grid-cols-[1fr_192px_192px_192px] lg:gap-x-0'>
+    <!-- Logo + tagline (left aligned) -->
     <div class='flex flex-col gap-4'>
       <Logo className='fill-white' />
       <p class='text-base font-[450] tracking-[.01em] text-gray-400'>
@@ -36,36 +40,33 @@ const legalLinks = [
       </p>
     </div>
 
-    <!-- Nav links -->
-    <div class='grid grid-cols-2 gap-14 md:block md:gap-0'>
-      <div class='flex flex-col gap-2'>
-        {
-          navLinks.map((link) => (
-            <Link
-              color='inverse'
-              href={link.href}>
-              {link.label}
-            </Link>
-          ))
-        }
-      </div>
-
-      <!-- Social links - mobile only in grid -->
-      <div class='flex flex-col gap-2 md:hidden'>
-        {
-          socialLinks.map((link) => (
-            <Link
-              color='inverse'
-              href={link.href}
-              target={link.target}>
-              {link.label}
-            </Link>
-          ))
-        }
-      </div>
+    <!-- Company links column (desktop: right cluster, first) -->
+    <div class='hidden md:flex md:flex-col md:gap-2'>
+      {
+        companyLinks.map((link) => (
+          <Link
+            color='inverse'
+            href={link.href}>
+            {link.label}
+          </Link>
+        ))
+      }
     </div>
 
-    <!-- Social links - desktop only -->
+    <!-- Content links column (desktop: right cluster, second) -->
+    <div class='hidden md:flex md:flex-col md:gap-2'>
+      {
+        contentLinks.map((link) => (
+          <Link
+            color='inverse'
+            href={link.href}>
+            {link.label}
+          </Link>
+        ))
+      }
+    </div>
+
+    <!-- Social links - desktop only (right cluster, third) -->
     <div class='hidden md:flex md:flex-col md:gap-2'>
       {
         socialLinks.map((link) => (
@@ -77,6 +78,44 @@ const legalLinks = [
           </Link>
         ))
       }
+    </div>
+
+    <!-- Mobile-only: two columns (left: company + social; right: content) -->
+    <div class='grid grid-cols-2 gap-8 md:hidden'>
+      <div class='flex flex-col gap-2'>
+        {
+          companyLinks.map((link) => (
+            <Link
+              color='inverse'
+              href={link.href}>
+              {link.label}
+            </Link>
+          ))
+        }
+        <div class='mt-4 flex flex-col gap-2'>
+          {
+            socialLinks.map((link) => (
+              <Link
+                color='inverse'
+                href={link.href}
+                target={link.target}>
+                {link.label}
+              </Link>
+            ))
+          }
+        </div>
+      </div>
+      <div class='flex flex-col gap-2'>
+        {
+          contentLinks.map((link) => (
+            <Link
+              color='inverse'
+              href={link.href}>
+              {link.label}
+            </Link>
+          ))
+        }
+      </div>
     </div>
 
     <!-- Copyright -->

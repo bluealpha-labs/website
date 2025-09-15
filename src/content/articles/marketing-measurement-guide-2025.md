@@ -34,7 +34,7 @@ Imagine your brand is allocating 70% of its marketing budget to middle-of-funnel
 
 ### Moving Beyond Attribution: Understanding True Value
 
-BlueAlpha’s approach to marketing measurement tackles this challenge head-on through a combination of [marketing mix modeling (MMM)](/articles/what-is-media-mix-modeling), AI-powered budget optimization, and automated [incrementality testing](/articles/incrementality-testing-implementation-guide).
+BlueAlpha’s approach to marketing measurement tackles this challenge head-on through a combination of [marketing mix modeling (MMM)](/articles/what-is-media-mix-modeling), AI-powered budget optimization, and automated [incrementality testing](/articles/how-to-implement-incrementality-testing).
 
 By moving beyond traditional attribution models, BlueAlpha empowers CMOs to measure the true impact of channels and campaigns on sales and revenue, and make informed decisions.
 

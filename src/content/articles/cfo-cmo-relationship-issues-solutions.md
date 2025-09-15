@@ -3,7 +3,8 @@ title: 'How to Solve the Issues Plaguing the CFO-CMO Relationship'
 description: 'Address common CFO-CMO relationship challenges through improved communication, measurement techniques, and strategic alignment for better business outcomes.'
 image: '#/assets/backgrounds/background-6.png'
 author: 'peter'
-date: 2025-01-30
+date: 2024-08-13
+category: 'Leadership'
 time: 5
 tags: ['leadership', 'measurement', 'mmm']
 status: 'published'

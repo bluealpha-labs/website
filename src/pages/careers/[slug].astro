@@ -11,6 +11,7 @@ import { ContentWrapper } from '#components/content/content-wrapper.tsx'
 import { departmentNames } from '#constants/career.ts'
 import Layout from '#layouts/layout.astro'
 import { getCollection } from 'astro:content'
+import { careersDetailTitle } from '#utils/seo.ts'
 
 export async function getStaticPaths() {
   const collection = await getCollection('careers')
@@ -27,7 +28,7 @@ const { Content } = await render()
 const departmentName = departmentNames[data.department]
 ---
 
-<Layout className='py-20'>
+<Layout className='py-20' title={careersDetailTitle(data.title)}>
   <ContentHeader>
     <ContentHeaderContainer>
       <ContentHeaderWrapper>

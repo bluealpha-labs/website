@@ -79,7 +79,7 @@ Attribution answers the question, “_Which tracked event happened latest before
 Causal measurement rests on three legs:
 
 - **[Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling)**: A top‑down statistical regression that ingests spend, media exposure, seasonality, price, promotions, and external factors, then returns marginal ROI curves by channel and interactions between channels. Modern MMM, [including our BlueAlpha approach](/articles/cmo-guide-before-investing-in-mmm), refreshes weekly, not yearly, thanks to Bayesian priors and GPU acceleration.
-- **[Incrementality testing](/articles/incrementality-testing-implementation-guide)**: Geo splits, matched‑market tests, ghost ads, or randomized holdouts. They deliver yes‑or‑no answers about lift, and they also feed stronger priors back into the MMM.
+ - **[Incrementality testing](/articles/how-to-implement-incrementality-testing)**: Geo splits, matched‑market tests, ghost ads, or randomized holdouts. They deliver yes‑or‑no answers about lift, and they also feed stronger priors back into the MMM.
 - **Scenario simulation**: Once you own marginal ROI curves, you can run what‑if scenarios. Move 20 percent of prospecting budget from Meta to TikTok and see the predicted profit delta before risking real dollars ([see a real-world case study here](https://bluealpha.ai/case-studies/how-beehiiv-transformed-its-marketing-efficiency-with-bluealpha/)).
 
 Collectively these tools expose diminishing returns in precise dollar terms and free you to invest where incrementality is highest.

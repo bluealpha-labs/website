@@ -5,8 +5,11 @@ import { $showCta } from '#stores/show-cta.tsx'
 import { snappyTransition } from '#utils/transitions.ts'
 import { useStore } from '@nanostores/react'
 import { AnimatePresence } from 'motion/react'
+import { buttonStyles } from '#components/button.tsx'
 
-export function DesktopNav() {
+type Props = { isHome: boolean }
+
+export function DesktopNav({ isHome }: Props) {
   const showCta = useStore($showCta)
 
   return (
@@ -21,9 +24,9 @@ export function DesktopNav() {
           </a>
         </div>
         <Link
-          className='max-sm:hidden'
-          href='/articles'>
-          Articles
+          className='max-sm:text-sm'
+          href='/case-studies'>
+          Case studies
         </Link>
         <Link
           className='max-sm:hidden'
@@ -31,25 +34,38 @@ export function DesktopNav() {
           Playbooks
         </Link>
         <Link
-          className='max-sm:text-sm'
-          href='/case-studies'>
-          Case studies
+          className='max-sm:hidden'
+          href='/articles'>
+          Articles
         </Link>
         <Link
           className='max-sm:text-sm'
           href='/careers'>
           Careers
         </Link>
-        <AnimatePresence mode='popLayout'>
-          {showCta && (
-            <CallWithFounder
-              className='-me-2 px-3 py-2 text-sm sm:-me-3 sm:px-4 sm:py-2.5 sm:text-base'
-              initial={{ y: 20, opacity: 0, transition: snappyTransition }}
-              animate={{ y: 0, opacity: 1, transition: snappyTransition }}
-              exit={{ y: 20, opacity: 0, transition: snappyTransition }}
-            />
-          )}
-        </AnimatePresence>
+        {!isHome ? (
+          <a
+            href='https://cal.com/team/bluealpha/call-with-bluealpha'
+            target='_blank'
+            rel='noopener noreferrer'
+            className={buttonStyles({}) + ' -me-2 px-3 py-2 text-sm sm:-me-3 sm:px-4 sm:py-2.5 sm:text-base'}
+            aria-label='Book a demo'>
+            <span className='sm:hidden'>Demo</span>
+            <span className='hidden sm:inline'>Book a demo</span>
+          </a>
+        ) : (
+          <AnimatePresence mode='popLayout'>
+            {showCta && (
+              <CallWithFounder
+                href='https://cal.com/team/bluealpha/call-with-bluealpha'
+                className='-me-2 px-3 py-2 text-sm sm:-me-3 sm:px-4 sm:py-2.5 sm:text-base'
+                initial={{ y: 20, opacity: 0, transition: snappyTransition }}
+                animate={{ y: 0, opacity: 1, transition: snappyTransition }}
+                exit={{ y: 20, opacity: 0, transition: snappyTransition }}
+              />
+            )}
+          </AnimatePresence>
+        )}
       </nav>
     </div>
   )

@@ -28,7 +28,7 @@ const {
   noindex = false
 } = Astro.props
 
-const siteURL = 'https://www.bluealpha.ai'
+const siteURL = 'https://bluealpha.ai'
 const fullCanonicalURL = canonicalURL || new URL(Astro.url.pathname, siteURL).href
 const fullOGImage = ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteURL).href
 ---

@@ -3,7 +3,8 @@ title: 'Why Your Marketing Agency Needs MMM and Incrementality Testing'
 description: 'Strategic guide for marketing agencies to differentiate with MMM and incrementality testing, delivering superior client value and results.'
 image: '#/assets/backgrounds/background-15.png'
 author: 'matthias'
-date: 2025-04-21
+date: 2024-10-20
+category: 'Marketing Agencies'
 time: 12
 tags: ['agencies', 'mmm']
 status: 'published'

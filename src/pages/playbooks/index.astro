@@ -6,13 +6,14 @@ import { authorNames } from '#constants/author.ts'
 import { RemainingContent01 } from '#components/content/remaining-content/remaining-content-01.tsx'
 import { tagColors, tagNames } from '#constants/playbook.ts'
 import { formatDate } from '#utils/format.ts'
+import { pageTitle } from '#utils/seo.ts'
 
 const collection = await getCollection('playbooks')
 const published = collection.filter((entry) => entry.data.status === 'published')
 const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
 ---
 
-<Layout className='py-20'>
+<Layout className='py-20' title={pageTitle('Playbooks')}>
   <ContentHeader01
     label='Playbooks'
     title='Learn how to build with BlueAlpha'

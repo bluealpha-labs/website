@@ -1,0 +1,21 @@
+---
+import Layout from '#layouts/layout.astro'
+---
+
+<Layout title='Page Not Found | BlueAlpha' noindex={true}>
+  <section class='flex min-h-[60vh] items-center justify-center px-4 py-24 md:px-8'>
+    <div class='mx-auto max-w-3xl text-center'>
+      <h1 class='mb-4 text-4xl font-[650] tracking-[-.01em] md:text-5xl'>Page not found</h1>
+      <p class='mx-auto mb-8 max-w-xl text-lg text-gray-600'>
+        Sorry, we couldn’t find the page you were looking for. Try one of these instead.
+      </p>
+      <div class='flex flex-wrap items-center justify-center gap-3'>
+        <a class='rounded-full bg-blue-600 px-5 py-2.5 font-semibold text-white hover:bg-blue-700' href='/'>Home</a>
+        <a class='rounded-full border border-gray-200 px-5 py-2.5 font-semibold hover:border-gray-300 hover:bg-gray-50' href='/case-studies/'>Case studies</a>
+        <a class='rounded-full border border-gray-200 px-5 py-2.5 font-semibold hover:border-gray-300 hover:bg-gray-50' href='/playbooks/'>Playbooks</a>
+        <a class='rounded-full border border-gray-200 px-5 py-2.5 font-semibold hover:border-gray-300 hover:bg-gray-50' href='/articles/'>Articles</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+

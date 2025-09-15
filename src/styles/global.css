@@ -60,3 +60,29 @@ input[type='number'] {
 input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
+
+/* Ensure anchored headings are not hidden by sticky nav */
+.prose :is(h2, h3) {
+  scroll-margin-top: 6rem;
+}
+
+/* Articles: hide duplicate H1 in body since header already shows title */
+.article-prose :is(h1):first-of-type {
+  display: none;
+}
+
+/* More space between blockquote border and text for playbooks */
+.prose.prose-quote-comfy :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
+  &:where(blockquote) {
+    padding-inline-start: calc(var(--spacing) * 4) !important;
+  }
+}
+
+/* Playbook-specific image adjustments */
+.playbook-prose :is(img[alt="Decision tree"]) {
+  width: 70% !important;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

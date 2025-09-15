@@ -29,7 +29,7 @@ status: 'published'
 
 ## 5 Warning Signs Your Current MMM Is Misleading You
 
-1.  **Lack of [Incrementality Testing](/articles/incrementality-testing-implementation-guide):** If your MMM vendor doesn’t integrate incrementality testing, their model may never fully validate its assumptions.
+1.  **Lack of [Incrementality Testing](/articles/how-to-implement-incrementality-testing):** If your MMM vendor doesn’t integrate incrementality testing, their model may never fully validate its assumptions.
 2.  **Static Channel Effectiveness:** Reports showing unchanging channel effectiveness (static betas) signal that the model isn’t adapting to real market dynamics.
 3.  **Overvalued High-Spend Channels:** Models that consistently overvalue high-spend channels might be misleading your budget decisions.
 4.  **Diminishing Returns Despite Recommendations:** Following model advice that still leads to declining returns is a red flag.

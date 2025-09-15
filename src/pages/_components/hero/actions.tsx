@@ -25,7 +25,7 @@ export function Actions() {
     <div
       ref={ref}
       className='flex gap-3'>
-      <CallWithFounder />
+      <CallWithFounder href='https://cal.com/team/bluealpha/call-with-bluealpha' />
       <Button
         variant='outline'
         onClick={scrollToNextSection}>

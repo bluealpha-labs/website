@@ -16,6 +16,7 @@ import { ContentCardTitle } from '#components/content/content-card/content-card-
 import { ContentCardDescription } from '#components/content/content-card/content-card-description.tsx'
 import { ContentCardTagLink } from '#components/content/content-card/content-card-tag-link.tsx'
 import { Badge } from '#components/badge.tsx'
+import { pageTitle } from '#utils/seo.ts'
 
 const collection = await getCollection('caseStudies')
 const published = collection.filter((entry) => entry.data.status === 'published')
@@ -24,7 +25,7 @@ const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.
 
 <Layout
   className='py-20'
-  title='Case Studies | BlueAlpha Success Stories'
+  title={pageTitle('Case Studies')}
   description='Discover how leading brands use BlueAlpha to optimize marketing performance. Real-world examples of incrementality testing, MMM implementation, and marketing optimization.'
   keywords='case studies, success stories, marketing optimization, incrementality testing examples, MMM case studies'>
   <ContentHeader01

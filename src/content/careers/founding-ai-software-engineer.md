@@ -1,5 +1,5 @@
 ---
-title: 'Founding AI Software Engineer'
+title: 'Founding Software Engineer - AI'
 image: '#assets/backgrounds/background-1.png'
 department: 'engineering'
 locations: ['sf', 'remote']

@@ -5,9 +5,11 @@ import { ContentProse } from '#components/content/content-prose.tsx'
 import { ContentWrapper } from '#components/content/content-wrapper.tsx'
 import { Quote } from '#components/content/quote.tsx'
 import { tagColors, tagNames } from '#constants/case-study.ts'
+import { companyNames } from '#constants/case-study.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
+import { caseStudyDetailTitle } from '#utils/seo.ts'
 
 export async function getStaticPaths() {
   const collection = await getCollection('caseStudies')
@@ -22,9 +24,41 @@ const {
 const { Content } = await render()
 
 const formattedDate = formatDate(data.date)
+const companyName = companyNames[data.company]
+const caseStudyUrl = `https://bluealpha.ai${Astro.url.pathname}`
+const keywords = data.tags.map((tag) => tagNames[tag]).join(', ')
+const caseStudySchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  image: data.image.src.startsWith('http') ? data.image.src : `https://bluealpha.ai${data.image.src}`,
+  datePublished: data.date.toISOString(),
+  dateModified: data.date.toISOString(),
+  // Omit author to avoid misattribution; provide publisher only if desired
+  publisher: {
+    '@type': 'Organization',
+    name: 'BlueAlpha',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://bluealpha.ai/logo.svg'
+    }
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': caseStudyUrl
+  },
+  keywords
+}
 ---
 
-<Layout className='py-20'>
+<Layout
+  className='py-20'
+  title={caseStudyDetailTitle(companyName, data.title)}
+  description={data.description}
+  ogImage={data.image.src}
+  ogType='article'
+  keywords={keywords}>
   <ContentHeader02
     label={`Published ${formattedDate}`}
     title={data.title}
@@ -47,4 +81,9 @@ const formattedDate = formatDate(data.date)
       </ContentProse>
     </ContentWrapper>
   </ContentContainer>
+  <script
+    type='application/ld+json'
+    is:inline
+    set:html={JSON.stringify(caseStudySchema)}
+  />
 </Layout>

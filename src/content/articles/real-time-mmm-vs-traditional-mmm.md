@@ -6,7 +6,7 @@ author: 'peter'
 date: 2025-04-06
 time: 12
 tags: ['mmm', 'ai', 'measurement']
-status: 'published'
+status: 'draft'
 ---
 
 # The C-Suite Guide to AI Agents for Marketing | BlueAlpha

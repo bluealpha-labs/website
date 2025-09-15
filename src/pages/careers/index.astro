@@ -1,5 +1,6 @@
 ---
 import Layout from '#layouts/layout.astro'
+import { careersIndexTitle } from '#utils/seo.ts'
 import { getCollection } from 'astro:content'
 import { ContentHeader01 } from '#components/content/content-header/content-header-01.tsx'
 import { RemainingContentGridItem } from '#components/content/remaining-content/remaining-content-grid-item.tsx'
@@ -13,7 +14,7 @@ const collection = await getCollection('careers')
 const published = collection.filter((entry) => entry.data.status === 'published')
 ---
 
-<Layout className='py-20'>
+<Layout className='py-20' title={careersIndexTitle()}>
   <ContentHeader01
     label='Careers'
     title='Join the BlueAlpha team'

@@ -4,10 +4,13 @@ import { ContentHeader02 } from '#components/content/content-header/content-head
 import { ContentProse } from '#components/content/content-prose.tsx'
 import { ContentWrapper } from '#components/content/content-wrapper.tsx'
 import { tagColors, tagNames } from '#constants/playbook.ts'
+import { authorNames } from '#constants/author.ts'
 import Layout from '#layouts/layout.astro'
 import { formatDate } from '#utils/format.ts'
 import { getCollection } from 'astro:content'
 import { PlaybookCta } from './_components/playbook-cta'
+import { pageTitle } from '#utils/seo.ts'
+import { TableOfContents } from '#components/content/table-of-contents.tsx'
 
 export async function getStaticPaths() {
   const collection = await getCollection('playbooks')
@@ -19,14 +22,43 @@ const {
   entry: { data, render }
 } = Astro.props
 
-const { Content } = await render()
+const { Content, headings } = await render()
 
 const formattedDate = formatDate(data.date)
+const authorName = authorNames[data.author]
+const playbookUrl = `https://bluealpha.ai${Astro.url.pathname}`
+const keywords = [data.category, ...data.tags.map((tag) => tagNames[tag])].filter(Boolean).join(', ')
+const playbookSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: data.title,
+  description: data.description,
+  image: data.image.src.startsWith('http') ? data.image.src : `https://bluealpha.ai${data.image.src}`,
+  datePublished: data.date.toISOString(),
+  dateModified: data.date.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: authorName
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': playbookUrl
+  },
+  keywords
+}
 ---
 
-<Layout className='py-20'>
+<Layout
+  className='py-20'
+  title={pageTitle(data.title)}
+  description={data.description}
+  ogImage={data.image.src}
+  ogType='article'
+  author={authorName}
+  publishedTime={data.date.toISOString()}
+  keywords={keywords}>
   <ContentHeader02
-    label={`Published ${formattedDate}`}
+    label={`${authorName} • ${formattedDate}`}
     title={data.title}
     image={data.image.src}
     description={data.description}
@@ -37,10 +69,16 @@ const formattedDate = formatDate(data.date)
   />
   <ContentContainer>
     <ContentWrapper>
-      <ContentProse>
+      <ContentProse className='prose-quote-comfy playbook-prose'>
+        <TableOfContents headings={headings} />
         <Content />
         <PlaybookCta client:visible />
       </ContentProse>
     </ContentWrapper>
   </ContentContainer>
+  <script
+    type='application/ld+json'
+    is:inline
+    set:html={JSON.stringify(playbookSchema)}
+  />
 </Layout>

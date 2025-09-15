@@ -12,9 +12,10 @@ import { ContentHeaderTitle } from '#components/content/content-header/content-h
 import { ContentHeaderImage } from '#components/content/content-header/content-header-image.tsx'
 import background1 from '#assets/backgrounds/background-1.png'
 import { ContentHeaderDescription } from '#components/content/content-header/content-header-description.tsx'
+import { referralTitle } from '#utils/seo.ts'
 ---
 
-<Layout className='py-20'>
+<Layout className='py-20' title={referralTitle()}>
   <ContentHeader>
     <ContentHeaderContainer>
       <ContentHeaderWrapper>

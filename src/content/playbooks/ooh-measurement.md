@@ -7,6 +7,7 @@ date: 2025-08-28
 time: 8
 tags: ['mmm']
 status: 'published'
+category: 'Out-of-Home Advertising'
 ---
 
 ## Why this playbook exists

@@ -2,14 +2,15 @@
 title: 'Why a CDP Is Not the Solution You Need Right Now'
 description: 'Critical analysis of Customer Data Platforms limitations and why alternative solutions may better address your current marketing needs.'
 image: '#/assets/backgrounds/background-16.png'
-author: 'peter'
-date: 2025-04-24
+author: 'matthias'
+date: 2024-08-13
+category: 'MarTech'
 time: 6
 tags: ['tools', 'privacy', 'measurement']
 status: 'published'
 ---
 
-# Why a CDP Is Not the Solution You Need Right Now | BlueAlpha
+ 
 
 ![Customer Data Platforms](#assets/articles/why-cdp-not-the-solution/customer-data-platforms.jpg)
 

@@ -32,6 +32,7 @@ const {
   modifiedTime,
   noindex
 }: Props = Astro.props
+const isHome = Astro.url.pathname === '/'
 ---
 
 <!doctype html>
@@ -59,7 +60,7 @@ const {
       ></iframe></noscript
     >
     <!-- End Google Tag Manager (noscript) -->
-    <DesktopNav client:load />
+    <DesktopNav isHome={isHome} client:load />
     <main class={cx('relative z-10 rounded-b-4xl bg-white', className)}>
       <slot />
     </main>

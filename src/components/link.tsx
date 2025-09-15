@@ -24,12 +24,18 @@ export const linkStyles = tv({
 
 export type LinkProps = ComponentProps<typeof motion.a> & VariantProps<typeof linkStyles>
 
-export function Link({ variant, color, className, ...props }: LinkProps) {
+export function Link({ variant, color, className, href, target, rel, ...props }: LinkProps) {
+  const isExternal = typeof href === 'string' && /^https?:\/\//.test(href)
+  const finalTarget = target ?? (isExternal ? '_blank' : undefined)
+  const finalRel = rel ?? (isExternal ? 'noopener noreferrer' : undefined)
   return (
     <motion.a
       layout
       className={linkStyles({ variant, color, className })}
       transition={snappyTransition}
+      href={href}
+      target={finalTarget}
+      rel={finalRel}
       {...props}
     />
   )

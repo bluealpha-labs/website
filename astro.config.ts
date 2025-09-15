@@ -3,10 +3,18 @@ import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import tailwindcss from '@tailwindcss/vite'
 import { defineConfig } from 'astro/config'
+import rehypeExternalLinks from './src/plugins/rehype-external-links'
 
 export default defineConfig({
-  site: 'https://www.bluealpha.ai',
-  integrations: [react(), sitemap(), mdx()],
+  site: 'https://bluealpha.ai',
+  integrations: [
+    react(),
+    sitemap(),
+    mdx({ rehypePlugins: [rehypeExternalLinks as any] })
+  ],
+  markdown: {
+    rehypePlugins: [rehypeExternalLinks as any]
+  },
   vite: { plugins: [tailwindcss()] },
   experimental: {
     fonts: [

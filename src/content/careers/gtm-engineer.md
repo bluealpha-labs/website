@@ -1,5 +1,5 @@
 ---
-title: 'Founding GTM Engineer'
+title: 'GTM Engineer'
 image: '#assets/backgrounds/background-2.png'
 department: 'engineering'
 locations: ['sf', 'remote']

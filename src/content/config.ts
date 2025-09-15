@@ -15,6 +15,7 @@ const articles = defineCollection({
       author: z.enum(authors),
       date: z.date(),
       time: z.number(),
+      category: z.string().optional(),
       tags: z.array(z.enum(articleTags)),
       status: z.enum(statuses)
     })
@@ -60,6 +61,7 @@ const playbooks = defineCollection({
       author: z.enum(authors),
       date: z.date(),
       time: z.number(),
+      category: z.string().optional(),
       tags: z.array(z.enum(playbookTags)),
       status: z.enum(statuses)
     })

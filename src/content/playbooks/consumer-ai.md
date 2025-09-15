@@ -7,6 +7,7 @@ date: 2025-07-21
 time: 10
 tags: ['growth', 'saas']
 status: 'published'
+category: 'Consumer AI'
 ---
 
 ## Why this playbook exists
@@ -339,7 +340,7 @@ _Third row →_ Cash runway, burn multiple.
 
 _What good looks like for 90-day retention in consumer AI SaaS_
 
-![Retention benchmark cheat sheet](#/assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)
+[![Retention benchmark cheat sheet](#assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)](#assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)
 
 | Cohort benchmark                                       | 30-day retention | 60-day retention | 90-day retention | Source                                                                                                                                |
 | ------------------------------------------------------ | ---------------- | ---------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -358,7 +359,17 @@ _What finally fixed attribution, retention, or both, according to peers who have
 
 _In the following deep-dive conversation, EJ White (former Head of Growth at beehiiv) shares how they allocate marketing budgets between brand awareness and direct response channels to achieve their 3x+ LTV:CAC target._
 
-[https://www.youtube.com/watch?v=scdI0xI5yEw](https://www.youtube.com/watch?v=scdI0xI5yEw)
+<div class="aspect-video">
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/scdI0xI5yEw"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## Closing
 

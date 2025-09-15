@@ -15,15 +15,31 @@ type Props = {
   image: string
   description: string
   tags: { name: string; color: BadgeProps['color']; href?: string }[]
+  author?: string
+  date?: string
+  dateTime?: string
 }
 
-export function ContentHeader02({ label, title, image, description, tags }: Props) {
+export function ContentHeader02({ label, title, image, description, tags, author, date, dateTime }: Props) {
   return (
     <ContentHeader>
       <ContentHeaderContainer>
         <ContentHeaderWrapper>
           <ContentHeaderLabel>{label}</ContentHeaderLabel>
           <ContentHeaderTitle>{title}</ContentHeaderTitle>
+          {(author || date) && (
+            <p className='mt-2 text-sm font-[500] text-gray-600'>
+              {author && (
+                <>
+                  By {author}
+                  {date ? ' • ' : ''}
+                </>
+              )}
+              {date && (
+                <time dateTime={dateTime}>{date}</time>
+              )}
+            </p>
+          )}
           <ContentHeaderDescription>{description}</ContentHeaderDescription>
           <ContentGroup
             className='mt-8'
