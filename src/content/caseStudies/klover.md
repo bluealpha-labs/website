@@ -14,8 +14,6 @@ tags: ["incrementality", "mmm"]
 status: "published"
 ---
 
-*Categories:* **Incrementality Testing**, **Marketing Mix Modeling**
-
 ## **Fast Facts**
 
 - **Industry:** Fintech / Consumer Mobile App (Cash Advance Service)
