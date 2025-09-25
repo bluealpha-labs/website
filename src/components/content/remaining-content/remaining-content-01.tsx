@@ -8,6 +8,7 @@ import { RemainingContentTitle } from './remaining-content-title'
 type Props = {
   title: string
   items: {
+    id?: string
     title: string
     description: string
     image: string
@@ -23,9 +24,9 @@ export function RemainingContent01({ title, items }: Props) {
     <RemainingContent>
       <RemainingContentTitle>{title}</RemainingContentTitle>
       <RemainingContentGrid>
-        {items.map((item) => {
+        {items.map(({ id, ...item }) => {
           return (
-            <RemainingContentGridItem key={item.title}>
+            <RemainingContentGridItem key={id ?? item.href}>
               <ContentCard01 {...item} />
             </RemainingContentGridItem>
           )

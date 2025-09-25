@@ -32,7 +32,7 @@ This role blends AI engineering, infrastructure development, and system design t
 - 5+ years of experience in AI engineering, infrastructure development, or related fields, with a proven track record of deploying AI models to production.
 - Expertise in building and maintaining scalable AI infrastructure and deployment pipelines.
 - Proficiency in Python and experience with AI frameworks and tools.
-  Strong understanding of prompt engineering techniques and evaluation methodologies.
+- Strong understanding of prompt engineering techniques and evaluation methodologies.
 - Experience with cloud platforms (e.g., AWS, GCP, Azure) and infrastructure-as-code tools.
 - Excellent problem-solving skills and ability to thrive in a fast-paced, ambiguous startup environment.
 
@@ -47,9 +47,8 @@ This role blends AI engineering, infrastructure development, and system design t
 
 - **Compensation**: competitive salary + meaningful equity — real ownership in BlueAlpha's success
 - **Benefits**: health insurance, flexible PTO, and remote-friendly work
-- **Impact**: Founding GTM engineer, with outsized influence on customer experience and revenue growth
-- **Growth**: Shape and eventually scale the GTM engineering function as BlueAlpha grows
-- **Culture**: A collaborative, high-energy environment where we challenge ideas, not people — small team, big ambition
+- **Growth**: shape and scale our AI engineering capabilities as BlueAlpha grows
+- **Culture**: a collaborative, high-energy environment where we challenge ideas, not people — small team, big ambition
 
 ## How to Apply
 

@@ -2,7 +2,8 @@
 title: 'An Actionable Guide to Media Effectiveness for CMOs and CFOs'
 description: 'Practical strategies for CMOs and CFOs to measure media effectiveness, optimize spending, and drive measurable business growth together.'
 image: '#/assets/backgrounds/background-4.png'
-author: 'peter'
+author: 'matthias'
+category: 'Leadership, Paid Media'
 date: 2025-03-19
 time: 11
 tags: ['measurement', 'leadership', 'budget']
@@ -54,7 +55,7 @@ Effective marketing strikes a balance between driving short-term revenue and cul
 
 It would be a mistake to measure the success of awareness campaigns solely based on short-term sales. Instead, marketers should focus on metrics that reflect long-term impact, such as brand lift and customer lifetime value.
 
-One of the primary reasons CMOs face resistance from CFOs when allocating budgets to awareness campaigns is the lack of a clearly quantified impact. Although these campaigns are critical for building long-term value, their nature makes it challenging to demonstrate their immediate ROI. To address this, a two-step approach is recommended. First, [CFOs](https://bluealpha.ai/bluealpha-for-cfos/) must be educated on the importance and value of concepts like incrementality, and metrics like brand lift and lifetime value. Second, incremental tests should be conducted to establish a causal link between these campaigns and measurable outcomes.
+One of the primary reasons CMOs face resistance from CFOs when allocating budgets to awareness campaigns is the lack of a clearly quantified impact. Although these campaigns are critical for building long-term value, their nature makes it challenging to demonstrate their immediate ROI. To address this, a two-step approach is recommended. First, [CFOs](https://bluealpha.ai/articles/cfo-cmo-partnership-reduce-marketing-waste/) must be educated on the importance and value of concepts like incrementality, and metrics like brand lift and lifetime value. Second, incremental tests should be conducted to establish a causal link between these campaigns and measurable outcomes.
 
 An advanced platform like BlueAlpha can facilitate success in both steps. BlueAlpha’s customer segmentation and marketing mix modeling capabilities enable businesses to quantify the long-term impact of awareness campaigns on incremental revenue and incremental lifetime value over a one-year or two-year horizon. Additionally, its incrementality testing feature allows marketers to design precise experiments that can run a couple of weeks and display the causal effects of campaigns on brand lift and related metrics. This _value-driven_ approach not only demonstrates the importance of awareness campaigns but also equips organizations with actionable insights for future investments.
 
@@ -62,7 +63,7 @@ An advanced platform like BlueAlpha can facilitate success in both steps. BlueAl
 
 To streamline measurement efforts, it’s recommended to assign a **Marketing Measurement Lead** who can centralize measurement activities and develop a shared KPI framework across the organization. This lead doesn’t need a PhD in statistics but should be passionate about understanding the customer journey and skilled at storytelling. Their role is to translate data into actionable insights that can be shared across the company and used to justify marketing budgets to CFOs and CEOs.
 
-Onboarding a **marketing measurement platform like BlueAlpha** can greatly simplify this process. With BlueAlpha’s [expertise and ongoing direct support](https://bluealpha.ai/about/), the CMO – or even any marketer on the team – can effectively take on the role of the measurement lead. We provide the tools, insights, and guidance needed to centralize measurement efforts, ensuring that your team can focus on driving results rather than getting bogged down in data complexities. This empowers your organization to make smarter, data-driven decisions without the need for specialized in-house expertise.
+Onboarding a **marketing measurement platform like BlueAlpha** can greatly simplify this process. With BlueAlpha’s expertise and ongoing direct support, the CMO – or even any marketer on the team – can effectively take on the role of the measurement lead. We provide the tools, insights, and guidance needed to centralize measurement efforts, ensuring that your team can focus on driving results rather than getting bogged down in data complexities. This empowers your organization to make smarter, data-driven decisions without the need for specialized in-house expertise.
 
 ## Building a Measurement Toolkit
 

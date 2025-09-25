@@ -8,6 +8,10 @@ time: 10
 tags: ['growth', 'saas']
 status: 'published'
 category: 'Consumer AI'
+cta:
+  heading: 'Ready to Take Your Marketing to the Next Level?'
+  body: '{link} to build provable MMM, incrementality testing, and scaled experimentation loops with BlueAlpha.'
+  linkLabel: 'Book a 1:1 call'
 ---
 
 ## Why this playbook exists

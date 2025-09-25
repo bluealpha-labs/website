@@ -10,14 +10,16 @@ import { pageTitle } from '#utils/seo.ts'
 
 const collection = await getCollection('playbooks')
 const published = collection.filter((entry) => entry.data.status === 'published')
-const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
+const sorted = published.slice().sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
 ---
 
 <Layout className='py-20' title={pageTitle('Playbooks')}>
   <ContentHeader01
     label='Playbooks'
-    title='Learn how to build with BlueAlpha'
-    description='Practical strategies to turn insights into smarter growth decisions.'
+    title='Operate Like a Growth Scientist'
+    titleAs='h1'
+    description='Fast-track marketing ROI for growth leaders. Tactical guides, frameworks, and decision workflows for turning noisy data into confident decisions.'
+    descriptionAs='h2'
   />
   <RemainingContent01
     title='All playbooks'
@@ -26,6 +28,7 @@ const sorted = published.toSorted((a, b) => b.data.date.getTime() - a.data.date.
       const formattedDate = formatDate(data.date)
 
       return {
+        id: slug,
         title: data.title,
         description: data.description,
         image: data.image.src,

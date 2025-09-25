@@ -1,9 +1,10 @@
 ---
 title: "Does Google's AI Max Serve Marketers or Shareholders?"
-description: "Critical analysis of Google's AI Max for Search campaigns and its impact on marketing performance versus platform profitability."
+description: "The CMO brief on AI Max: what actually changes, what breaks, and how to measure incremental profit before scaling."
 image: '#/assets/backgrounds/background-14.png'
-author: 'peter'
-date: 2025-02-23
+author: 'matthias'
+date: 2025-05-09
+category: 'Paid Media'
 time: 8
 tags: ['tools', 'ai', 'channels']
 status: 'published'
@@ -19,9 +20,7 @@ Google promises a 10-30% conversion uplift of AI Max vs. accounts dominated by e
 
 Can you afford to turn AI Max on, without independent visibility into how the money is spent?
 
-> ---
->
-> ## What Exactly Is AI Max?
+## What Exactly Is AI Max?
 
 - Component: Search‑term matching
   - What it does: Broad Match + “keywordless” logic that scans your landing pages, ads and historical keywords to capture new queries
@@ -40,7 +39,7 @@ Can you afford to turn AI Max on, without independent visibility into how the 
 
 ### We Saw That Coming
 
-Voice search, multimodal Lens queries and AI Overviews have already pushed Google to interpret meaning rather than characters. Keywords, match types, even creative inputs are progressively collapsing into a few “signals” Google ingests. AI Max is one of the many steps in this roadmap, and formalizes that shift for advertisers who want [PMax](/articles/google-ai-max-performance-analysis)‑style reach inside Search‑only inventory.
+Voice search, multimodal Lens queries and AI Overviews have already pushed Google to interpret meaning rather than characters. Keywords, match types, even creative inputs are progressively collapsing into a few “signals” Google ingests. AI Max is one of the many steps in this roadmap, and formalizes that shift for advertisers who want [PMax](/articles/pmax)‑style reach inside Search‑only inventory.
 
 It also simplifies keyword management. Google’s own guidance now suggests collapsing sprawling ad groups into a handful of generic terms paired with geo targets. That reduces operational bloat but cedes more matching discretion to the algorithm.
 
@@ -76,10 +75,6 @@ BlueAlpha rebuilds that audit trail through
 - Fully customized [Marketing Mix Models](/articles/what-is-media-mix-modeling)
 - Properly designed [incrementality tests](/articles/incrementality-testing-implementation-guide)
 
-Download our free white paper:
-
-“**_Understanding Incrementality Testing for Marketing and Financial Success_**”
-
 ## 7-Step Action Plan for CMOs
 
 **Simplify keyword lists**: keep the intent nouns; shift cities, brands, tiers to ad-group-level.
@@ -90,9 +85,9 @@ Download our free white paper:
 
 **Wire CRM events** or proxy quality scores back to Google.
 
-**Educate [CFO](https://bluealpha.ai/bluealpha-for-cfos/) & legal** on synthetic keyword reporting and potential compliance gaps from auto‑generated copy.
+**Educate [CFO](https://bluealpha.ai/articles/cfo-cmo-partnership-reduce-marketing-waste/) & legal** on synthetic keyword reporting and potential compliance gaps from auto‑generated copy.
 
-**[Contact BlueAlpha](#contact) to **design test‑vs‑control geography splits** before flipping the AI Max switch, and to deploy a neutral measurement layer** to validate true incremental profit, not just Google-Ads-reported “conversions”.
+<strong><a href="https://cal.com/team/bluealpha/call-with-bluealpha" target="_blank" rel="noopener">Contact BlueAlpha</a> to design test-vs-control geography splits before flipping the AI Max switch</strong>, and deploy a neutral measurement layer to validate true incremental profit, not just Google-Ads-reported “conversions”.
 
 ## BlueAlpha’s Promise in a “Keywordless” World
 

@@ -2,7 +2,8 @@
 title: 'MER vs. ROAS: Why ROAS Is Misleading'
 description: 'Understand why ROAS can mislead marketing decisions and how Media Efficiency Ratio (MER) provides better campaign evaluation insights.'
 image: '#/assets/backgrounds/background-6.png'
-author: 'peter'
+author: 'matthias'
+category: 'Paid Media'
 date: 2025-03-25
 time: 10
 tags: ['measurement', 'incrementality', 'channels']

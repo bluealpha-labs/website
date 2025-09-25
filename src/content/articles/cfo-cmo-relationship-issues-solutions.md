@@ -12,7 +12,7 @@ status: 'published'
 
 # How to Solve the Issues Plaguing the CFO-CMO Relationship | BlueAlpha
 
-A well-functioning relationship between the [Chief Marketing Officer (CMO)](/articles/marketing-measurement-guide-2025) and [Chief Financial Officer (CFO)](https://bluealpha.ai/bluealpha-for-cfos/) is crucial for driving growth. However, a recent study by the CMO Council and KPMG found that only 22% of these relationships are truly collaborative, as highlighted in a [Marketing Week article](https://www.marketingweek.com/cmo-council-cfo-relationship/). This statistic underscores a significant gap that many organizations need to address.
+A well-functioning relationship between the [Chief Marketing Officer (CMO)](/articles/marketing-measurement-for-growth-focused-cmos) and [Chief Financial Officer (CFO)](https://bluealpha.ai/articles/cfo-cmo-partnership-reduce-marketing-waste/) is crucial for driving growth. However, a recent study by the CMO Council and KPMG found that only 22% of these relationships are truly collaborative, as highlighted in a [Marketing Week article](https://www.marketingweek.com/cmo-council-cfo-relationship/). This statistic underscores a significant gap that many organizations need to address.
 
 Further, economic challenges are becoming more prevalent, and many organizations are not adequately prepared. The same study reveals that only 10% of marketing leaders strongly believe their marketing investments—often controlled by finance—position them to outperform competitors during economic downturns. 
 

@@ -9,16 +9,32 @@ type Props = {
   label: string
   title: string
   description: string
+  labelAs?: 'span' | 'p' | 'h3' | 'h4'
+  labelHref?: string
+  titleAs?: 'h1' | 'h2' | 'h3' | 'h4'
+  descriptionAs?: 'p' | 'h2' | 'h3'
 }
 
-export function ContentHeader01({ label, title, description }: Props) {
+export function ContentHeader01({
+  label,
+  title,
+  description,
+  labelAs,
+  labelHref,
+  titleAs,
+  descriptionAs
+}: Props) {
   return (
     <ContentHeader>
       <ContentHeaderContainer>
         <ContentHeaderWrapper>
-          <ContentHeaderLabel>{label}</ContentHeaderLabel>
-          <ContentHeaderTitle>{title}</ContentHeaderTitle>
-          <ContentHeaderDescription>{description}</ContentHeaderDescription>
+          <ContentHeaderLabel
+            as={labelAs}
+            href={labelHref}>
+            {label}
+          </ContentHeaderLabel>
+          <ContentHeaderTitle as={titleAs}>{title}</ContentHeaderTitle>
+          <ContentHeaderDescription as={descriptionAs}>{description}</ContentHeaderDescription>
         </ContentHeaderWrapper>
       </ContentHeaderContainer>
     </ContentHeader>

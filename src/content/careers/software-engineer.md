@@ -38,8 +38,7 @@ This role blends frontend, backend and infrastructure development to deliver str
 
 - **Compensation**: competitive salary + meaningful equity — real ownership in BlueAlpha's success
 - **Benefits**: health insurance, flexible PTO, and remote-friendly work
-- **Impact**: Founding GTM engineer, with outsized influence on customer experience and revenue growth
-- **Growth**: Shape and eventually scale the GTM engineering function as BlueAlpha grows
+- **Impact**: work on multi-faceted problems end-to-end
 - **Culture**: A collaborative, high-energy environment where we challenge ideas, not people — small team, big ambition
 
 ## How to Apply

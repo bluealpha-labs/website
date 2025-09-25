@@ -74,7 +74,7 @@ input[type='search']::-webkit-search-cancel-button {
 /* More space between blockquote border and text for playbooks */
 .prose.prose-quote-comfy :not(:where([class~='not-prose'], [class~='not-prose'] *)) {
   &:where(blockquote) {
-    padding-inline-start: calc(var(--spacing) * 4) !important;
+    padding-inline-start: calc(var(--spacing) * 6) !important;
   }
 }
 
@@ -85,4 +85,19 @@ input[type='search']::-webkit-search-cancel-button {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.playbook-prose :is(img[alt="Retention benchmark cheat sheet"]) {
+  display: block;
+  width: min(150%, 960px) !important;
+  max-width: none;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .playbook-prose :is(img[alt="Retention benchmark cheat sheet"]) {
+    width: 100% !important;
+  }
 }

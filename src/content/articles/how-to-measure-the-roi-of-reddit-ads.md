@@ -4,6 +4,7 @@ description: 'Comprehensive guide to measuring Reddit advertising effectiveness 
 image: '#/assets/backgrounds/background-11.png'
 author: 'matthias'
 date: 2025-04-09
+category: 'Paid Media'
 time: 8
 tags: ['measurement', 'channels', 'mmm']
 status: 'published'
@@ -21,7 +22,11 @@ A significant factor behind Reddit’s stock surge is its unprecedented visibili
 
 This exponential growth in search visibility appears linked to Google’s $60 million annual content licensing partnership with Reddit, announced in early 2024. Although Google denied that this deal influenced Reddit’s search rankings, the timing has led to widespread speculation. The partnership allows Google to train its AI models on Reddit’s data, enhancing its generative AI capabilities with insights derived from real user conversations. This AI deal, along with Reddit’s integration into Google’s “Discussions and Forums” feature, has propelled the platform’s prominence in search results, providing it with a consistent stream of organic traffic that has further boosted its stock performance and investor appeal.
 
-![How to measure the ROI of Reddit ads - Reddit visibility on Google over time](#assets/articles/seasonality-marketing-effectiveness-analysis/reddit-visibility-google.png)
+<img
+  src="#assets/articles/seasonality-marketing-effectiveness-analysis/reddit-visibility-google.png"
+  alt="How to measure the ROI of Reddit ads - Reddit visibility on Google over time"
+  class="mx-auto w-full max-w-[880px]"
+/>
 
 ## **Reddit’s Growing Influence in Search Results and Implications for Brands**
 
@@ -81,7 +86,7 @@ Use Reddit’s authentic tone to your advantage. Don’t write like an old-schoo
 
 Always check a subreddit’s rules before posting or advertising. These guidelines exist to maintain quality discussions, and they vary from one subreddit to another. By respecting local customs, you not only preserve your brand reputation but also increase your chances of positive reception.
 
-## Common Tracking Techniques
+## **Common Tracking Techniques**
 
 To measure the ROI of Reddit ads, you need to track more than just impressions and upvotes. Here are the typical measurement tactics commonly adopted by small to medium-sized businesses:
 
@@ -92,7 +97,7 @@ Reddit provides a tracking pixel you can add to your site. This code monitors vi
 ##### UTM Parameters
 
 UTM parameters attach small bits of identifying info to your URLs. For example:  
-_https://www.yoursite.com/product?utm\_source=reddit&utm\_medium=cpc&utm\_campaign=summer\_sale_
+`https://www.yoursite.com/product?utm_source=reddit&utm_medium=cpc&utm_campaign=summer_sale`
 
 When a visitor arrives at your site through this link, your analytics tool (like Google Analytics) knows which Reddit campaign led them there. This data can be essential for seeing which ads spark clicks and conversions.
 
@@ -170,7 +175,7 @@ Adopting these advanced methods might sound daunting, especially if you’re a s
 
 ### Let BlueAlpha Build Your Next Incrementality Test
 
-That’s where **BlueAlpha** steps in. We understand that designing robust incrementality tests and sophisticated MMM frameworks can be complex. [Our team](https://bluealpha.ai/about/) has deep expertise in data-driven strategies, without requiring you to hire (and manage) a specialized data science team in-house. We’ll help you set up a precise incrementality testing plan (or combine it with MMM) to measure the real-world causal effect of your Reddit campaigns.
+That’s where **BlueAlpha** steps in. We understand that designing robust incrementality tests and sophisticated MMM frameworks can be complex. Our team has deep expertise in data-driven strategies, without requiring you to hire (and manage) a specialized data science team in-house. We’ll help you set up a precise incrementality testing plan (or combine it with MMM) to measure the real-world causal effect of your Reddit campaigns.
 
 - **No Data Science Headaches**: We take care of the technical heavy lifting.
 - **Custom-Tailored Approach**: Every brand is unique. We’ll design tests that fit your specific goals, budget, and audience.

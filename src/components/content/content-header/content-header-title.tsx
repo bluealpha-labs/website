@@ -1,15 +1,19 @@
 import { cva } from '#utils/cva.ts'
-import type { ComponentProps } from 'react'
+import type { ComponentPropsWithoutRef } from 'react'
 
 const styles = cva({
   base: 'mt-3 text-display-md font-semibold text-gray-900 md:text-display-lg'
 })
 
-type Props = ComponentProps<'h2'>
+type HeadingTag = 'h1' | 'h2' | 'h3' | 'h4'
 
-export function ContentHeaderTitle({ className, ...props }: Props) {
+type Props = ComponentPropsWithoutRef<'h2'> & {
+  as?: HeadingTag
+}
+
+export function ContentHeaderTitle({ as: Tag = 'h2', className, ...props }: Props) {
   return (
-    <h2
+    <Tag
       className={styles({ className })}
       {...props}
     />

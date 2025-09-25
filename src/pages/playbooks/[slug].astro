@@ -28,6 +28,7 @@ const formattedDate = formatDate(data.date)
 const authorName = authorNames[data.author]
 const playbookUrl = `https://bluealpha.ai${Astro.url.pathname}`
 const keywords = [data.category, ...data.tags.map((tag) => tagNames[tag])].filter(Boolean).join(', ')
+const cta = data.cta ?? {}
 const playbookSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
@@ -72,7 +73,15 @@ const playbookSchema = {
       <ContentProse className='prose-quote-comfy playbook-prose'>
         <TableOfContents headings={headings} />
         <Content />
-        <PlaybookCta client:visible />
+        <PlaybookCta
+          client:visible
+          heading={cta.heading}
+          body={cta.body}
+          linkHref={cta.linkHref}
+          linkLabel={cta.linkLabel}
+          buttonLabelMobile={cta.buttonLabelMobile}
+          buttonLabelDesktop={cta.buttonLabelDesktop}
+        />
       </ContentProse>
     </ContentWrapper>
   </ContentContainer>

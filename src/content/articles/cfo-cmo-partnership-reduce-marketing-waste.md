@@ -2,8 +2,9 @@
 title: 'Why CFOs Need to Partner with CMOs to Reduce Waste in Marketing Spend'
 description: 'Discover how CFO-CMO partnerships reduce marketing waste through advanced measurement techniques like MMM and incrementality testing for better ROI.'
 image: '#/assets/backgrounds/background-4.png'
-author: 'peter'
+author: 'matthias'
 date: 2025-01-24
+category: 'Leadership'
 time: 8
 tags: ['leadership', 'budget', 'measurement']
 status: 'published'
@@ -21,7 +22,6 @@ Compounding the issue, CFOs often lack a deep understanding of [marketing mix m
 
 This article will explore why aligning on incrementality measurement is crucial for driving marketing accountability and ROI optimization. We’ll provide a roadmap for CFOs to partner with their CMOs, leveraging data-driven insights to make smarter budget allocation decisions. By the end, you’ll understand how to translate these marketing measurement improvements into tangible business impact.
 
-- - [Encouraging Accountability Among CMOs](#Encouraging_Accountability_Among_CMOs)
 
 ## The Limitations of Platform Attribution Models
 

@@ -5,6 +5,7 @@ image: '#/assets/backgrounds/background-16.png'
 author: 'peter'
 date: 2025-03-01
 time: 12
+category: 'Incrementality Testing'
 tags: ['incrementality', 'measurement', 'mmm']
 status: 'published'
 ---
@@ -34,10 +35,6 @@ Additionally, both treatment and control groups account for external shocks duri
 This robust approach provides reliable, actionable insights into the incremental impact of marketing activities, facilitating better strategic decisions and optimized budget allocations.
 
 ![Incremental effect in Marketing](#assets/articles/how-to-implement-incrementality-testing/incremental-effect-marketing.png)
-
-##### Download our free whitepaper:
-
-_Understanding Incrementality Testing for Marketing and Financial Success_
 
 ## What Comes After Testing?
 

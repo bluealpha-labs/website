@@ -61,29 +61,23 @@ _What to Look For:_ Geo‑lift testing, conversion lift testing, and causal impa
 
 _Why It Matters:_ Measures true cause‑and‑effect without cookies or last‑click assumptions.
 
-##### **3\. Predictive Scenario Planning & Budget Forecasting**
+#### 3. Predictive Scenario Planning & Budget Forecasting
 
-\_What to Look For:  
-\_A tool that lets you simulate budget shifts across channels and forecast revenue impact using Bayesian inference and multivariate regression models.
+*What to Look For:* Tools that let you simulate budget shifts across channels and forecast revenue impact using Bayesian inference and multivariate regression models.
 
-\_Why It Matters:  
-\_Helps marketers test budget allocation changes before making financial commitments, optimizing spend efficiency**.**
+*Why It Matters:* Helps marketers test budget allocation changes before making financial commitments, optimizing spend efficiency.
 
-##### **4\. AI-Powered Marketing Decisioning**
+#### 4. AI-Powered Marketing Decisioning
 
-\_What to Look For:  
-\_Software that leverages AI and machine learning for optimizing marketing spend, identifying diminishing returns, and forecasting revenue impact.
+*What to Look For:* Software that leverages AI and machine learning for optimizing marketing spend, identifying diminishing returns, and forecasting revenue impact.
 
-\_Why It Matters:  
-\_AI-driven models provide **continuous learning and optimization**, refining budget allocation strategies dynamically as market conditions evolve.
+*Why It Matters:* AI-driven models provide continuous learning and optimization, refining budget allocation strategies dynamically as market conditions evolve.
 
-##### **5\. Omni-Channel Attribution & Holistic ROI Measurement**
+#### 5. Omni-Channel Attribution & Holistic ROI Measurement
 
-\_What to Look For:  
-\_Software that integrates online and offline marketing data, ensuring all touchpoints are accounted for.
+*What to Look For:* Software that integrates online and offline marketing data, ensuring all touchpoints are accounted for.
 
-\_Why It Matters:  
-\_MMM enables businesses to quantify the impact of both digital and offline channels, unlike attribution models that focus primarily on digital touchpoints.
+*Why It Matters:* MMM enables businesses to quantify the impact of both digital and offline channels, unlike attribution models that focus primarily on digital touchpoints.
 
 ## Which MMM Software Delivers the Best Results for Mid-Market Companies?
 
@@ -223,7 +217,7 @@ At **BlueAlpha**, we provide **Marketing Mix Modeling Software** built for **lea
 
 - **Real Incrementality Testing:** Measure **true marketing lift** without relying on assumptions or flawed attribution models.
 
-- **Expert Support:** Our [team of data scientists and growth strategists](https://bluealpha.ai/about/) acts as an extension of your team.
+- **Expert Support:** Our team of data scientists and growth strategists acts as an extension of your team.
 
 - **Custom Models, Custom Pricing:** We give you enterprise-level customization, but ensure you only pay for what you need.
 

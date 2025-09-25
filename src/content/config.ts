@@ -63,7 +63,17 @@ const playbooks = defineCollection({
       time: z.number(),
       category: z.string().optional(),
       tags: z.array(z.enum(playbookTags)),
-      status: z.enum(statuses)
+      status: z.enum(statuses),
+      cta: z
+        .object({
+          heading: z.string().optional(),
+          body: z.string().optional(),
+          linkHref: z.string().optional(),
+          linkLabel: z.string().optional(),
+          buttonLabelMobile: z.string().optional(),
+          buttonLabelDesktop: z.string().optional()
+        })
+        .optional()
     })
 })
 

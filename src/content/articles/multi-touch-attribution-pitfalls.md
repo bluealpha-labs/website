@@ -1,8 +1,9 @@
 ---
 title: 'Multi-Touch Attribution Can Kill Your Marketing Strategy'
-description: 'Critical analysis of multi-touch attribution limitations and pitfalls that can damage marketing strategy and budget allocation decisions.'
+description: 'If DDA made you confident, read this. MTA still distorts budgets without MMM and causal tests. Replace attribution theater with evidence: DDA for patterns, MMM for budget, incrementality for proof.'
 image: '#/assets/backgrounds/background-8.png'
-author: 'peter'
+author: 'matthias'
+category: 'Attribution'
 date: 2025-03-31
 time: 11
 tags: ['measurement', 'incrementality', 'privacy']
@@ -39,20 +40,28 @@ MTA’s focus on measurable digital interactions also ignores the impact of offl
 
 Ultimately, relying solely on MTA can lead to misguided budget allocations, over-investing in channels that appear to perform well in the model but do not actually drive significant business outcomes. Marketing leaders who continue to depend exclusively on MTA are making a critical mistake, failing to adapt to the evolving landscape of data privacy and consumer behavior.
 
-### Deep Dive:
-
-11 Flaws of Multi-Touch Attribution Models
+### Deep Dive: 11 Flaws of Multi-Touch Attribution Models
 
 1.  **Flawed Assumptions**. MTA models falsely assume that marketing touchpoints exist independently of each other. In reality, each touchpoint is influenced by preceding interactions, either positively or negatively. This interconnectedness means eliminating seemingly ineffective interactions can reduce the power of highly effective interactions that came before them.
+
 2.  **Complexity and Setup**. Implementing and interpreting personalized MTA models (the kind of models that would provide the most insights for decision-making) is challenging due to their complexity. This process requires sophisticated data analytics and a clear understanding of customer touchpoints. The intricate setup often leads to overcomplicating the process and causing information overload, which can be counterproductive for marketers.
+
 3.  **Privacy and Data Regulation**. The rise of privacy regulations such as GDPR, CCPA, and Apple’s App Tracking Transparency (ATT) has significantly impacted the viability of MTA. These regulations make it difficult to track user behavior across multiple platforms, limiting the completeness and accuracy of the data needed for effective attribution.
+
 4.  **Inaccurate Measurements**. MTA models often rely on unproven assumptions and guesswork to assign credit to touchpoints. For instance, models like the U-shaped approach, which assumes the first and last touches are most crucial, are more heuristic than factual. This can lead to inaccurate insights and misguided marketing decisions.
+
 5.  **Inability to Measure External Factors**. MTA models cannot measure external factors like word-of-mouth, pricing, seasonality, competitor activities, offline promotional events, or even certain media like “dark” social channels. This limitation prevents marketers from gaining a comprehensive view of their overall marketing effectiveness, as significant channels and external factors are often overlooked.
+
 6.  **Focus on Measurable Metrics**. The emphasis on measurable metrics can lead marketers to focus on improving these metrics rather than on tactics that genuinely move the needle with their buyers. This focus can result in a lack of common sense and creativity in marketing strategies, as the more nuanced and qualitative aspects of marketing are neglected.
+
 7.  **Incremental Revenue**. MTA does not account for incremental revenue from existing customers. Not having this critical variable factored into the attribution model can lead to misallocating spend towards non-incremental ads/campaigns/channels.
+
 8.  **Arbitrary Impact on Revenue**. The assignment of marketing dollars to different channels based on MTA data can be arbitrary and difficult to navigate, especially when channels have few conversions. This can lead to marketing dollars being allocated to channels that do not significantly impact the conversion path, thereby wasting budget and resources.
+
 9.  **Attributed ROI is Not True ROI**. Attributed ROI in MTA models is not the true ROI because it only reflects the attributed value of touchpoints within the digital ecosystem. It does not account for the actual business outcomes or the broader impact of marketing efforts on brand equity and customer lifetime value.
+
 10. **Focus on Last-Touch Conversions**. Whether it’s last-click or multi-touch, these models show the best results when used for immediate sales, as they overlook users who convert outside the attribution window, or on different devices, or after cookies expire. This narrow focus can miss significant portions of the customer journey and lead to incomplete insights.
+
 11. **Suitability and Lack of Customization of Pre-Built Models**. Pre-built MTA models may not work well for all businesses, as their effectiveness depends on the nature of products or services, industry, and available data. The lack of customization in these models means they may not accurately reflect the unique customer journeys and marketing dynamics of different businesses.
 
 ## Why Performance Marketing Teams Still Rely on MTA

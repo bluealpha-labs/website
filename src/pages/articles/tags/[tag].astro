@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 const { articles, tag } = Astro.props
 const tagName = tagNames[tag as Tag]
 
-const sorted = articles.toSorted((a: any, b: any) => b.data.date.getTime() - a.data.date.getTime())
+const sorted = articles.slice().sort((a: any, b: any) => b.data.date.getTime() - a.data.date.getTime())
 const recent = sorted.slice(0, 3)
 const remaining = sorted.slice(3)
 ---
@@ -54,7 +54,9 @@ const remaining = sorted.slice(3)
   keywords={`${tagName.toLowerCase()} articles, ${tagName.toLowerCase()} guides, marketing ${tagName.toLowerCase()}, ${tagName.toLowerCase()} strategies`}>
   <ContentHeader01
     label='Articles'
+    labelHref='/articles'
     title={tagName}
+    titleAs='h1'
     description={`All articles tagged with "${tagName}"`}
   />
   
