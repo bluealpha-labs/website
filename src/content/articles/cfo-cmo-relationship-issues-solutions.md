@@ -20,7 +20,7 @@ In challenging times, finance departments scrutinize budgets, including marketin
 
 In this article, we will delve into the top 3 issues that plague the CFO-CMO relationship and provide strategies to overcome them, fostering a stronger CFO-CMO partnership. 
 
-![CMO-CFO Aligment](#assets/articles/cfo-cmo-relationship-issues-solutions/cmo-cfo-alignment.webp)
+![CMO-CFO Aligment](#/assets/articles/cfo-cmo-relationship-issues-solutions/cmo-cfo-alignment.webp)
 
 ## Bridging the CFO-CMO Language Barrier
 
@@ -28,7 +28,7 @@ Finance teams and marketing teams often speak different languages, using special
 
 To overcome these language barriers, CMOs need to translate their metrics, such as clicks or web traffic, into actionable items for Finance. While Multi-Touch Attribution models can help bridge this gap by measuring bottom-funnel conversions, their accuracy is increasingly challenged by evolving privacy laws.
 
-Recent advancements in machine learning offer CMOs new ways to quantify and measure their marketing efforts. [Marketing Mix Models (MMM)](/articles/what-is-media-mix-modeling) and [Geo Incrementality tests](/articles/incrementality-testing-implementation-guide) provide effective measurement for all types of marketing campaigns. These models rely on correlation and causation, fueled by internal data, allowing the target metrics to be easily adjusted to speak the language of Finance.
+Recent advancements in machine learning offer CMOs new ways to quantify and measure their marketing efforts. [Marketing Mix Models (MMM)](/articles/what-is-media-mix-modeling) and [Geo Incrementality tests](/articles/how-to-implement-incrementality-testing) provide effective measurement for all types of marketing campaigns. These models rely on correlation and causation, fueled by internal data, allowing the target metrics to be easily adjusted to speak the language of Finance.
 
 ## CFO-CMO: Transparent Results and Outcomes
 

@@ -14,7 +14,7 @@ status: 'published'
 
 ##### BlueAlpha’s Complete Guide to Measuring Offline Media Impact
 
-![Mastering OOH Measurement - How Modern Marketers Track Offline Media Impact](#assets/articles/ooh-measurement-complete-guide/ooh-measurement-guide.webp)
+![Mastering OOH Measurement - How Modern Marketers Track Offline Media Impact](#/assets/articles/ooh-measurement-complete-guide/ooh-measurement-guide.webp)
 
 While out-of-home (OOH) advertising is often presumed difficult to measure, today’s standards and technologies allow marketers to track real-world exposures with near-digital precision. Below, we’ll break down the new best practices for OOH measurement, highlight advanced frameworks for daily frame-level forecasting, and demonstrate how to integrate OOH analytics with your broader marketing strategy.
 
@@ -54,7 +54,7 @@ This is the fundamental layer. At minimum, you measure how many people pass in f
 **Pros**: Offers a baseline bridging offline to online.  
 **Cons**: Impressions alone don’t necessarily tie to brand outcomes.
 
-### 2) [Incrementality Testing](/articles/incrementality-testing-implementation-guide)
+### 2) [Incrementality Testing](/articles/how-to-implement-incrementality-testing)
 
 This approach uses control vs. test groups to see how much your OOH campaign lifts a specific metric, such as store visits or [brand awareness](/articles/creative-testing-framework-for-growth). For instance, if you saturate New York with bus panels while leaving Philadelphia as a control, you can compare brand-lift or foot traffic differences between the two regions.
 

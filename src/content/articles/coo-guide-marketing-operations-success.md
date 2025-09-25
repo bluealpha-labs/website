@@ -11,7 +11,7 @@ status: 'published'
 
 # The COO's Guide to Marketing Operations Success | BlueAlpha
 
-![The COO's Guide to Marketing Operations Success](#assets/articles/coo-guide-marketing-operations-success/coo-guide-marketing-operations.webp)
+![The COO's Guide to Marketing Operations Success](#/assets/articles/coo-guide-marketing-operations-success/coo-guide-marketing-operations.webp)
 
 High-growth companies are a thrilling space to operate in, but they come with their own set of challenges. As the Chief Operating Officer, you are tasked with scaling operations, managing resources, and ensuring alignment across departments to sustain growth. Among these priorities, optimizing operational efficiency by leveraging data-driven insights stands out as a critical pillar for success.
 

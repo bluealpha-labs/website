@@ -1,6 +1,6 @@
 ---
 title: 'Founding Software Engineer - Fullstack'
-image: '#assets/backgrounds/background-7.png'
+image: '#/assets/backgrounds/background-7.png'
 department: 'engineering'
 locations: ['sf', 'remote']
 status: 'published'

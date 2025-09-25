@@ -11,7 +11,7 @@ status: 'published'
 
 # What Every CMO Must Know Before Investing in a Marketing Mix Model
 
-![BlueAlpha - What Every CMO Must Know Before Investing in a Marketing Mix Model - Integrating Bayesian MMM with Incrementality Testing](#assets/articles/cmo-guide-before-investing-in-mmm/bayesian-mmm-incrementality.png)
+![BlueAlpha - What Every CMO Must Know Before Investing in a Marketing Mix Model - Integrating Bayesian MMM with Incrementality Testing](#/assets/articles/cmo-guide-before-investing-in-mmm/bayesian-mmm-incrementality.png)
 
 ## Executive Summary
 

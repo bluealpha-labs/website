@@ -12,7 +12,7 @@ status: 'published'
 
 # Why CFOs Need to Partner with CMOs to Reduce Waste in Marketing Spend | BlueAlpha
 
-![Why CFOs Need to Partner with CMOs to Reduce Waste in Marketing Spend - BlueAlpha for CFOs](#assets/articles/cfo-cmo-partnership-reduce-marketing-waste/cfo-cmo-partnership.webp)
+![Why CFOs Need to Partner with CMOs to Reduce Waste in Marketing Spend - BlueAlpha for CFOs](#/assets/articles/cfo-cmo-partnership-reduce-marketing-waste/cfo-cmo-partnership.webp)
 
 As a CFO, you’re well aware of the increasing pressure to show the business impact of the budgets you routinely approve for marketing investments. [Research](https://cmosurvey.org/results/) by Duke University suggests that *up to 40% of marketing budgets* may be misallocated due to unreliable attribution data, representing hundreds of billions in potentially wasted spend across the global marketing industry. This disconnect between marketing and finance creates tension, as CMOs struggle to prove the value of their activities while CFOs demand more accountability.
 

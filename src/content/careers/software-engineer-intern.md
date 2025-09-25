@@ -1,6 +1,6 @@
 ---
 title: 'Software Engineering Intern'
-image: '#assets/backgrounds/background-4.png'
+image: '#/assets/backgrounds/background-4.png'
 department: 'engineering'
 locations: ['sf', 'remote']
 status: 'published'

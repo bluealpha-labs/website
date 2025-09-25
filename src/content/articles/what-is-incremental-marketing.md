@@ -47,7 +47,7 @@ Marketing Mix Models are useful for identifying correlations in historical data 
 
 In contrast, incrementality tests directly measure the true causal impact of marketing activities, providing a comprehensive and accurate view of both online and offline efforts. These tests are faster and based on actual sales data, offering a more precise understanding of your marketing effectiveness.
 
-![Incrementality vs Mixed Marketing Models vs Attribution](#assets/articles/what-is-incremental-marketing/incrementality-vs-mmm-attribution.png)
+![Incrementality vs Mixed Marketing Models vs Attribution](#/assets/articles/what-is-incremental-marketing/incrementality-vs-mmm-attribution.png)
 
 ## Incrementality Testing vs. A/B Testing
 

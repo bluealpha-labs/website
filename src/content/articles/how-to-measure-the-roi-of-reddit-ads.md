@@ -12,7 +12,7 @@ status: 'published'
 
 # How to Measure the ROI of Reddit Ads | BlueAlpha
 
-![How to Measure the ROI of Reddit Ads - BlueAlpha](#assets/articles/seasonality-marketing-effectiveness-analysis/reddit-roi-measurement.webp)
+![How to Measure the ROI of Reddit Ads - BlueAlpha](#/assets/articles/seasonality-marketing-effectiveness-analysis/reddit-roi-measurement.webp)
 
 ## **Reddit’s Explosive Growth in Search Visibility**
 
@@ -23,7 +23,7 @@ A significant factor behind Reddit’s stock surge is its unprecedented visibili
 This exponential growth in search visibility appears linked to Google’s $60 million annual content licensing partnership with Reddit, announced in early 2024. Although Google denied that this deal influenced Reddit’s search rankings, the timing has led to widespread speculation. The partnership allows Google to train its AI models on Reddit’s data, enhancing its generative AI capabilities with insights derived from real user conversations. This AI deal, along with Reddit’s integration into Google’s “Discussions and Forums” feature, has propelled the platform’s prominence in search results, providing it with a consistent stream of organic traffic that has further boosted its stock performance and investor appeal.
 
 <img
-  src="#assets/articles/seasonality-marketing-effectiveness-analysis/reddit-visibility-google.png"
+  src="#/assets/articles/seasonality-marketing-effectiveness-analysis/reddit-visibility-google.png"
   alt="How to measure the ROI of Reddit ads - Reddit visibility on Google over time"
   class="mx-auto w-full max-w-[880px]"
 />

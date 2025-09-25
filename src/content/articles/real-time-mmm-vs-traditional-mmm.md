@@ -100,7 +100,7 @@ AI agents play a crucial role in measuring and optimizing marketing performance.
 
 To fully integrate AI agents into marketing, businesses should follow a structured approach:
 
-![AI Agents for Marketing](#assets/articles/real-time-mmm-vs-traditional-mmm/ai-agents-for-marketing.png)
+![AI Agents for Marketing](#/assets/articles/real-time-mmm-vs-traditional-mmm/ai-agents-for-marketing.png)
 
 First, achieving data preparedness is essential but often challenging. Ensuring that data sources are accurate, integrated, and accessible for AI agents can be both time-intensive and costly.  
 For small and midsize companies, this can represent a significant hurdle, as they often lack the enterprise-level resources and workforce to undertake such tasks efficiently. Similarly, training team members to work with AI agents or hiring additional specialists, such as data scientists, incurs overheads that many companies cannot afford.

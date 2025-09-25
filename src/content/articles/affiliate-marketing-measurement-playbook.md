@@ -1,7 +1,7 @@
 ---
 title: 'How to Measure Affiliate Marketing: The Ultimate Playbook'
 description: 'Master affiliate marketing measurement with proven metrics, incrementality testing, and MMM strategies to identify partners that truly drive growth'
-image: '#assets/backgrounds/background-1.png'
+image: '#/assets/backgrounds/background-1.png'
 author: 'matthias'
 date: 2025-03-26
 time: 12
@@ -14,7 +14,7 @@ status: 'published'
 
 In recent years, affiliate marketing has evolved into one of the most flexible and potent tools for driving sales, subscriptions, and brand awareness. It can connect your business with niche influencers, leading industry websites, coupon and cashback platforms, and more. However, capturing the true value of affiliates isn’t as straightforward as setting a commission and watching the dollars roll in. If you want an accurate read on which partners truly move the needle (and which ones just show up at the last step), you need a robust measurement framework.
 
-This guide is your roadmap: from classic affiliate metrics such as click-through rate and average order value, to advanced measurement challenges like coupon intercepts, partial-funnel influences, and [marketing mix modeling (MMM)](/articles/what-is-media-mix-modeling). We’ll dig deep into [incrementality testing](/articles/incrementality-testing-implementation-guide), from straightforward holdouts to more nuanced experiments, and show you how to avoid the mistakes that lead to over- or under-crediting your affiliate partners.
+This guide is your roadmap: from classic affiliate metrics such as click-through rate and average order value, to advanced measurement challenges like coupon intercepts, partial-funnel influences, and [marketing mix modeling (MMM)](/articles/what-is-media-mix-modeling). We’ll dig deep into [incrementality testing](/articles/how-to-implement-incrementality-testing), from straightforward holdouts to more nuanced experiments, and show you how to avoid the mistakes that lead to over- or under-crediting your affiliate partners.
 
 By the end, you’ll have the tools to:  
 – Track the right day-to-day KPIs (clicks, conversions, earnings per click, etc.).  

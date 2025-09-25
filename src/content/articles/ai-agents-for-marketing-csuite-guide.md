@@ -1,7 +1,7 @@
 ---
 title: 'The C-Suite Guide to AI Agents for Marketing'
 description: 'Discover how AI agents transform marketing with autonomous workflows, real-time insights, and personalized customer experiences at scale'
-image: '#assets/backgrounds/background-2.png'
+image: '#/assets/backgrounds/background-2.png'
 author: 'matthias'
 date: 2025-01-18
 time: 8
@@ -100,7 +100,7 @@ AI agents play a crucial role in measuring and optimizing marketing performance.
 
 To fully integrate AI agents into marketing, businesses should follow a structured approach:
 
-![AI Agents for Marketing](#assets/articles/ai-agents-for-marketing-csuite-guide/ai-agents-for-marketing.png)
+![AI Agents for Marketing](#/assets/articles/ai-agents-for-marketing-csuite-guide/ai-agents-for-marketing.png)
 
 First, achieving data preparedness is essential but often challenging. Ensuring that data sources are accurate, integrated, and accessible for AI agents can be both time-intensive and costly.  
 For small and midsize companies, this can represent a significant hurdle, as they often lack the enterprise-level resources and workforce to undertake such tasks efficiently. Similarly, training team members to work with AI agents or hiring additional specialists, such as data scientists, incurs overheads that many companies cannot afford.

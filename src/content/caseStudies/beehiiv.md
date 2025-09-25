@@ -1,7 +1,7 @@
 ---
 title: 'How Beehiiv Built Trust and Transformed Its Marketing Efficiency with BlueAlpha'
 description: "Discover how Beehiiv, a fast-growing newsletter platform, leveraged BlueAlpha's innovative methodology to reveal the true cost of marketing, reallocate budget intelligently, and drive more business growth with confidence."
-image: '#assets/backgrounds/background-1.png'
+image: '#/assets/backgrounds/background-1.png'
 author: 'matthias'
 company: 'beehiiv'
 testimonial:

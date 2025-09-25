@@ -1,7 +1,7 @@
 ---
 title: 'How to Measure Offline Channels (OOH) with MMM & Geo Hold-Outs'
 description: 'Quantify incremental traffic and CPA from offline media using geo-testing and MMM'
-image: '#assets/backgrounds/background-2.png'
+image: '#/assets/backgrounds/background-2.png'
 author: 'matthias'
 date: 2025-08-28
 time: 8

@@ -12,7 +12,7 @@ status: 'published'
 
  
 
-![Customer Data Platforms](#assets/articles/why-cdp-not-the-solution/customer-data-platforms.jpg)
+![Customer Data Platforms](#/assets/articles/why-cdp-not-the-solution/customer-data-platforms.jpg)
 
 Analytics and Marketing leaders are increasingly thinking about adopting Customer Data Platforms (CDPs) to manage and analyze their customer data. These platforms promise to revolutionize data management and offer comprehensive insights into customer behavior. Before you commit to a CDP, let’s break down why this might be a misallocation of resources. Here are several reasons why a CDP might not be the golden ticket you’re looking for, along with suggestions for different advanced and data-driven strategies.
 
@@ -42,7 +42,7 @@ Implementing a CDP isn’t just about the initial purchase price. The hidden cos
 
 ## A better allocation for your money: Media Mix Modeling and Incrementality Testing.
 
-Instead of throwing money at a CDP, consider incorporating to your Marketing strategy some advanced measurement techniques like [Media Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [Incrementality Testing](/articles/incrementality-testing-implementation-guide).
+Instead of throwing money at a CDP, consider incorporating to your Marketing strategy some advanced measurement techniques like [Media Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [Incrementality Testing](/articles/how-to-implement-incrementality-testing).
 
 Media Mix Modeling uses statistical analysis to estimate the impact of various marketing tactics on sales and other business outcomes. By analyzing historical data, MMM helps you allocate marketing budgets more effectively and identify the channels that drive the most value, giving you a holistic view of marketing performance without needing a centralized data platform.
 

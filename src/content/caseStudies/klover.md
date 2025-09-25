@@ -1,7 +1,7 @@
 ---
 title: "How Klover Unlocked Millions in 30 Days by Measuring True Marketing Incrementality"
 description: "In 30 days, Klover replaced attribution noise with causal truth and made decisive moves: 50% pullback on Meta iOS with steady conversions, 10x scale on Apple Search Ads with lift intact, and 35% better incremental CAC for a clear path to 7-figure savings."
-image: '#assets/backgrounds/background-3.png'
+image: '#/assets/backgrounds/background-3.png'
 author: "matthias"
 company: "klover"
 testimonial:

@@ -101,4 +101,4 @@ GeoLift experimentation is a popular and accessible method for measuring increme
 - May not capture the full impact of nationwide or global campaigns.
 - Requires careful selection and matching of geographic regions to ensure comparability.
 
-![Accuracy and Causality in Marketing Data Science](#assets/articles/media-transparency-optimization-framework/accuracy-causality-marketing.png)
+![Accuracy and Causality in Marketing Data Science](#/assets/articles/media-transparency-optimization-framework/accuracy-causality-marketing.png)

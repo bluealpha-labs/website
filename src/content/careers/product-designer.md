@@ -1,6 +1,6 @@
 ---
 title: 'Product Designer'
-image: '#assets/backgrounds/background-3.png'
+image: '#/assets/backgrounds/background-3.png'
 department: 'design'
 locations: ['sf', 'remote']
 status: 'published'

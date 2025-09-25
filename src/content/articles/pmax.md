@@ -12,7 +12,7 @@ status: 'published'
 
 # Why You Still Shouldn't Fully Trust PMax | BlueAlpha
 
-![Why You Still Shouldn't Fully Trust PMax (Even After the 2025 Updates) - BlueAlpha](#assets/articles/marketing-data-infrastructure-setup/pmax-trust-issues.webp)
+![Why You Still Shouldn't Fully Trust PMax (Even After the 2025 Updates) - BlueAlpha](#/assets/articles/marketing-data-infrastructure-setup/pmax-trust-issues.webp)
 
 It’s your first month as Head of Performance Marketing. Your brand has serious issues, and your CMO tells you to start showing good numbers. You decide to invest in Performance Max (PMax), and launch a flurry of PMax campaigns. The numbers coming in look great. You keep optimizing your channel mix reallocating budget towards what looks best. Your manager is satisfied. You’re showcasing impressive ROAS. You feel like a stellar Marketing leader. You start posting on LinkedIn that PMax is the future of Marketing. “_Join or die_”! And the best part is, you can’t believe how easy reaching such results was. Meanwhile, your brand is quietly dying, and the competition is leaving you in the dust. Then, you get fired. The worst part? You still have no idea why, because those numbers *did* look great!
 

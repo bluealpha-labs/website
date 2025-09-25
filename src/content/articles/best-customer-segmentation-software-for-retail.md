@@ -12,7 +12,7 @@ status: 'published'
 
 # The Best Customer Segmentation Software for Retail Brands | BlueAlpha
 
-![The Best Customer Segmentation Software for SMBs](#assets/articles/cross-channel-cannibalization-prevention/customer-segmentation-software.webp)
+![The Best Customer Segmentation Software for SMBs](#/assets/articles/cross-channel-cannibalization-prevention/customer-segmentation-software.webp)
 
 For small and mid-sized retail businesses, precision matters. Every customer interaction should be strategic, ensuring that marketing efforts drive maximum impact without wasted spend. The right customer segmentation software makes this possible, by offering data-driven insights, streamlined targeting, and actionable strategies in one intuitive platform.
 
@@ -135,9 +135,9 @@ For retail SMBs, customer segmentation should be insightful, not overwhelming. B
 
 By focusing on key behavioral patterns, BlueAlpha eliminates unnecessary complexity, providing SMBs with insights that directly impact revenue.
 
-![Customer Segmentation Software - BlueAlpha - Monthly 2](#assets/articles/cross-channel-cannibalization-prevention/customer-segmentation-monthly.jpg)
+![Customer Segmentation Software - BlueAlpha - Monthly 2](#/assets/articles/cross-channel-cannibalization-prevention/customer-segmentation-monthly.jpg)
 
-![Customer Segmentation Software - BlueAlpha](#assets/articles/cross-channel-cannibalization-prevention/customer-segmentation-bluealpha.jpg)
+![Customer Segmentation Software - BlueAlpha](#/assets/articles/cross-channel-cannibalization-prevention/customer-segmentation-bluealpha.jpg)
 
 ## Integrated, Automated, and Actionable
 
@@ -149,7 +149,7 @@ BlueAlpha connects effortlessly with eCommerce platforms, CRMs, and the other ma
 
 Once segmented, customers can be automatically enrolled in targeted campaigns. Whether through personalized emails, dynamic on-site messaging, or strategic social media ads, BlueAlpha ensures every interaction is timely and relevant, without manual effort.
 
-#### **[Incrementality Testing](/articles/incrementality-testing-implementation-guide) and [Media Mix Modeling](/articles/what-is-media-mix-modeling)**
+#### **[Incrementality Testing](/articles/how-to-implement-incrementality-testing) and [Media Mix Modeling](/articles/what-is-media-mix-modeling)**
 
 Beyond segmentation, BlueAlpha distinguishes itself by offering built-in incrementality testing and media mix modeling. These features empower you to understand the true lift each campaign provides and optimize your media spend across channels. Rather than guessing which channel or tactic is most effective, you can now measure and validate your decisions with precision. Combined with high-value segment identification, they increase the [incrementality of your marketing efforts](/articles/what-is-incremental-marketing) even further.
 
@@ -203,7 +203,7 @@ Pricing varies, but many vendors offer flexible plans that scale with your busin
 
 #### **How do I measure segmentation success?**
 
-Track metrics like open rates, click-through rates, customer retention, and revenue lift. A/B testing different segment strategies can further optimize results. BlueAlpha’s integrated [Media Mix Modeling](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/incrementality-testing-implementation-guide) features ensure you isolate and measure the true impact of your segmentation efforts, eliminating guesswork and making every marketing dollar count.
+Track metrics like open rates, click-through rates, customer retention, and revenue lift. A/B testing different segment strategies can further optimize results. BlueAlpha’s integrated [Media Mix Modeling](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/how-to-implement-incrementality-testing) features ensure you isolate and measure the true impact of your segmentation efforts, eliminating guesswork and making every marketing dollar count.
 
 #### Ready to Scale You Retail Brand with Smarter Customer Segmentation?
 

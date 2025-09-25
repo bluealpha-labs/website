@@ -1,7 +1,7 @@
 ---
 title: 'Winning Market Share in Consumer AI SaaS (2025-2027)'
 description: 'A CFO-proof growth system: incrementality-first MMM, GeoLift, and 10+ tests/week'
-image: '#assets/backgrounds/background-1.png'
+image: '#/assets/backgrounds/background-1.png'
 author: 'matthias'
 date: 2025-07-21
 time: 10
@@ -344,7 +344,7 @@ _Third row →_ Cash runway, burn multiple.
 
 _What good looks like for 90-day retention in consumer AI SaaS_
 
-[![Retention benchmark cheat sheet](#assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)](#assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)
+[![Retention benchmark cheat sheet](#/assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)](#/assets/playbooks/consumer-ai/retention-benchmark-cheat-sheet.webp)
 
 | Cohort benchmark                                       | 30-day retention | 60-day retention | 90-day retention | Source                                                                                                                                |
 | ------------------------------------------------------ | ---------------- | ---------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- |

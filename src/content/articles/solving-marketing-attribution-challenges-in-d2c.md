@@ -12,11 +12,11 @@ status: 'published'
 
 # Solving Marketing Attribution Challenges in D2C: Lessons and Strategies for True Impact | BlueAlpha
 
-![Solving Marketing Attribution Challenges in D2C - Lessons and Strategies for True Impact](#assets/articles/budget-allocation-optimization-strategies/d2c-attribution-challenges.webp)
+![Solving Marketing Attribution Challenges in D2C - Lessons and Strategies for True Impact](#/assets/articles/budget-allocation-optimization-strategies/d2c-attribution-challenges.webp)
 
 Direct-to-consumer brands navigate a complex digital world where fragmented customer journeys, limited data visibility, and strict privacy rules make it tough to measure marketing success. Terms like “multi-touch attribution” and “data-driven attribution” promise answers, but many brands still can’t crack the code on what drives growth.
 
-This article unpacks the key challenges of marketing attribution, explains why traditional models fall short, and shows how blending [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) with [incrementality testing](/articles/incrementality-testing-implementation-guide) delivers clearer insights into marketing performance.
+This article unpacks the key challenges of marketing attribution, explains why traditional models fall short, and shows how blending [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) with [incrementality testing](/articles/how-to-implement-incrementality-testing) delivers clearer insights into marketing performance.
 
 We’ll explore:
 
@@ -136,7 +136,7 @@ If your ads, promotions, or channels really matter, the test group should show a
 
 For D2C products or subscription models, it is easy to misread correlation as causal impact. Let us say your brand invests big in retargeting. You see plenty of conversions. An incrementality test might reveal that many of those customers would have purchased anyway, with or without the retargeting ad. In that case, your real incremental effect is much lower than the attribution platform claims.
 
-### [Common Approaches to Incrementality](/articles/incrementality-testing-implementation-guide)
+### [Common Approaches to Incrementality](/articles/how-to-implement-incrementality-testing)
 
 1.  **Geo-Based Tests (GeoLift)**: Split different regions or markets into “test” (where you scale up or activate a campaign) and “control” (where you scale down or pause it). Compare the difference in sales or signups, controlling for external factors.
 2.  **Holdout Groups**: If your database is large enough, you might systematically withhold campaign exposure from a random portion of your audience. Compare their conversion rate to the exposed group.

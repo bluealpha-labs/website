@@ -12,7 +12,7 @@ status: 'published'
 
 # Does Google's AI Max Serve Marketers or Shareholders? | BlueAlpha
 
-![Does Google's AI Max Serve Marketers or Shareholders](#assets/articles/google-ai-max-performance-analysis/google-ai-max.webp)
+![Does Google's AI Max Serve Marketers or Shareholders](#/assets/articles/google-ai-max-performance-analysis/google-ai-max.webp)
 
 The [recently announced](https://blog.google/products/ads-commerce/google-ai-max-for-search-campaigns/) Google’s **AI Max for Search campaigns** is the public codification of a trend performance marketers have felt for years: the ad auction is graduating from exact keyword matching to **machine‑inferred intent**.
 
@@ -73,7 +73,7 @@ Google sales reps stress that “keywords are simpler, not gone”. They’re ri
 BlueAlpha rebuilds that audit trail through
 
 - Fully customized [Marketing Mix Models](/articles/what-is-media-mix-modeling)
-- Properly designed [incrementality tests](/articles/incrementality-testing-implementation-guide)
+- Properly designed [incrementality tests](/articles/how-to-implement-incrementality-testing)
 
 ## 7-Step Action Plan for CMOs
 

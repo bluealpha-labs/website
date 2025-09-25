@@ -13,11 +13,11 @@ status: 'published'
 
 #### A Comprehensive Guide for Growth-Minded Marketers
 
-![How to Measure Brand Campaign Success](#assets/articles/creative-testing-framework-for-growth/measure-brand-campaign-success.webp)
+![How to Measure Brand Campaign Success](#/assets/articles/creative-testing-framework-for-growth/measure-brand-campaign-success.webp)
 
 Establishing a strong brand is critical to staying relevant and fueling long-term growth. Yet many marketing leaders hesitate to invest in brand campaigns because the results often feel “unmeasurable”. Brand marketing is more complex to track than bottom-of-funnel performance efforts, so it’s easy for finance teams (or even some members of your executive suite) to view brand investments as purely speculative.
 
-This guide lays out practical, data-backed ways to measure brand campaign success. You’ll learn the essentials of brand health tracking, the importance of leading indicators, and how to harness techniques like [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/incrementality-testing-implementation-guide). Throughout, we’ll show how brand marketing can (and should) be held accountable, while still acknowledging the unique challenges that make brand efforts trickier to measure than direct-response campaigns.
+This guide lays out practical, data-backed ways to measure brand campaign success. You’ll learn the essentials of brand health tracking, the importance of leading indicators, and how to harness techniques like [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) and [incrementality testing](/articles/how-to-implement-incrementality-testing). Throughout, we’ll show how brand marketing can (and should) be held accountable, while still acknowledging the unique challenges that make brand efforts trickier to measure than direct-response campaigns.
 
 Whether you’re a marketing decision-maker in a B2C subscription company, an established e-commerce player with a hefty media budget, or a growth-stage tech brand looking to scale, this guide offers a future-oriented approach to proving that brand spend contributes to sustainable outcomes. We’ll also highlight how BlueAlpha, with our authoritative yet accessible analytics expertise, can help you confidently navigate brand measurement while maximizing ROI.
 
@@ -123,7 +123,7 @@ For smaller or mid-size brands, building an MMM from scratch can be daunting. Th
 
 ## **Step 4: Validate Results with Incrementality Testing**
 
-MMM provides a top-down macro view of how brand channels drive outcomes. But you can further validate brand campaigns through **[incrementality testing](/articles/incrementality-testing-implementation-guide)**. While it’s common to run incrementality tests for short-term performance channels (like paid social or search), brand marketing can benefit too.
+MMM provides a top-down macro view of how brand channels drive outcomes. But you can further validate brand campaigns through **[incrementality testing](/articles/how-to-implement-incrementality-testing)**. While it’s common to run incrementality tests for short-term performance channels (like paid social or search), brand marketing can benefit too.
 
 ### What is Incrementality Testing?
 

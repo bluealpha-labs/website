@@ -12,7 +12,7 @@ status: 'published'
 
 # The CMO's Guide to Channel Marketing Optimization | BlueAlpha
 
-![The CMO's Guide to Channel Marketing Optimization](#assets/articles/channel-marketing-optimization-guide/channel-marketing-optimization.webp)
+![The CMO's Guide to Channel Marketing Optimization](#/assets/articles/channel-marketing-optimization-guide/channel-marketing-optimization.webp)
 
 The marketing chessboard keeps adding new pieces: TikTok ads, retail media networks, connected TV, affiliate marketplaces, podcasts, and a dozen data‑clean rooms promising the moon. That explosion creates reach, but it also fragments budgets, reporting, and accountability. If you are still optimizing channels one at a time, you are leaving profit on the table.
 
@@ -120,7 +120,7 @@ As you contemplate new channels or reconsider old ones, replace intuition with a
 
 Score each dimension on a five‑point scale, average the results, then plot channels in a two‑by‑two matrix: payback period on one axis, risk or upside on the other. The matrix segments channels into always‑on, test‑and‑learn, long‑term bets, or deprioritized. Creating the matrix forces you to articulate _why_ a podcast sponsorship belongs in an experimental bucket instead of the permanent roster.
 
-![Channel Marketing Optimization - Fit‑Behavior‑Lever Framework - BlueAlpha](#assets/articles/channel-marketing-optimization-guide/fit-behavior-lever-framework.webp)
+![Channel Marketing Optimization - Fit‑Behavior‑Lever Framework - BlueAlpha](#/assets/articles/channel-marketing-optimization-guide/fit-behavior-lever-framework.webp)
 
 ## **Governance: Keep the Engine Honest**
 

@@ -12,7 +12,7 @@ status: 'published'
 
 # Marketing Measurement: What Growth-Focused CMOs Need to Know in 2025 | BlueAlpha
 
-![Marketing Measurement: What Growth-Focused CMOs Need to Know in 2025](#assets/articles/marketing-measurement-guide-2025/marketing-measurement-cmos-2025.webp)
+![Marketing Measurement: What Growth-Focused CMOs Need to Know in 2025](#/assets/articles/marketing-measurement-guide-2025/marketing-measurement-cmos-2025.webp)
 
 ## The Modern CMO’s Measurement Challenge
 
@@ -73,7 +73,7 @@ In one of our [case studies](https://bluealpha.ai/case-studies/), we secured dou
 
 ## Operationalizing BlueAlpha: A Step-by-Step Onboarding Flow
 
-![Operationalizing BlueAlpha: A Step-by-Step Onboarding Flow](#assets/articles/marketing-measurement-guide-2025/onboarding-flow.png)
+![Operationalizing BlueAlpha: A Step-by-Step Onboarding Flow](#/assets/articles/marketing-measurement-guide-2025/onboarding-flow.png)
 
 BlueAlpha’s onboarding process is designed to deliver value quickly, enabling CMOs to see tangible results within weeks.
 

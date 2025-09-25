@@ -1,7 +1,7 @@
 ---
 title: 'How Pettable Achieved a 14% CAC Reduction by Partnering with BlueAlpha'
 description: "When Google Search spend crept past break-even and Customer Acquisition Cost (CAC) climbed 20%, Pettable's marketing team needed facts, not hunches: Which dollars were truly incremental, and which were cannibalizing organic sales? Existing dashboards couldn't prove causality at the campaign level."
-image: '#assets/backgrounds/background-2.png'
+image: '#/assets/backgrounds/background-2.png'
 author: 'matthias'
 company: 'pettable'
 testimonial:

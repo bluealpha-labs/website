@@ -41,7 +41,7 @@ The MMM process typically involves three main stages:
 2.  **Model Building:** Using statistical techniques to build a model that quantifies the impact of different marketing activities on sales, identifying relationships and interactions between variables​.
 3.  **Insights and Recommendations:** Analyzing the model’s results to generate insights and recommendations for optimizing marketing strategies and budget allocations​.
 
-![10% Revenue Increase with Media Mix Modeling](#assets/articles/what-is-media-mix-modeling/revenue-increase-mmm.jpg)
+![10% Revenue Increase with Media Mix Modeling](#/assets/articles/what-is-media-mix-modeling/revenue-increase-mmm.jpg)
 
 ## Why MMM is Essential to Marketing
 

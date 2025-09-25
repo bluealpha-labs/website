@@ -12,7 +12,7 @@ status: 'published'
 
  
 
-![The Best Marketing Mix Modeling Software for Mid-Market Brands - BlueAlpha](#assets/articles/tiktok-measurement-complete-playbook/mmm-software-mid-market.webp)
+![The Best Marketing Mix Modeling Software for Mid-Market Brands - BlueAlpha](#/assets/articles/tiktok-measurement-complete-playbook/mmm-software-mid-market.webp)
 
 For growth-stage and mid-market companies, every marketing dollar must drive measurable impact.  
 Choosing the right [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-modeling) software empowers lean marketing teams with data-driven insights to optimize budgets, identify the most effective channels and campaigns, and stay competitive – without needing an in-house data science team or enterprise-level resources.
@@ -25,7 +25,7 @@ Choosing the right [Marketing Mix Modeling (MMM)](/articles/what-is-media-mix-mo
 
 **Adapt Quickly to Market Changes**: Growth-stage and mid-market brands have the agility to shift strategies faster than large enterprises. With MMM insights, businesses can adjust media spend dynamically, based on what’s working.
 
-**Validate Marketing Experiments**: MMM delivers the most value when paired with [incrementality testing](/articles/incrementality-testing-implementation-guide), including [geo-lift experiments](/articles/matched-market-testing-guide); this combination of tools helps companies simulate “what-if” scenarios before committing important budgets to new channels or campaigns.
+**Validate Marketing Experiments**: MMM delivers the most value when paired with [incrementality testing](/articles/how-to-implement-incrementality-testing), including [geo-lift experiments](/articles/matched-market-testing-guide); this combination of tools helps companies simulate “what-if” scenarios before committing important budgets to new channels or campaigns.
 
 **Communicate ROI with Clarity**: Stakeholders – from CFOs to board members – need proof of marketing’s financial impact. MMM software generates dashboards that show incremental revenue and justify investment in marketing initiatives.
 

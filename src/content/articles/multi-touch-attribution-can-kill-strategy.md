@@ -15,7 +15,7 @@ As your company’s Head of Performance Marketing, you’ve always been well-reg
 
 You’ve been long convinced MTA/DDA provide the insights needed to optimize your marketing efforts across different channels. However, despite your team’s best efforts, your campaigns’ results are disappointing, and your competitors are growing stronger day by day. You’re probably wondering if there’s a better way.
 
-![Why Multi-Touch Attribution and DDA Can Kill Your Marketing Strategy](#assets/articles/multi-touch-attribution-can-kill-strategy/multi-touch-attribution-dda.webp)
+![Why Multi-Touch Attribution and DDA Can Kill Your Marketing Strategy](#/assets/articles/multi-touch-attribution-can-kill-strategy/multi-touch-attribution-dda.webp)
 
 ## What is MTA in Marketing?
 
@@ -67,7 +67,7 @@ Recognizing the limitations of traditional attribution models, Google has been p
 
 The transition to DDA has however not resolved all the common issues with MTA models we just analyzed. In fact, it has introduced new challenges. Lazy marketers and managers, who previously relied on the flawed simplicity of MTA models but at least were probably comparing multiple models one vs. the other before taking decisions, now tend to place blind trust solely in Google’s DDA model. This over-reliance on a black-box algorithm can be dangerous. Without a clear understanding of how DDA works, marketing leaders may take decisions based on incomplete or misinterpreted data. The opacity of DDA inner workings means that marketers cannot easily verify or challenge the attributions made, potentially leading to misguided strategies.
 
-The limitations of MTA and DDA highlight the need for a more comprehensive and integrated approach to marketing measurement, adopting other methodologies like [Media Mix Modeling](/articles/what-is-media-mix-modeling) and [Incrementality Testing](/articles/incrementality-testing-implementation-guide) to achieve a holistic understanding of marketing effectiveness.
+The limitations of MTA and DDA highlight the need for a more comprehensive and integrated approach to marketing measurement, adopting other methodologies like [Media Mix Modeling](/articles/what-is-media-mix-modeling) and [Incrementality Testing](/articles/how-to-implement-incrementality-testing) to achieve a holistic understanding of marketing effectiveness.
 
 ## The Need for Combining MTA with MMM and Incrementality Testing
 
