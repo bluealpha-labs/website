@@ -1,10 +1,16 @@
 import { getCalApi } from '@calcom/embed-react'
-import { useEffect, type ReactNode } from 'react'
+import { useEffect, type ReactNode, type MouseEvent } from 'react'
 import { Button, type ButtonProps, buttonStyles } from './button'
 
-type Props = ButtonProps & { children?: ReactNode; href?: string }
+type ClickEvent = MouseEvent<HTMLButtonElement | HTMLAnchorElement>
 
-export function CallWithFounder({ children, href, className, ...props }: Props) {
+type Props = Omit<ButtonProps, 'onClick'> & {
+  children?: ReactNode
+  href?: string
+  onClick?: (event: ClickEvent) => void
+}
+
+export function CallWithFounder({ children, href, className, onClick, 'aria-label': ariaLabel, ...props }: Props) {
   useEffect(() => {
     async function init() {
       const cal = await getCalApi({ namespace: 'call-with-founder' })
@@ -19,13 +25,23 @@ export function CallWithFounder({ children, href, className, ...props }: Props) 
     init()
   }, [])
 
+  function handleClick(event: ClickEvent) {
+    if (typeof window !== 'undefined') {
+      window.lintrk?.('track', { conversion_id: 23786426 })
+    }
+
+    onClick?.(event)
+  }
+
   if (href) {
     return (
       <a
         href={href}
         target='_blank'
         rel='noopener noreferrer'
-        className={buttonStyles({ className })}>
+        className={buttonStyles({ className })}
+        aria-label={ariaLabel}
+        onClick={handleClick}>
         {children ?? (
           <>
             <span className='sm:hidden'>Demo</span>
@@ -38,6 +54,8 @@ export function CallWithFounder({ children, href, className, ...props }: Props) 
 
   return (
     <Button
+      aria-label={ariaLabel}
+      onClick={handleClick}
       data-cal-namespace='call-with-founder'
       data-cal-link='bluealpha/call-with-founder'
       data-cal-config='{"layout":"month_view"}'

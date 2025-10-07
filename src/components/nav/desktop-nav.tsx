@@ -5,7 +5,6 @@ import { $showCta } from '#stores/show-cta.tsx'
 import { snappyTransition } from '#utils/transitions.ts'
 import { useStore } from '@nanostores/react'
 import { AnimatePresence } from 'motion/react'
-import { buttonStyles } from '#components/button.tsx'
 
 type Props = { isHome: boolean }
 
@@ -44,15 +43,11 @@ export function DesktopNav({ isHome }: Props) {
           Careers
         </Link>
         {!isHome ? (
-          <a
+          <CallWithFounder
             href='https://cal.com/team/bluealpha/call-with-bluealpha'
-            target='_blank'
-            rel='noopener noreferrer'
-            className={buttonStyles({}) + ' -me-2 px-3 py-2 text-sm sm:-me-3 sm:px-4 sm:py-2.5 sm:text-base'}
-            aria-label='Book a demo'>
-            <span className='sm:hidden'>Demo</span>
-            <span className='hidden sm:inline'>Book a demo</span>
-          </a>
+            className='-me-2 px-3 py-2 text-sm sm:-me-3 sm:px-4 sm:py-2.5 sm:text-base'
+            aria-label='Book a demo'
+          />
         ) : (
           <AnimatePresence mode='popLayout'>
             {showCta && (
